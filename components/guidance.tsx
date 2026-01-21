@@ -19,8 +19,9 @@ export default function Guidance() {
     },
     {
       icon: "❤️",
-      title: "Mental Health Check",
-      description: "Ensure your well-being is prioritized during exams.",
+      title: "Mental Well-Being ",
+      title1:"Self-Reflection",
+      description: "Because learning works best when the mind feels supported, not pressured.",
       link: "Start Check",
       href: "/wellbeing"
     },
@@ -38,7 +39,8 @@ export default function Guidance() {
           {cards.map((card, index) => (
             <div key={index} className="guidance-card">
               <div className="card-icon">{card.icon}</div>
-              <h3>{card.title}</h3>
+             <h3 className="text1">{card.title}<br/>{card.title1}</h3>
+            
               <p>{card.description}</p>
               {card.href ? (
                 <Link href={card.href} className="card-link">

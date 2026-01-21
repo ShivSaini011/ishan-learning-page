@@ -6,7 +6,7 @@ import Features from "@/components/features"
 import Classes from "@/components/classes"
 import WhyChoose from "@/components/why-choose"
 import Guidance from "@/components/guidance"
-import AppDownload from "@/components/app-download"
+// import AppDownload from "@/components/app-download"
 import Footer from "@/components/footer"
 import "@/styles/main.css"
 
