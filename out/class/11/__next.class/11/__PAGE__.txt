@@ -1,0 +1,12 @@
+1:"$Sreact.fragment"
+2:I[41874,["/ishan-learning-page/_next/static/chunks/906c91b1c4c18a0b.js","/ishan-learning-page/_next/static/chunks/9a41b83c37fa0a6a.js"],"ClientPageRoot"]
+3:I[33633,["/ishan-learning-page/_next/static/chunks/21942d87ecba3710.js","/ishan-learning-page/_next/static/chunks/867689766fdc8d12.js","/ishan-learning-page/_next/static/chunks/d830bc1c35fc1546.js"],"default"]
+6:I[238,["/ishan-learning-page/_next/static/chunks/906c91b1c4c18a0b.js","/ishan-learning-page/_next/static/chunks/9a41b83c37fa0a6a.js"],"OutletBoundary"]
+7:"$Sreact.suspense"
+:HL["/ishan-learning-page/_next/static/chunks/57f7485461e7543f.css","style"]
+:HL["/ishan-learning-page/_next/static/chunks/2c90d4eeee4fed7c.css","style"]
+:HL["/ishan-learning-page/_next/static/chunks/2bbf40fad40be5b4.css","style"]
+0:{"buildId":"3JpVvryLxCV0B76o6imR2","rsc":["$","$1","c",{"children":[["$","$L2",null,{"Component":"$3","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@4","$@5"]}}],[["$","link","0",{"rel":"stylesheet","href":"/ishan-learning-page/_next/static/chunks/57f7485461e7543f.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/ishan-learning-page/_next/static/chunks/2c90d4eeee4fed7c.css","precedence":"next"}],["$","link","2",{"rel":"stylesheet","href":"/ishan-learning-page/_next/static/chunks/2bbf40fad40be5b4.css","precedence":"next"}],["$","script","script-0",{"src":"/ishan-learning-page/_next/static/chunks/867689766fdc8d12.js","async":true}],["$","script","script-1",{"src":"/ishan-learning-page/_next/static/chunks/d830bc1c35fc1546.js","async":true}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"loading":null,"isPartial":false}
+4:{}
+5:"$0:rsc:props:children:0:props:serverProvidedParams:params"
+8:null
