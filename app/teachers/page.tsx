@@ -4,6 +4,7 @@ import Header from "@/components/header"
 import Footer from "@/components/footer"
 import HomeButton from "@/components/home-button"
 import "@/styles/teachers.css"
+import { useRef, useState } from "react"
 
 export default function Teachers() {
   const teachers = [
@@ -99,17 +100,33 @@ export default function Teachers() {
     }
   ]
 
+  const [selectedTeacher, setSelectedTeacher] = useState<number | null>(null)
+  const [showModal, setShowModal] = useState(false)
+  const teachersGridRef = useRef<HTMLDivElement>(null)
+
+  const handleViewTeachers = (e: React.MouseEvent) => {
+    e.preventDefault()
+    teachersGridRef.current?.scrollIntoView({ behavior: "smooth" })
+  }
+
+  const handleMeetTeacher = (e: React.MouseEvent) => {
+    e.preventDefault()
+    setShowModal(true)
+  }
+
+  const closeModal = () => setShowModal(false)
+
   return (
     <div className="app">
       <Header />
 
       <main className="teachers-container">
-        <section className="teachers-hero">
+        {/* <section className="teachers-hero">
           <h1>Meet Our Teachers</h1>
           <p>Experienced educators dedicated to your success</p>
-        </section>
+        </section> */}
 
-        <section className="teachers-intro">
+        <section className="teachers-intro teachers-hero">
           <div className="intro-content">
             <h2>About Our Teaching Team</h2>
             <p>
@@ -121,39 +138,78 @@ export default function Teachers() {
           </div>
         </section>
 
-        <section className="teachers-grid">
-          <h2>Our Teaching Faculty</h2>
-          <div className="teachers-list">
-            {teachers.map((teacher) => (
-              <div key={teacher.id} className="teacher-card">
-                <div className="teacher-image-wrapper">
-                  <div className="teacher-image-placeholder">{teacher.name.charAt(0)}</div>
-                </div>
-                
-                <div className="teacher-content">
-                  <h3>{teacher.name}</h3>
-                  <p className="teacher-position">{teacher.position}</p>
-                  <p className="teacher-qualification">{teacher.qualification}</p>
-                  
-                  <p className="teacher-bio">{teacher.bio}</p>
-                  
-                  <div className="teacher-expertise">
-                    <h4>Expertise:</h4>
-                    <div className="expertise-tags">
-                      {teacher.expertise.map((skill, index) => (
-                        <span key={index} className="expertise-tag">{skill}</span>
-                      ))}
-                    </div>
+        {/* Teachers Grid Section - interactive */}
+        {/* <div ref={teachersGridRef} id="your-teacher">
+          <section className="teachers-grid">
+            <h2>Our Teaching Faculty</h2>
+            <div className="teachers-list">
+              {teachers.map((teacher) => (
+                <div
+                  key={teacher.id}
+                  className={`teacher-card${selectedTeacher === teacher.id ? " expanded" : ""}`}
+                  onClick={() => setSelectedTeacher(selectedTeacher === teacher.id ? null : teacher.id)}
+                  style={{ cursor: "pointer" }}
+                >
+                  <div className="teacher-image-wrapper">
+                    <div className="teacher-image-placeholder">{teacher.name.charAt(0)}</div>
                   </div>
-                  
-                  <div className="teacher-quote">
-                    <p>"{teacher.quote}"</p>
+                  <div className="teacher-content">
+                    <h3>{teacher.name}</h3>
+                    <p className="teacher-position">{teacher.position}</p>
+                    <p className="teacher-qualification">{teacher.qualification}</p>
+                    <p className="teacher-bio">{teacher.bio}</p>
+                    {selectedTeacher === teacher.id && (
+                      <>
+                        <div className="teacher-expertise">
+                          <h4>Expertise:</h4>
+                          <div className="expertise-tags">
+                            {teacher.expertise.map((skill, index) => (
+                              <span key={index} className="expertise-tag">{skill}</span>
+                            ))}
+                          </div>
+                        </div>
+                        <div className="teacher-quote">
+                          <p>"{teacher.quote}"</p>
+                        </div>
+                      </>
+                    )}
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
+          </section> */}
+        {/* </div> */}
+
+        {/* //add two buttons here one is View your teacer and meet your teacher */}
+        <div className="teacher-buttons">
+          <a href="#your-teacher" className="teacher-btn" onClick={handleViewTeachers}>View Your Teacher</a>
+          <a href="#meet-teacher" className="teacher-btn secondary" onClick={handleMeetTeacher}>Meet Your Teacher</a>
+        </div>
+
+        {/* Meet Your Teacher Modal */}
+        {showModal && (
+          <div className="teacher-modal-overlay" onClick={closeModal}>
+            <div className="teacher-modal" onClick={e => e.stopPropagation()}>
+              <button className="modal-close" onClick={closeModal}>&times;</button>
+              <h2>Meet Your Teacher</h2>
+              <form className="meet-form">
+                <label>
+                  Your Name
+                  <input type="text" name="name" required />
+                </label>
+                <label>
+                  Your Email
+                  <input type="email" name="email" required />
+                </label>
+                <label>
+                  Message
+                  <textarea name="message" rows={3} required placeholder="Ask a question or request a meeting..."></textarea>
+                </label>
+                <button type="submit" className="teacher-btn">Send Request</button>
+              </form>
+            </div>
           </div>
-        </section>
+        )}
 
         <section className="teaching-philosophy">
           <h2>Our Teaching Philosophy</h2>

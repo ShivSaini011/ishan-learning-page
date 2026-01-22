@@ -28,6 +28,9 @@ export default function Classes() {
           ))}
         </div>
       </div>
+      <div className="note">
+        Learning resources are being added progressively.
+      </div>
       <div className="request-a-session">
         <Link href="/beyond">
           <button className="classbtn">Beyond the Classroom

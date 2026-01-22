@@ -130,6 +130,27 @@
   opacity: 1;
 }
 
+.note {
+  margin: 32px auto 0 auto;
+  max-width: 500px;
+  background: #fffbe6;
+  color: #7c5e00;
+  border-left: 5px solid #ffd700;
+  border-radius: 6px;
+  padding: 8px 10px;
+  font-size: 1.05rem;
+  box-shadow: 0 2px 8px rgba(255, 215, 0, 0.08);
+  text-align: center;
+}
+
+/* Dark mode note styles */
+:root.dark-mode .note {
+  background: #2a2a3e;
+  color: #ffe066;
+  border-left: 5px solid #ffe066;
+  box-shadow: 0 2px 8px rgba(255, 224, 102, 0.12);
+}
+
 @media (max-width: 768px) {
   .classes {
     padding: 40px 20px;

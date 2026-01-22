@@ -50,7 +50,7 @@ export default function ClassPage({ params }: { params: { classNumber: string } 
               {expandedSubject === subject.name && (
                 <div className="subject-options">
                   {subject.options.map((option, index) => (
-                    <Link href={option.link} key={index} className="option-link">
+                    <Link href={option.link} key={index} className="option-link" target="_blank" rel="noopener noreferrer">
                       <div className="option-card">
                         <img src={option.icon} alt={option.name} className="option-icon" />
                         <div className="option-name">{option.name}</div>

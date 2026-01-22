@@ -372,6 +372,8 @@ export default function ClassPage({
                       href={option.link}
                       key={index}
                       className="option-link"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <div className="option-card">
                         <img

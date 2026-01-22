@@ -11,7 +11,7 @@
 /* Hero Section */
 .teachers-hero {
   text-align: center;
-  padding: 60px 20px 50px;
+  padding: 20px 20px 10px;
   background: linear-gradient(135deg, rgba(102, 126, 234, 0.12) 0%, rgba(118, 75, 162, 0.12) 100%);
 }
 
@@ -46,7 +46,8 @@
 
 /* Introduction Section */
 .teachers-intro {
-  max-width: 900px;
+  /* background-color:le; */
+  /* max-width: 900px; */
   margin: 0 auto;
   padding: 50px 20px;
   text-align: center;
@@ -273,7 +274,7 @@
 .teaching-philosophy {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 50px 20px;
+  padding: 5px 5px;
 }
 
 .teaching-philosophy h2 {
@@ -352,7 +353,7 @@
 
 /* CTA Section */
 .teacher-cta {
-  max-width: 800px;
+  max-width: auto;
   margin: 0 auto;
   padding: 50px 20px;
   text-align: center;
@@ -406,6 +407,128 @@
 .cta-button:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+/* Buttons */
+.teacher-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 32px 0 40px 0;
+}
+
+.teacher-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  padding: 12px 32px;
+  border-radius: 28px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.15);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.teacher-btn:hover {
+  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+  box-shadow: 0 4px 16px rgba(102, 126, 234, 0.22);
+  transform: translateY(-2px);
+}
+
+.teacher-btn.secondary {
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e42 100%);
+  color: #222;
+}
+
+.teacher-btn.secondary:hover {
+  background: linear-gradient(135deg, #f59e42 0%, #fbbf24 100%);
+  color: #111;
+}
+
+:root.dark-mode .teacher-btn.secondary {
+  background: linear-gradient(135deg, #ffe066 0%, #ffd700 100%);
+  color: #222;
+}
+
+/* Modal styles and expanded card */
+.teacher-modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(30, 41, 59, 0.45);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.teacher-modal {
+  background: #fff;
+  border-radius: 16px;
+  padding: 32px 28px 24px 28px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 8px 32px rgba(102, 126, 234, 0.18);
+  position: relative;
+  animation: modalIn 0.2s;
+}
+@keyframes modalIn {
+  from { transform: scale(0.95); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+.modal-close {
+  position: absolute;
+  top: 12px; right: 16px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #667eea;
+  cursor: pointer;
+}
+.meet-form label {
+  display: block;
+  margin-bottom: 14px;
+  font-weight: 500;
+  color: #333;
+}
+.meet-form input,
+.meet-form textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #c7d2fe;
+  margin-top: 4px;
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+.meet-form button {
+  margin-top: 8px;
+}
+:root.dark-mode .teacher-modal {
+  background: #23213a;
+  color: #fff;
+}
+:root.dark-mode .modal-close {
+  color: #a78bfa;
+}
+:root.dark-mode .meet-form label {
+  color: #e0e7ff;
+}
+:root.dark-mode .meet-form input,
+:root.dark-mode .meet-form textarea {
+  background: #2a2a3e;
+  color: #fff;
+  border: 1px solid #4c1d95;
+}
+.teacher-card.expanded {
+  border: 2px solid #764ba2;
+  box-shadow: 0 8px 24px rgba(118, 75, 162, 0.13);
+  background: #f8f5ff;
+}
+:root.dark-mode .teacher-card.expanded {
+  background: #2a1f3d;
+  border-color: #a78bfa;
 }
 
 /* Responsive */
