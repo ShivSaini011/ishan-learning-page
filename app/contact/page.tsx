@@ -23,11 +23,11 @@ export default function Contact() {
           <p>For questions related to learning, concepts, or guidance requests, please use:</p>
           
           <div className="contact-actions">
-            <a href="#ask-query" className="contact-button query-button">
-              <span className="button-icon">✉️</span>
+            <a href="/ask-query" className="contact-button query-button" target="_blank">
+              <span className="button-icon" >✉️</span>
               Ask Query
             </a>
-            <a href="#request-session" className="contact-button session-button">
+            <a href="/request-session" className="contact-button session-button" target="_blank">
               <span className="button-icon">📅</span>
               Request a Session
             </a>

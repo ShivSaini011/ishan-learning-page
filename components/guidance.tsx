@@ -54,9 +54,12 @@ export default function Guidance() {
             </div>
           ))}
         </div>
-        <div className="request-a-session"> 
+        <a className="request-a-session" href="/reqest" target="_blank"> 
           <button className="session-btn">Request a Counseling Session</button>
-        </div>
+        </a>
+      <Link href="\tdy" className="home-button1" target="_blank">
+      <span className="home-icon-txt">Today's Class Schedule </span>
+      </Link>
       </div>
     </section>
   )

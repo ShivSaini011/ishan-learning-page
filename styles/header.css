@@ -66,6 +66,8 @@
 }
 
 .header-nav {
+  /* color: #f8f7ff; */
+  background-color: #ffffff;
   display: flex;
   gap: 30px;
   align-items: center;
@@ -176,7 +178,7 @@
 
 .mobile-toggle {
   display: none;
-  background: none;
+  /* background: none; */
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
@@ -202,7 +204,7 @@
     right: 0;
     flex-direction: column;
     gap: 15px;
-    background-color: var(--bg-white);
+    background-color: white;
     padding: 20px;
     border-bottom: 1px solid var(--border-color);
     width: 100%;

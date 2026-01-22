@@ -80,10 +80,14 @@
 
 .footer-socials {
   display: flex;
-  gap: 20px;
+  gap: 10px;
 }
 
 .footer-socials a {
+  width: 35px;
+  padding: 5px;
+  background-color: #fff;
+  border-radius: 50%  ;
   color: rgba(255, 255, 255, 0.7);
   text-decoration: none;
   font-size: 0.9rem;

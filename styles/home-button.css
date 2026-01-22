@@ -1,9 +1,9 @@
 .home-button {
   position: fixed;
-  bottom: 30px;
+  bottom: 50px;
   right: 30px;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   display: flex;
@@ -25,13 +25,13 @@
 }
 
 .home-icon {
-  font-size: 1.8rem;
+  font-size: 1.rem;
 }
 
 /* Mobile responsive */
 @media (max-width: 768px) {
   .home-button {
-    bottom: 20px;
+    bottom: 40px;
     right: 20px;
     width: 50px;
     height: 50px;

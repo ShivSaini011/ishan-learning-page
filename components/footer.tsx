@@ -63,9 +63,12 @@ export default function Footer() {
       <div className="footer-bottom">
         <p>&copy; 2026 Ishan Learning. All rights reserved.</p>
         <div className="footer-socials">
-          <a href="#facebook">f</a>
-          <a href="#twitter">𝕏</a>
-          <a href="#linkedin">in</a>
+          <a href="\fb" target="_"><img src="\fb.png" alt="facebook" /></a>
+          <a href="\fb" target="_"><img src="\tw.png" alt="twitter" /></a>
+          <a href="\fb" target="_"><img src="\ins.png" alt="instagrem" /></a>
+          <a href="\fb" target="_"><img src="\tel.png" alt="telegram" /></a>
+          <a href="\fb" target="_"><img src="\w.png" alt="whatsapp" /></a>
+          <a href="\fb" target="_"><img src="\yt.png" alt="youtube" /></a>
         </div>
       </div>
     </footer>

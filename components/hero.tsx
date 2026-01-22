@@ -12,12 +12,12 @@ export default function Hero() {
             {t("Class 6 to 12 - Learn Smart,")}{" "}
             <span className="highlight">{t("Stay Confident")}</span>
           </h1>
-          <div className="youtubeican">
-            <a href="#" className="socialyt" title="YouTube">
+          <a href="\ytpage"className="youtubeican" title="YouTube" target="_blank">
+            <div className="socialyt" title="YouTube" >
               ▶
-            </a>
-            <div className="youtubetxt ">@LshanLearning</div>
-          </div>
+            </div>
+            <div className="youtubetxt ">@IshanLearning</div>
+          </a>
           <div className="search-bar">
             <input
               type="text"
@@ -43,19 +43,19 @@ export default function Hero() {
 
           {/* Social media icons */}
           <div className="social-icons">
-            <a href="#" className="social-icon" title="Facebook">
+            <a href="#" className="social-icon" title="Facebook" target="_blank">
               <img src="/face.png" alt="Instagram" width={65} height={65} />
             </a>
-            <a href="#" className="social-icon" title="Twitter">
+            <a href="#" className="social-icon" title="Twitter" target="_blank">
               <img src="/x.png" alt="Instagram" width={65} height={65} />
             </a>
-            <a href="#" className="social-icon" title="Instagram">
+            <a href="#" className="social-icon" title="Instagram" target="_blank">
               <img src="/insta.png" alt="Instagram" width={64} height={64} />
             </a>
-            <a href="#" className="social-icon" title="LinkedIn">
+            <a href="#" className="social-icon" title="LinkedIn" target="_blank">
               <img src="/tele.png" alt="Instagram" width={54} height={54} />
             </a>
-            <a href="#" className="social-icon" title="YouTube">
+            <a href="#" className="social-icon1 whatsapp" title="YouTube" target="_blank">
               <img src="/what.png" alt="Instagram" width={45} height={45} />
             </a>
           </div>

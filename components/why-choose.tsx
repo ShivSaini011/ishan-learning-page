@@ -34,10 +34,11 @@ export default function WhyChoose() {
           <div className="query-form-container">
             <h2 className="qrtxt">Have Questions?</h2>
             <img src="/qr.png" alt="Query Illustration" width={400} height={200} />
-      
               <div className="query-instructions">
               <h2  className="qrtxt">Submit Your Query....</h2>
+              <a href="\submit"  target="_blank">
               <button className="submit-query-btn">Submit</button>
+              </a>
               </div>
           </div>
         </div>
