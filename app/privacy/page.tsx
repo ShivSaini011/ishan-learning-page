@@ -70,7 +70,7 @@ export default function PrivacyPolicy() {
               <li>Improve clarity and relevance of learning support</li>
             </ul>
             <p>
-              We do not sell, rent, or share this information with third
+              We do not sell, rent or share this information with third
               parties.
             </p>
           </section>
@@ -142,8 +142,8 @@ export default function PrivacyPolicy() {
             <ul>
               <li>Ishan Learning is an academic learning support platform.</li>
               <li>
-                We do not provide medical, psychological, counselling, or
-                therapeutic services, and no data is used for diagnosis or
+                We do not provide medical, psychological, counselling or
+                therapeutic services and no data is used for diagnosis or
                 treatment.
               </li>
             </ul>

@@ -1,5 +1,6 @@
 import "@/styles/hero.css";
 import { useLanguage } from "@/components/language-context";
+import SearchClass from "@/components/search"
 // import Image from "@/components/optimized-image"
 export default function Hero() {
   const { t } = useLanguage();
@@ -8,24 +9,18 @@ export default function Hero() {
       <div className="hero-container">
         <div className="hero-content">
           {/* <div className="hero-badge">✨ ENROLLMENT OPEN FOR 2024-25</div> */}
-          <h1 className="hero-title">
-            {t("Class 6 to 12 - Learn Smart,")}{" "}
-            <span className="highlight">{t("Stay Confident")}</span>
-          </h1>
-          <a href="\ytpage"className="youtubeican" title="YouTube" target="_blank">
+          <div className="hero-title">
+            <div className="hero-txt"> Class 6 to 12 - Learn Smart,</div>
+            <span className="highlight">Stay Confident</span>
+          </div>
+          <a href="https://www.youtube.com/@IshanLearning" className="youtubeican" title="YouTube" target="_blank">
             <div className="socialyt" title="YouTube" >
               ▶
             </div>
             <div className="youtubetxt ">@IshanLearning</div>
           </a>
-          <div className="search-bar">
-            <input
-              type="text"
-              placeholder="Search Class..."
-              className="search-input"
-            />
-            <button className="search-btn">🔍</button>
-          </div>
+          {/* <SearchClass/> */}
+          <div className="education-right">Education is a right, not a privilege.</div>
         </div>
 
         <div className="hero-right-section">
@@ -43,13 +38,13 @@ export default function Hero() {
 
           {/* Social media icons */}
           <div className="social-icons">
-            <a href="#" className="social-icon" title="Facebook" target="_blank">
+            <a href="https://www.facebook.com/ishanlearning/" className="social-icon" title="Facebook" target="_blank">
               <img src="/face.png" alt="Instagram" width={65} height={65} />
             </a>
-            <a href="#" className="social-icon" title="Twitter" target="_blank">
+            <a href="https://www.twitter.com/ishanlearning" className="social-icon" title="Twitter" target="_blank">
               <img src="/x.png" alt="Instagram" width={65} height={65} />
             </a>
-            <a href="#" className="social-icon" title="Instagram" target="_blank">
+            <a href="https://www.instagram.com/ishanlearning/" className="social-icon" title="Instagram" target="_blank">
               <img src="/insta.png" alt="Instagram" width={64} height={64} />
             </a>
             <a href="#" className="social-icon" title="LinkedIn" target="_blank">

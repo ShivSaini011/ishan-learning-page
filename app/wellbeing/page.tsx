@@ -3,6 +3,7 @@
 import { useState } from "react"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
+import Backtotest from "@/components/back-to-test"
 import HomeButton from "@/components/home-button"
 import "@/styles/wellbeing.css"
 
@@ -36,11 +37,11 @@ const tests: Test[] = [
     id: "exam-stress",
     title: "Exam Stress Reflection",
     category: "Academic Load & Learning Energy Reflections",
-    why: "Examinations are meant to assess learning, but for many students they also become a major source of pressure. Fear of results, expectations from others, and self-doubt can silently affect focus, confidence, and emotional balance—even when preparation is sincere. This reflection helps students notice how exam-related stress is experienced internally, without judgement or labels.",
+    why: "Examinations are meant to assess learning, but for many students they also become a major source of pressure. Fear of results, expectations from others and self-doubt can silently affect focus, confidence and emotional balance even when preparation is sincere. This reflection helps students notice how exam-related stress is experienced internally, without judgement or labels.",
     statements: [
       "I feel tense or uneasy when exams or tests are approaching",
       "Thoughts about results distract me while studying",
-      "I worry about disappointing parents, teachers, or myself",
+      "I worry about disappointing parents, teachers or myself",
       "My body feels restless or uncomfortable before or during exams",
       "Even after preparing, I feel unsure about my performance",
       "I replay exam mistakes in my mind repeatedly",
@@ -57,13 +58,13 @@ const tests: Test[] = [
       },
       sometimes: {
         title: "🌤️ Exam stress affects you at certain times",
-        description: "Exam stress affects you at certain times, which is very common—especially during busy or high-expectation phases. Awareness, rest, and supportive guidance can help prevent stress from becoming heavier.",
+        description: "Exam stress affects you at certain times, which is very common-especially during busy or high-expectation phases. Awareness, rest and supportive guidance can help prevent stress from becoming heavier.",
         note: "Notice when it increases and reach out early if needed."
       },
       often: {
         title: "🌧️ Exam-related pressure may be affecting you more consistently",
         description: "Exam-related pressure may be affecting you more consistently. When worry or tension feels frequent, it is important not to manage it alone. Support can help restore confidence and balance.",
-        note: "Seeking support reflects responsibility and self-awareness—not weakness."
+        note: "Seeking support reflects responsibility and self-awareness-not weakness."
       }
     }
   },
@@ -71,7 +72,7 @@ const tests: Test[] = [
     id: "learning-energy",
     title: "Learning Energy & Mental Fatigue Reflection",
     category: "Academic Load & Learning Energy Reflections",
-    why: "Learning requires mental energy. When students continue studying despite feeling mentally exhausted, overloaded, or drained, learning can slowly feel heavier—even without obvious reasons. This reflection focuses on learning energy and mental fatigue, not medical burnout or diagnosis.",
+    why: "Learning requires mental energy. When students continue studying despite feeling mentally exhausted, overloaded or drained, learning can slowly feel heavier even without obvious reasons. This reflection focuses on learning energy and mental fatigue, not medical burnout or diagnosis.",
     statements: [
       "I feel mentally tired after study sessions",
       "Starting study feels harder than it used to",
@@ -106,7 +107,7 @@ const tests: Test[] = [
     id: "focus-distraction",
     title: "Focus & Distraction Awareness Reflection",
     category: "Academic Load & Learning Energy Reflections",
-    why: "Many students want to study sincerely, yet find their attention drifting repeatedly. Distraction is not always about lack of effort—it is often linked to mental load, fatigue, stress, or overstimulation. This reflection helps students notice how focus and distraction are showing up in their learning, without blame or judgement.",
+    why: "Many students want to study sincerely, yet find their attention drifting repeatedly. Distraction is not always about lack of effort-it is often linked to mental load, fatigue, stress or overstimulation. This reflection helps students notice how focus and distraction are showing up in their learning, without blame or judgement.",
     statements: [
       "My mind wanders even when I try to concentrate",
       "I get distracted by my phone or other thoughts while studying",
@@ -139,9 +140,9 @@ const tests: Test[] = [
   },
   {
     id: "study-rest",
-    title: "Study–Rest Balance Reflection",
+    title: "Study-Rest Balance Reflection",
     category: "Academic Load & Learning Energy Reflections",
-    why: "Consistent learning requires both effort and recovery. When rest is ignored or associated with guilt, the mind may remain stressed even during breaks—reducing learning effectiveness over time. This reflection helps students become aware of how well study and rest are balanced.",
+    why: "Consistent learning requires both effort and recovery. When rest is ignored or associated with guilt, the mind may remain stressed even during breaks-reducing learning effectiveness over time. This reflection helps students become aware of how well study and rest are balanced.",
     statements: [
       "My sleep is affected because of academic demands",
       "I study for long hours without sufficient breaks",
@@ -156,9 +157,9 @@ const tests: Test[] = [
     ],
     results: {
       rarely: {
-        title: "✨ Your study–rest balance appears relatively healthy",
-        description: "Your study–rest balance appears relatively healthy. You seem able to study while also allowing recovery.",
-        note: "Keep honoring your need for rest—it's essential for effective learning."
+        title: "✨ Your study-rest balance appears relatively healthy",
+        description: "Your study-rest balance appears relatively healthy. You seem able to study while also allowing recovery.",
+        note: "Keep honoring your need for rest-it's essential for effective learning."
       },
       sometimes: {
         title: "🌤️ Balance may be inconsistent",
@@ -176,7 +177,7 @@ const tests: Test[] = [
     id: "emotional-balance",
     title: "Emotional Balance Reflection",
     category: "Emotional Experience in Learning",
-    why: "Academic life can influence emotions in subtle ways. Even capable students may feel emotionally overloaded, irritable, or unsettled without fully understanding why. This reflection supports awareness of emotional balance related to learning experiences, without labels or diagnosis.",
+    why: "Academic life can influence emotions in subtle ways. Even capable students may feel emotionally overloaded, irritable or unsettled without fully understanding why. This reflection supports awareness of emotional balance related to learning experiences, without labels or diagnosis.",
     statements: [
       "My emotions feel mostly stable during academic routines",
       "Small academic issues affect my mood strongly",
@@ -203,7 +204,7 @@ const tests: Test[] = [
       often: {
         title: "🌧️ Emotional load may be affecting learning more consistently",
         description: "Emotional load may be affecting learning more consistently. When emotions feel heavy or persistent, reaching out for support can help restore steadiness.",
-        note: "You deserve support—sharing how you feel is an important first step."
+        note: "You deserve support-sharing how you feel is an important first step."
       }
     }
   },
@@ -211,7 +212,7 @@ const tests: Test[] = [
     id: "mood-motivation",
     title: "Mood & Motivation Reflection",
     category: "Emotional Experience in Learning",
-    why: "Motivation does not remain constant. Academic pressure, repeated effort, and emotional load can slowly affect interest, energy, and enthusiasm for learning—even when students want to do well. This reflection helps students notice patterns in mood and motivation related to learning, without judgement or labels.",
+    why: "Motivation does not remain constant. Academic pressure, repeated effort and emotional load can slowly affect interest, energy and enthusiasm for learning even when students want to do well. This reflection helps students notice patterns in mood and motivation related to learning, without judgement or labels.",
     statements: [
       "I feel interested in what I am studying",
       "I struggle to feel motivated even when work is important",
@@ -227,7 +228,7 @@ const tests: Test[] = [
     results: {
       rarely: {
         title: "✨ Your motivation and mood appear generally positive",
-        description: "Your motivation and mood appear generally positive. Interest in studying seems steady, and low mood does not seem to consistently interfere.",
+        description: "Your motivation and mood appear generally positive. Interest in studying seems steady and low mood does not seem to consistently interfere.",
         note: "Keep connecting with what makes learning meaningful to you."
       },
       sometimes: {
@@ -246,7 +247,7 @@ const tests: Test[] = [
     id: "academic-anxiety",
     title: "Academic Anxiety Awareness Reflection",
     category: "Emotional Experience in Learning",
-    why: "Academic anxiety can appear as constant worry, physical uneasiness, or fear of outcomes. This reflection focuses only on anxiety related to academic experiences, not clinical anxiety or diagnosis. The purpose is to support awareness—not to label or define.",
+    why: "Academic anxiety can appear as constant worry, physical uneasiness or fear of outcomes. This reflection focuses only on anxiety related to academic experiences, not clinical anxiety or diagnosis. The purpose is to support awareness-not to label or define.",
     statements: [
       "Academic thoughts make me feel uneasy or tense",
       "I experience physical signs of nervousness while studying",
@@ -273,7 +274,7 @@ const tests: Test[] = [
       often: {
         title: "🌧️ Anxiety around academics may be affecting your wellbeing consistently",
         description: "Anxiety around academics may be affecting your wellbeing consistently. When worry feels frequent or intense, reaching out for support can help build confidence.",
-        note: "Many students experience this—you are not alone. Support can make a real difference."
+        note: "Many students experience this-you are not alone. Support can make a real difference."
       }
     }
   },
@@ -281,7 +282,7 @@ const tests: Test[] = [
     id: "grit-persistence",
     title: "Grit & Persistence Reflection",
     category: "Learning Strengths & Inner Skills",
-    why: "Learning involves effort, mistakes, and setbacks. Grit and persistence influence how students respond to difficulty—not how 'smart' they are. This reflection supports awareness of how consistently effort is maintained when challenges arise.",
+    why: "Learning involves effort, mistakes and setbacks. Grit and persistence influence how students respond to difficulty-not how 'smart' they are. This reflection supports awareness of how consistently effort is maintained when challenges arise.",
     statements: [
       "I continue studying even after facing difficulties",
       "I feel discouraged easily when learning feels hard",
@@ -297,12 +298,12 @@ const tests: Test[] = [
     results: {
       rarely: {
         title: "✨ Your persistence appears reasonably strong",
-        description: "Your persistence appears reasonably strong. Setbacks do not easily defeat you, and you seem able to return to effort after difficulty.",
+        description: "Your persistence appears reasonably strong. Setbacks do not easily defeat you and you seem able to return to effort after difficulty.",
         note: "Keep nurturing the resilience and determination you clearly possess."
       },
       sometimes: {
         title: "🌤️ Persistence fluctuates during challenges",
-        description: "Persistence fluctuates during challenges, especially when difficulty feels heavy. This is very normal—effort naturally feels harder during tough phases.",
+        description: "Persistence fluctuates during challenges, especially when difficulty feels heavy. This is very normal-effort naturally feels harder during tough phases.",
         note: "Remembering past successes can help you persist through current struggles."
       },
       often: {
@@ -316,7 +317,7 @@ const tests: Test[] = [
     id: "learning-confidence",
     title: "Learning Self-Confidence Reflection",
     category: "Learning Strengths & Inner Skills",
-    why: "Confidence in learning is not about being perfect—it is about trusting one's ability to understand, improve, and cope with challenges. Academic pressure, comparison, and repeated difficulty can quietly reduce self-confidence over time. This reflection helps students notice how confident they currently feel in their learning abilities, without judgement or labels.",
+    why: "Confidence in learning is not about being perfect-it is about trusting one's ability to understand, improve and cope with challenges. Academic pressure, comparison and repeated difficulty can quietly reduce self-confidence over time. This reflection helps students notice how confident they currently feel in their learning abilities, without judgement or labels.",
     statements: [
       "I believe I can understand difficult topics with effort",
       "I doubt my abilities while studying",
@@ -337,13 +338,13 @@ const tests: Test[] = [
       },
       sometimes: {
         title: "🌤️ Confidence fluctuates, especially during challenges",
-        description: "Confidence fluctuates, especially during challenging periods or after setbacks. This is very common—confidence naturally dips when learning feels hard.",
+        description: "Confidence fluctuates, especially during challenging periods or after setbacks. This is very common-confidence naturally dips when learning feels hard.",
         note: "Notice what builds your confidence back up and lean on that."
       },
       often: {
         title: "🌧️ Self-doubt may be affecting your learning approach",
         description: "Self-doubt may be affecting your learning approach more consistently. When confidence feels persistently low, support in recognizing your strengths and reframing setbacks can help significantly.",
-        note: "You are capable—sharing doubts with someone supportive can help restore belief in yourself."
+        note: "You are capable-sharing doubts with someone supportive can help restore belief in yourself."
       }
     }
   },
@@ -351,7 +352,7 @@ const tests: Test[] = [
     id: "growth-mindset",
     title: "Growth Mindset Reflection",
     category: "Learning Strengths & Inner Skills",
-    why: "A growth mindset involves viewing mistakes and challenges as part of learning rather than signs of failure. Pressure, fear of judgement, or repeated setbacks can make mistakes feel threatening instead of useful. This reflection supports awareness of how students currently relate to mistakes, effort, and improvement.",
+    why: "A growth mindset involves viewing mistakes and challenges as part of learning rather than signs of failure. Pressure, fear of judgement or repeated setbacks can make mistakes feel threatening instead of useful. This reflection supports awareness of how students currently relate to mistakes, effort and improvement.",
     statements: [
       "I see mistakes as opportunities to learn",
       "I fear making mistakes in academic settings",
@@ -384,9 +385,9 @@ const tests: Test[] = [
   },
   {
     id: "home-adjustment",
-    title: "Home–Study Adjustment Reflection",
+    title: "Home-Study Adjustment Reflection",
     category: "Adjustment & Support Environment",
-    why: "A student's learning experience is shaped not only by effort, but also by the home environment. Family expectations, space, noise, routines, and communication can support or unintentionally strain learning. This reflection helps students notice how home-related factors influence their studies, without placing blame.",
+    why: "A student's learning experience is shaped not only by effort, but also by the home environment. Family expectations, space, noise, routines and communication can support or unintentionally strain learning. This reflection helps students notice how home-related factors influence their studies, without placing blame.",
     statements: [
       "My home environment supports my studies",
       "Family expectations feel manageable",
@@ -413,15 +414,15 @@ const tests: Test[] = [
       often: {
         title: "🌧️ Home-related challenges may be affecting learning",
         description: "Home-related challenges may be affecting learning more consistently. When home factors feel draining, talking to someone supportive about solutions can help.",
-        note: "Your struggles are valid—exploring practical adjustments or support can make a difference."
+        note: "Your struggles are valid-exploring practical adjustments or support can make a difference."
       }
     }
   },
   {
     id: "school-adjustment",
-    title: "School & Coaching Adjustment Reflection",
+    title: "School Adjustment Reflection",
     category: "Adjustment & Support Environment",
-    why: "Learning is influenced by the academic environment—teaching pace, expectations, interaction style, and perceived support. Even motivated students may struggle when the learning environment does not fully align with their needs. This reflection helps students understand how well they are adjusting to school or coaching environments, without blame or judgement.",
+    why: "Learning is influenced by the academic environment-teaching pace, expectations, interaction style and perceived support. Even motivated students may struggle when the learning environment does not fully align with their needs. This reflection helps students understand how well they are adjusting to school environments, without blame or judgement.",
     statements: [
       "The teaching pace suits my learning ability",
       "I feel comfortable asking questions or doubts",
@@ -429,7 +430,7 @@ const tests: Test[] = [
       "I feel supported by teachers or instructors",
       "I struggle to keep up with lessons at times",
       "The learning environment motivates me",
-      "I feel anxious in class or coaching settings",
+      "I feel anxious in class settings",
       "Feedback from teachers helps me improve",
       "I feel pressure to perform in front of others",
       "The academic environment affects my confidence"
@@ -437,7 +438,7 @@ const tests: Test[] = [
     results: {
       rarely: {
         title: "✨ You appear well-adjusted to the academic environment",
-        description: "You appear well-adjusted to the academic environment. Pace and expectations seem manageable, and you feel reasonably supported.",
+        description: "You appear well-adjusted to the academic environment. Pace and expectations seem manageable and you feel reasonably supported.",
         note: "Keep appreciating the environment that's working for you."
       },
       sometimes: {
@@ -448,7 +449,7 @@ const tests: Test[] = [
       often: {
         title: "🌧️ Adjustment to the academic environment may be affecting learning",
         description: "Adjustment to the academic environment may be affecting learning consistently. When the environment feels misaligned, support in problem-solving or finding alternatives can help.",
-        note: "Speaking with teachers, counselors, or parents about adjustments is an important step."
+        note: "Speaking with teachers, counselors or parents about adjustments is an important step."
       }
     }
   },
@@ -456,7 +457,7 @@ const tests: Test[] = [
     id: "social-support",
     title: "Social Support Awareness Reflection",
     category: "Adjustment & Support Environment",
-    why: "Support from friends, teachers, and trusted adults can reduce academic stress and emotional burden. When students feel alone with pressure, learning can feel heavier—even when they are capable. This reflection supports awareness of how supported a student currently feels, without judgement.",
+    why: "Support from friends, teachers and trusted adults can reduce academic stress and emotional burden. When students feel alone with pressure, learning can feel heavier, even when they are capable. This reflection supports awareness of how supported a student currently feels, without judgement.",
     statements: [
       "I have someone I can talk to about academic stress",
       "I feel alone when dealing with study pressure",
@@ -473,7 +474,7 @@ const tests: Test[] = [
       rarely: {
         title: "✨ You appear to have good social support",
         description: "You appear to have good social support. People around you seem approachable and helpful when you face academic challenges.",
-        note: "Keep nurturing these supportive relationships—they are valuable."
+        note: "Keep nurturing these supportive relationships-they are valuable."
       },
       sometimes: {
         title: "🌤️ Support is available, but you sometimes feel alone",
@@ -482,8 +483,8 @@ const tests: Test[] = [
       },
       often: {
         title: "🌧️ Feeling unsupported may be affecting your wellbeing",
-        description: "Feeling unsupported may be affecting your wellbeing. When academic stress feels isolating, reaching out to someone—a teacher, counselor, or trusted adult—can help restore connection.",
-        note: "Support exists—sometimes the hardest step is asking for it."
+        description: "Feeling unsupported may be affecting your wellbeing. When academic stress feels isolating, reaching out to someone a teacher, counselor or trusted adult can help restore connection.",
+        note: "Support exists-sometimes the hardest step is asking for it."
       }
     }
   },
@@ -491,7 +492,7 @@ const tests: Test[] = [
     id: "self-discipline",
     title: "Self-Discipline & Routine Reflection",
     category: "Self-Management & Direction",
-    why: "Self-discipline supports consistency, but it is influenced by motivation, emotional state, and structure—not just willpower. Academic pressure can disrupt routines, making consistency difficult. This reflection helps students notice patterns in discipline and routine, without labelling or judgement.",
+    why: "Self-discipline supports consistency, but it is influenced by motivation, emotional state and structure, not just willpower. Academic pressure can disrupt routines, making consistency difficult. This reflection helps students notice patterns in discipline and routine, without labelling or judgement.",
     statements: [
       "I follow a regular study routine",
       "I delay tasks even when time is available",
@@ -507,12 +508,12 @@ const tests: Test[] = [
     results: {
       rarely: {
         title: "✨ Your discipline and routine appear well-established",
-        description: "Your discipline and routine appear well-established. Consistency comes naturally to you, and structure seems to support your learning.",
+        description: "Your discipline and routine appear well-established. Consistency comes naturally to you and structure seems to support your learning.",
         note: "Keep valuing the routines that help you stay focused and productive."
       },
       sometimes: {
         title: "🌤️ Discipline fluctuates, especially under pressure",
-        description: "Discipline fluctuates, especially under pressure or during demanding periods. This is very normal—maintaining routine becomes harder when stress increases.",
+        description: "Discipline fluctuates, especially under pressure or during demanding periods. This is very normal-maintaining routine becomes harder when stress increases.",
         note: "Notice when routines slip and gently rebuild them without self-judgment."
       },
       often: {
@@ -526,7 +527,7 @@ const tests: Test[] = [
     id: "emotional-regulation",
     title: "Emotional Regulation Reflection",
     category: "Self-Management & Direction",
-    why: "Emotions are a natural part of learning. Stress, frustration, disappointment, or pressure can affect how students think, react, and continue their efforts. Emotional regulation does not mean suppressing feelings—it means understanding and managing them in healthy ways. This reflection supports awareness of how emotions are currently handled during academic experiences, without judgement or labels.",
+    why: "Emotions are a natural part of learning. Stress, frustration, disappointment or pressure can affect how students think, react and continue their efforts. Emotional regulation does not mean suppressing feelings-it means understanding and managing them in healthy ways. This reflection supports awareness of how emotions are currently handled during academic experiences, without judgement or labels.",
     statements: [
       "I am able to calm myself when I feel stressed",
       "I feel stuck in frustration during academic challenges",
@@ -553,7 +554,7 @@ const tests: Test[] = [
       often: {
         title: "🌧️ Emotional overwhelm may be affecting your learning",
         description: "Emotional overwhelm may be affecting your learning more consistently. When emotions feel hard to manage, learning coping strategies or reaching out for support can help significantly.",
-        note: "Emotional regulation is a skill—practice and support can help you build it."
+        note: "Emotional regulation is a skill-practice and support can help you build it."
       }
     }
   },
@@ -561,7 +562,7 @@ const tests: Test[] = [
     id: "purpose-direction",
     title: "Purpose & Learning Direction Reflection",
     category: "Self-Management & Direction",
-    why: "Having a sense of purpose helps students stay motivated during effort and difficulty. When learning feels directionless or driven only by pressure, motivation can weaken—even when ability is present. This reflection supports awareness of how connected a student feels to purpose and direction in learning, without judgment or expectation.",
+    why: "Having a sense of purpose helps students stay motivated during effort and difficulty. When learning feels directionless or driven only by pressure, motivation can weaken even when ability is present. This reflection supports awareness of how connected a student feels to purpose and direction in learning, without judgment or expectation.",
     statements: [
       "I understand why I am studying",
       "My studies feel meaningful to me",
@@ -578,12 +579,12 @@ const tests: Test[] = [
       rarely: {
         title: "✨ Your sense of purpose appears clear",
         description: "Your sense of purpose appears clear. You understand why you are learning and feel connected to your direction.",
-        note: "Keep nurturing this sense of meaning—it's a powerful motivator."
+        note: "Keep nurturing this sense of meaning-it's a powerful motivator."
       },
       sometimes: {
         title: "🌤️ Purpose wavers at times",
         description: "Purpose wavers at times, especially when pressure or difficulty increases. Reconnecting with your longer-term goals can help restore clarity.",
-        note: "It's normal to question direction sometimes—exploring your values can help."
+        note: "It's normal to question direction sometimes-exploring your values can help."
       },
       often: {
         title: "🌧️ Lack of clear purpose may be affecting motivation",
@@ -673,11 +674,11 @@ export default function WellBeing() {
           <section className="wellbeing-intro">
             <div className="intro-content">
               <p className="intro-text">
-                These reflections are designed using principles from psychology related to stress, learning, and emotional regulation, without applying diagnostic labels.
+                These reflections are designed using principles from psychology related to stress, learning and emotional regulation, without applying diagnostic labels.
               </p>
               <div className="disclaimer-box">
                 <h3>⚠️ Important</h3>
-                <p>These are not diagnoses, counselling sessions, or treatment. They are psychology-informed awareness tools intended to support reflection, balance, and responsible learning.</p>
+                <p>These are not diagnoses, counselling sessions or treatment. They are psychology-informed awareness tools intended to support reflection, balance and responsible learning.</p>
               </div>
             </div>
           </section>
@@ -723,7 +724,7 @@ export default function WellBeing() {
           <>
             <section className="wellbeing-hero">
               <div className="test-header-content">
-                <button className="back-btn" onClick={resetToSelection}>← Back to Tests</button>
+                <button className="BTT" onClick={resetToSelection}>Back</button>
                 <h1>{currentTest?.title}</h1>
                 <p className="subtitle">{currentTest?.category}</p>
               </div>
@@ -737,7 +738,7 @@ export default function WellBeing() {
                 </div>
                 <div className="disclaimer-box">
                   <h3>⚠️ Important</h3>
-                  <p>This self-reflection does not provide diagnosis, counselling, or treatment. It is a psychology-informed awareness tool intended to support reflection and responsible learning.</p>
+                  <p>This self-reflection does not provide diagnosis, counselling or treatment. It is a psychology-informed awareness tool intended to support reflection and responsible learning.</p>
                 </div>
               </div>
             </section>
@@ -845,14 +846,14 @@ export default function WellBeing() {
                   <p>You feel stuck or unable to cope on your own</p>
                 </div>
               </div>
-              <p className="support-note">Seeking support is a sign of awareness and self-respect—not weakness.</p>
+              <p className="support-note">Seeking support is a sign of awareness and self-respect-not weakness.</p>
             </section>
 
             <section className="wellbeing-boundaries">
               <h2>Important Boundaries</h2>
               <div className="boundaries-content">
                 <p>
-                  <strong>Ishan Learning does not provide counselling, therapy, or clinical mental health services.</strong> This self-reflection is intended for awareness and learning support only.
+                  <strong>Ishan Learning does not provide counselling, therapy or clinical mental health services.</strong> This self-reflection is intended for awareness and learning support only.
                 </p>
                 <p>If emotional distress feels intense or long-lasting, students are encouraged to seek support from:</p>
                 <div className="support-resources">
@@ -879,10 +880,10 @@ export default function WellBeing() {
             <section className="wellbeing-closing">
               <h2>A Closing Thought</h2>
               <p className="closing-main">
-                Your mental and emotional experiences shape how you learn, grow, and persist.
+                Your mental and emotional experiences shape how you learn, grow and persist.
               </p>
               <p className="closing-sub">
-                Taking time to reflect is not a distraction from learning—it is part of learning responsibly.
+                Taking time to reflect is not a distraction from learning-it is part of learning responsibly.
               </p>
             </section>
 
@@ -907,7 +908,7 @@ export default function WellBeing() {
           </>
         )}
       </main>
-
+      {/* <Backtotest/> */}
       <HomeButton />
       <Footer />
     </div>

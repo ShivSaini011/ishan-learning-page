@@ -243,3 +243,40 @@
     font-size: 1rem;
   }
 }
+
+/* =========================
+   DARK MODE – CLASS DETAILS
+   ========================= */
+
+:root.dark-mode .class-details-container {
+  background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+}
+:root.dark-mode .class-details-header h1 {
+  color: #cbd5f5;
+}
+:root.dark-mode .class-details-header p {
+  color: #94a3b8;
+}
+:root.dark-mode .subject-card {
+  background: #1e293b;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+:root.dark-mode .subject-header {
+  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+  color: #f8fafc;
+}
+:root.dark-mode .subject-options {
+  background: #111827;
+}
+:root.dark-mode .option-card {
+  background: #1e293b;
+  border-color: #374151;
+  color: #e5e7eb;
+}
+:root.dark-mode .option-card:hover {
+  border-color: #4f46e5;
+  background: #374151;
+}
+:root.dark-mode .option-arrow {
+  color: #a5b4fc;
+}

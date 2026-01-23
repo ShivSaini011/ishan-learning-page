@@ -5,11 +5,12 @@
 
 /* Dark mode features background */
 :root.dark-mode .features {
-  background: linear-gradient(135deg, #2a2a3e 0%, #3d2a3e 100%);
+  background: transparent;
+  /* background: linear-gradient(135deg, #2a2a3e 0%, #3d2a3e 100%); */
 }
 
 .features-container {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

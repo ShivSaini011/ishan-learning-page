@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="footer-container">
         <div className="footer-section">
           <div className="footer-logo">
-            <div><img src="/logonev.jpg" alt="logo" width={150} height={100} /></div>
+            <a href="/"><img src="/logonev.jpg" alt="logo" width={150} height={100} /></a>
             {/* <h4>Ishan Learning</h4> */}
           </div>
           <p>
@@ -33,7 +33,7 @@ export default function Footer() {
           <h4>SUPPORT</h4>
           <ul>
             <li>
-              <a href="#help">Help Center</a>
+              <a href="/help" target="_blank">Help Center</a>
             </li>
             <li>
               <a href="/faq">Frequently Asked Questions</a>
@@ -63,12 +63,12 @@ export default function Footer() {
       <div className="footer-bottom">
         <p>&copy; 2026 Ishan Learning. All rights reserved.</p>
         <div className="footer-socials">
-          <a href="\fb" target="_"><img src="\fb.png" alt="facebook" /></a>
-          <a href="\fb" target="_"><img src="\tw.png" alt="twitter" /></a>
-          <a href="\fb" target="_"><img src="\ins.png" alt="instagrem" /></a>
-          <a href="\fb" target="_"><img src="\tel.png" alt="telegram" /></a>
-          <a href="\fb" target="_"><img src="\w.png" alt="whatsapp" /></a>
-          <a href="\fb" target="_"><img src="\yt.png" alt="youtube" /></a>
+          <a href="\fb" target="_blank"><img src="\fb.png" alt="facebook" /></a>
+          <a href="\tw" target="_blank"><img src="\tw.png" alt="twitter" /></a>
+          <a href="\ins" target="_blank"><img src="\ins.png" alt="instagrem" /></a>
+          <a href="\tel" target="_blank"><img src="\tel.png" alt="telegram" /></a>
+          <a href="\w" target="_blank"><img src="\w.png" alt="whatsapp" /></a>
+          <a href="\yt" target="_blank"><img src="\yt.png" alt="youtube" /></a>
         </div>
       </div>
     </footer>

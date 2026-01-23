@@ -13,11 +13,11 @@ export default function FAQ() {
   const faqs = [
     {
       question: "What is Ishan Learning?",
-      answer: "Ishan Learning is an academic learning support platform designed to work alongside the school education system. It helps students strengthen conceptual understanding, revise topics, and study with clarity and confidence."
+      answer: "Ishan Learning is an academic learning support platform designed to work alongside the school education system. It helps students strengthen conceptual understanding, revise topics and study with clarity and confidence."
     },
     {
       question: "Is Ishan Learning a coaching institute or a replacement for schools?",
-      answer: "No. Ishan Learning does not replace schools, boards, or formal education. It supports classroom learning by helping students understand concepts more clearly and reduce academic confusion."
+      answer: "No. Ishan Learning does not replace schools, boards or formal education. It supports classroom learning by helping students understand concepts more clearly and reduce academic confusion."
     },
     {
       question: "Which classes does Ishan Learning support?",
@@ -41,15 +41,15 @@ export default function FAQ() {
     },
     {
       question: "How does Ishan Learning help students who feel stressed or confused about studies?",
-      answer: "By focusing on: Conceptual clarity, Step-by-step explanations, and A calm and supportive learning approach. Better understanding naturally reduces academic pressure."
+      answer: "By focusing on: Conceptual clarity, Step-by-step explanations and A calm and supportive learning approach. Better understanding naturally reduces academic pressure."
     },
     {
       question: "Does Ishan Learning provide counselling or therapy?",
       answer: "No. Ishan Learning provides academic learning support. Psychology-related concepts are used only to support learning and understanding."
     },
     {
-      question: "Are topics like stress, attention, or Emotional Intelligence discussed?",
-      answer: "Yes, these topics are discussed in relation to learning, study habits, and academic confidence, not as professional mental health services."
+      question: "Are topics like stress, attention or Emotional Intelligence discussed?",
+      answer: "Yes, these topics are discussed in relation to learning, study habits and academic confidence, not as professional mental health services."
     },
     {
       question: "Is any personal data collected?",
@@ -61,7 +61,7 @@ export default function FAQ() {
     },
     {
       question: "Can parents use this platform?",
-      answer: "Yes. Parents can explore content, understand the learning approach, and guide their children in a balanced and supportive way."
+      answer: "Yes. Parents can explore content, understand the learning approach and guide their children in a balanced and supportive way."
     },
     {
       question: "Is Ishan Learning suitable for students who struggle with basics?",

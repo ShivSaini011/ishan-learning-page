@@ -12,10 +12,10 @@ export default function WellBeing() {
 
   const statements = [
     "I feel mentally tired or drained because of academic demands",
-    "I feel anxious when I think about exams, tests, or results",
+    "I feel anxious when I think about exams, tests or results",
     "I find it difficult to concentrate even when I want to study",
     "I feel pressure to perform beyond what feels manageable for me",
-    "I worry about disappointing parents, teachers, or myself",
+    "I worry about disappointing parents, teachers or myself",
     "I feel stressed even during breaks or rest time",
     "I compare my academic performance with others and feel inadequate",
     "I feel confused or mentally blank despite putting effort into studying",
@@ -83,11 +83,11 @@ export default function WellBeing() {
             <section className="wellbeing-intro">
               <div className="intro-content">
                 <p className="intro-text">
-                  This reflection is designed using principles from psychology related to stress, learning, and emotional regulation, without applying diagnostic labels.
+                  This reflection is designed using principles from psychology related to stress, learning and emotional regulation, without applying diagnostic labels.
                 </p>
                 <div className="disclaimer-box">
                   <h3>⚠️ Important</h3>
-                  <p>This is not a diagnosis, counselling session, or treatment. It is a psychology-informed awareness tool intended to support reflection, balance, and responsible learning.</p>
+                  <p>This is not a diagnosis, counselling session or treatment. It is a psychology-informed awareness tool intended to support reflection, balance and responsible learning.</p>
                 </div>
               </div>
             </section>
@@ -96,17 +96,17 @@ export default function WellBeing() {
               <div className="why-content">
                 <h2>Why This Self-Reflection Exists</h2>
                 <p>
-                  Academic life often focuses on marks, speed, and results. What is discussed less is how students feel internally while trying to learn.
+                  Academic life often focuses on marks, speed and results. What is discussed less is how students feel internally while trying to learn.
                 </p>
                 <p>
-                  Many students continue studying despite feeling anxious, mentally tired, confused, or emotionally overloaded. Over time, these experiences can affect concentration, confidence, motivation, and interest in learning—even when the student is capable.
+                  Many students continue studying despite feeling anxious, mentally tired, confused, or emotionally overloaded. Over time, these experiences can affect concentration, confidence, motivation and interest in learning even when the student is capable.
                 </p>
                 <div className="why-list">
                   <h3>This self-reflection exists to:</h3>
                   <ul>
                     <li>Encourage awareness of mental and emotional experiences related to learning</li>
                     <li>Normalise academic stress without minimising it</li>
-                    <li>Help students reflect without fear, judgement, or labels</li>
+                    <li>Help students reflect without fear, judgement or labels</li>
                     <li>Gently indicate when additional support may be helpful</li>
                   </ul>
                 </div>
@@ -174,7 +174,7 @@ export default function WellBeing() {
                 <div className="result-card rarely">
                   <h3>✨ You appear to be managing well</h3>
                   <p>
-                    You appear to be managing academic demands reasonably well at the moment. Feeling balanced does not mean challenges will never arise—it suggests that your current coping patterns are helping you handle pressure.
+                    You appear to be managing academic demands reasonably well at the moment. Feeling balanced does not mean challenges will never arise-it suggests that your current coping patterns are helping you handle pressure.
                   </p>
                   <div className="result-note">Keep maintaining what's working for you and remember to take care of yourself.</div>
                 </div>
@@ -184,7 +184,7 @@ export default function WellBeing() {
                 <div className="result-card sometimes">
                   <h3>🌤️ Academic pressure affects you at times</h3>
                   <p>
-                    Academic pressure affects you at times, which is very common—especially during busy or exam-related phases. Paying attention to rest, understanding, and supportive guidance can help prevent stress from becoming overwhelming.
+                    Academic pressure affects you at times, which is very common-especially during busy or exam-related phases. Paying attention to rest, understanding and supportive guidance can help prevent stress from becoming overwhelming.
                   </p>
                   <div className="result-note">Notice when stress increases and reach out early if needed.</div>
                 </div>
@@ -196,7 +196,7 @@ export default function WellBeing() {
                   <p>
                     Academic pressure may be affecting you more consistently. When stress feels frequent or emotionally heavy, it is important not to manage it alone. Reaching out for support can help restore balance.
                   </p>
-                  <div className="result-note">Seeking support is a sign of awareness and self-respect—not weakness.</div>
+                  <div className="result-note">Seeking support is a sign of awareness and self-respect-not weakness.</div>
                 </div>
               )}
             </section>
@@ -215,21 +215,21 @@ export default function WellBeing() {
                 </div>
                 <div className="indicator">
                   <span className="indicator-icon">✓</span>
-                  <p>Academic pressure affects sleep, appetite, or daily functioning</p>
+                  <p>Academic pressure affects sleep, appetite or daily functioning</p>
                 </div>
                 <div className="indicator">
                   <span className="indicator-icon">✓</span>
                   <p>You feel stuck or unable to cope on your own</p>
                 </div>
               </div>
-              <p className="support-note">Seeking support is a sign of awareness and self-respect—not weakness.</p>
+              <p className="support-note">Seeking support is a sign of awareness and self-respect-not weakness.</p>
             </section>
 
             <section className="wellbeing-boundaries">
               <h2>Important Boundaries</h2>
               <div className="boundaries-content">
                 <p>
-                  <strong>Ishan Learning does not provide counselling, therapy, or clinical mental health services.</strong> This self-reflection is intended for awareness and learning support only.
+                  <strong>Ishan Learning does not provide counselling, therapy or clinical mental health services.</strong> This self-reflection is intended for awareness and learning support only.
                 </p>
                 <p>If emotional distress feels intense or long-lasting, students are encouraged to seek support from:</p>
                 <div className="support-resources">
@@ -256,10 +256,10 @@ export default function WellBeing() {
             <section className="wellbeing-closing">
               <h2>A Closing Thought</h2>
               <p className="closing-main">
-                Your mental well-being is not separate from learning. It shapes how you understand, remember, and grow.
+                Your mental well-being is not separate from learning. It shapes how you understand, remember and grow.
               </p>
               <p className="closing-sub">
-                Taking time to reflect on how you feel is not a distraction from studies—it is part of learning responsibly.
+                Taking time to reflect on how you feel is not a distraction from studies-it is part of learning responsibly.
               </p>
             </section>
 

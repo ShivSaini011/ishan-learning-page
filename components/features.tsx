@@ -10,7 +10,7 @@ export default function Features() {
     {
       icon: "🌱",
       title: "Holistic Growth",
-      description: "Focusing on emotional intelligence, confidence building, and personality development.",
+      description: "Focusing on emotional intelligence, confidence building and personality development.",
     },
     {
       icon: "👥",

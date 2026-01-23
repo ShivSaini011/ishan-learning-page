@@ -1,5 +1,5 @@
 .privacy-container {
-  max-width: 900px;
+  /* max-width: 900px; */
   margin: 40px auto;
   padding: 0 20px;
   font-family: inherit;
@@ -117,4 +117,79 @@
   .intro {
     padding: 15px;
   }
+}
+/* =========================
+   DARK MODE – PRIVACY POLICY
+   ========================= */
+
+:root.dark-mode .privacy-container {
+  color: #e5e7eb;
+}
+
+/* Main card */
+:root.dark-mode .privacy-content {
+  background-color: #0f172a; /* deep slate */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+}
+
+/* Page title */
+:root.dark-mode .privacy-content h1 {
+  color: #f8fafc;
+}
+
+/* Effective date */
+:root.dark-mode .effective-date {
+  color: #94a3b8;
+}
+
+/* Intro highlight box */
+:root.dark-mode .intro {
+  background-color: #020617;
+  color: #cbd5f5;
+  border-left-color: #8b5cf6; /* brand purple */
+}
+
+/* Section headings */
+:root.dark-mode .privacy-content h2 {
+  color: #e0e7ff;
+  border-bottom-color: #8b5cf6;
+}
+
+/* Paragraph text */
+:root.dark-mode .privacy-content p {
+  color: #cbd5e1;
+}
+
+/* Lists */
+:root.dark-mode .privacy-content ul {
+  color: #cbd5e1;
+}
+
+:root.dark-mode .privacy-content li {
+  color: #cbd5e1;
+}
+
+/* Nested lists */
+:root.dark-mode .privacy-content ul ul li {
+  color: #94a3b8;
+}
+
+/* Contact list icons/text */
+:root.dark-mode .contact-list li {
+  color: #e5e7eb;
+}
+
+/* Subtle section spacing glow */
+:root.dark-mode .privacy-content section {
+  border-radius: 8px;
+}
+
+/* Smooth transition */
+.privacy-container,
+.privacy-content,
+.intro,
+.privacy-content h1,
+.privacy-content h2,
+.privacy-content p {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }

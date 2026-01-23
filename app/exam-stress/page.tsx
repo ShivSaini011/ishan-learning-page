@@ -17,7 +17,7 @@ export default function ExamStress() {
           <div className="hero-content">
             <h1>Exam Stress Support</h1>
             <p className="hero-subtitle">
-              Exam stress is not a sign of weakness. It is a common response to pressure, expectations, and uncertainty.
+              Exam stress is not a sign of weakness. It is a common response to pressure, expectations and uncertainty.
             </p>
             <p className="hero-description">
               At Ishan Learning, exam stress support is not about eliminating stress completely. It is about helping students understand what they are experiencing and learning how to manage it in healthier ways.
@@ -29,10 +29,10 @@ export default function ExamStress() {
         <section className="exam-stress-section">
           <h2>Why Exam Stress Happens</h2>
           <p>
-            Exams carry more than just questions. They often carry expectations from parents, teachers, peers, and sometimes from the student themselves.
+            Exams carry more than just questions. They often carry expectations from parents, teachers, peers and sometimes from the student themselves.
           </p>
           <p>
-            Fear of failure, pressure to perform, comparison with others, and limited time can make even well-prepared students feel anxious. When stress increases, the mind starts focusing more on outcomes than understanding, which makes learning harder.
+            Fear of failure, pressure to perform, comparison with others and limited time can make even well-prepared students feel anxious. When stress increases, the mind starts focusing more on outcomes than understanding, which makes learning harder.
           </p>
           <p>
             This page exists to help students recognise exam stress and respond to it with awareness rather than fear.
@@ -45,7 +45,7 @@ export default function ExamStress() {
             Some level of stress before exams is normal. It can increase alertness and motivation.
           </p>
           <p>
-            Problems begin when stress becomes excessive or constant. At that point, students may experience difficulty concentrating, mental fatigue, self-doubt, or fear of blanking out during exams.
+            Problems begin when stress becomes excessive or constant. At that point, students may experience difficulty concentrating, mental fatigue, self-doubt or fear of blanking out during exams.
           </p>
           <p>
             Exam stress is not always about lack of preparation. Many times, it is about how the mind reacts to pressure.
@@ -55,7 +55,7 @@ export default function ExamStress() {
         <section className="exam-stress-section">
           <h2>When Studying Starts Feeling Heavy</h2>
           <p>
-            Students often say that despite studying, they feel restless, tired, or stuck. This happens when the mind is overloaded and does not get enough space to recover.
+            Students often say that despite studying, they feel restless, tired or stuck. This happens when the mind is overloaded and does not get enough space to recover.
           </p>
           <p>
             Continuous pressure without rest can reduce efficiency. Studying longer hours does not always mean studying better. Learning becomes more effective when the mind feels calm enough to process information.
@@ -71,7 +71,7 @@ export default function ExamStress() {
             As exams approach, thoughts about results and performance often increase. This can make students feel rushed or panicked.
           </p>
           <p>
-            At this stage, it is important to slow down mentally, focus on what is within control, and avoid last-minute comparison. Calm routines, realistic expectations, and clarity about revision help reduce anxiety.
+            At this stage, it is important to slow down mentally, focus on what is within control and avoid last-minute comparison. Calm routines, realistic expectations and clarity about revision help reduce anxiety.
           </p>
           <p>
             Stress reduces when the mind feels prepared and supported, not when it is pushed harder.
@@ -84,7 +84,7 @@ export default function ExamStress() {
             Many students worry about blanking out or losing control during exams. This fear itself can increase anxiety.
           </p>
           <p>
-            When the mind feels overwhelmed, grounding attention back to the present moment helps. Taking a few calm breaths, reading questions slowly, and reminding oneself that stress does not mean failure can bring stability.
+            When the mind feels overwhelmed, grounding attention back to the present moment helps. Taking a few calm breaths, reading questions slowly and reminding oneself that stress does not mean failure can bring stability.
           </p>
           <p>
             Exams test understanding and recall, not perfection.
@@ -126,7 +126,7 @@ export default function ExamStress() {
                 Students often absorb stress from the environment around them. Support becomes most helpful when it focuses on reassurance rather than constant reminders.
               </p>
               <p>
-                Listening without judgement, avoiding comparison, and acknowledging effort can reduce anxiety significantly. When students feel safe, they perform better emotionally and academically.
+                Listening without judgement, avoiding comparison and acknowledging effort can reduce anxiety significantly. When students feel safe, they perform better emotionally and academically.
               </p>
             </div>
 
@@ -134,7 +134,7 @@ export default function ExamStress() {
               <div className="note-icon">👨‍🏫</div>
               <h3>A Note for Teachers</h3>
               <p>
-                Teachers influence how students perceive exams and failure. Calm communication, realistic expectations, and balanced feedback help students manage stress more effectively.
+                Teachers influence how students perceive exams and failure. Calm communication, realistic expectations and balanced feedback help students manage stress more effectively.
               </p>
               <p>
                 When classrooms emphasise understanding over fear, students develop healthier attitudes toward exams and learning.
@@ -147,10 +147,10 @@ export default function ExamStress() {
         <section className="exam-stress-section highlight-section">
           <h2>A Psychology-Informed Perspective</h2>
           <p>
-            Psychology shows that excessive anxiety interferes with attention, memory, and recall. When the nervous system feels threatened, the brain focuses on survival rather than thinking clearly.
+            Psychology shows that excessive anxiety interferes with attention, memory and recall. When the nervous system feels threatened, the brain focuses on survival rather than thinking clearly.
           </p>
           <p>
-            Calmness supports learning. Reassurance, structure, and emotional safety help students perform closer to their actual ability.
+            Calmness supports learning. Reassurance, structure and emotional safety help students perform closer to their actual ability.
           </p>
           <p>
             Exam stress support focuses on restoring balance, not removing responsibility.
@@ -164,7 +164,7 @@ export default function ExamStress() {
             Ishan Learning does not provide clinical counselling or therapeutic services through this section. This page offers academic and psychological awareness only.
           </p>
           <p>
-            Students experiencing severe or persistent distress are encouraged to seek support from trusted adults, school counsellors, or qualified professionals.
+            Students experiencing severe or persistent distress are encouraged to seek support from trusted adults, school counsellors or qualified professionals.
           </p>
         </section>
 
@@ -183,7 +183,7 @@ export default function ExamStress() {
         <section className="exam-stress-techniques">
           <h2>Practical Techniques to Reduce Exam Stress</h2>
           <p className="intro-text">
-            Exam stress usually increases when the mind feels that everything has to be handled at once. Stress reduces when the mind starts feeling control, clarity, and structure.
+            Exam stress usually increases when the mind feels that everything has to be handled at once. Stress reduces when the mind starts feeling control, clarity and structure.
           </p>
           <p className="intro-text">
             These techniques are not meant to eliminate stress completely. They are meant to lower mental overload and help the mind function more steadily during exam periods.
@@ -199,7 +199,7 @@ export default function ExamStress() {
                 Instead, begin by identifying topics that you already understand reasonably well. Revising and strengthening these topics builds confidence.
               </p>
               <p>
-                When the mind recognises that some areas are already under control, anxiety naturally reduces. Revising strong topics is not avoidance — it is psychological grounding.
+                When the mind recognises that some areas are already under control, anxiety naturally reduces. Revising strong topics is not avoidance - it is psychological grounding.
               </p>
             </li>
 
@@ -209,7 +209,7 @@ export default function ExamStress() {
                 Looking at the entire syllabus at once often overwhelms the mind. A more effective approach is to divide the syllabus into small, manageable parts.
               </p>
               <p>
-                During each study session, focus only on a short and realistic target. Instead of thinking about finishing everything, focus on handling the next 40–60 minutes.
+                During each study session, focus only on a short and realistic target. Instead of thinking about finishing everything, focus on handling the next 40-60 minutes.
               </p>
               <p>
                 The mind copes better with present tasks than future pressure.
@@ -248,7 +248,7 @@ export default function ExamStress() {
                 In the final days before exams, trying to learn new topics often increases stress.
               </p>
               <p>
-                A simple revision loop works better. Begin with topics you are confident in, then review moderately difficult areas, and finally take a brief overview of remaining content.
+                A simple revision loop works better. Begin with topics you are confident in, then review moderately difficult areas and finally take a brief overview of remaining content.
               </p>
               <p>
                 Revision does not mean making everything perfect. It means keeping concepts familiar and accessible.
@@ -261,7 +261,7 @@ export default function ExamStress() {
                 Stress is not only mental; it is physical as well. If the body feels tense or restless, the mind cannot stay calm.
               </p>
               <p>
-                Between study sessions, take short breaks. Walk a little, drink water, stretch lightly, or practise slow breathing.
+                Between study sessions, take short breaks. Walk a little, drink water, stretch lightly or practise slow breathing.
               </p>
               <p>
                 Slow breathing sends a signal to the nervous system that the situation is safe.
@@ -313,14 +313,14 @@ export default function ExamStress() {
             The goal on exam day is not to feel completely calm. Some nervousness is normal and expected. The goal is to keep anxiety manageable, so the mind stays stable and functional.
           </p>
           <p className="intro-text">
-            This routine covers what to do before the exam, during the exam, and after the exam.
+            This routine covers what to do before the exam, during the exam and after the exam.
           </p>
 
           <ol className="routine-cards">
             <li className="routine-card">
               <h3>Before Leaving for the Exam</h3>
               <p>
-                On exam morning, the mind often jumps ahead to results, mistakes, or difficult questions. Trying to study new topics at this stage usually increases anxiety.
+                On exam morning, the mind often jumps ahead to results, mistakes or difficult questions. Trying to study new topics at this stage usually increases anxiety.
               </p>
               <p>
                 Limit revision to familiar points only. Focus on what you already know rather than what you have not covered perfectly. Confidence comes from familiarity, not last-minute pressure.
@@ -349,7 +349,7 @@ export default function ExamStress() {
                 When you receive the question paper, do not rush. Take one or two minutes to look through the paper calmly.
               </p>
               <p>
-                If a question increases anxiety, skip it temporarily and move to another one. Stress blocks thinking, and forcing yourself to solve a difficult question immediately often increases panic.
+                If a question increases anxiety, skip it temporarily and move to another one. Stress blocks thinking and forcing yourself to solve a difficult question immediately often increases panic.
               </p>
               <p>
                 If your thoughts start racing, pause briefly and slow your breathing for a few seconds. Anxiety does not mean you are blank; it usually means the mind is overloaded.
@@ -362,7 +362,7 @@ export default function ExamStress() {
                 Feeling blank during an exam is a very common experience. It does not reflect your intelligence or preparation.
               </p>
               <p>
-                If this happens, take your eyes off the paper for a few seconds, relax your shoulders, and slow your breathing. Giving the mind a short pause often helps recall return naturally.
+                If this happens, take your eyes off the paper for a few seconds, relax your shoulders and slow your breathing. Giving the mind a short pause often helps recall return naturally.
               </p>
             </li>
 

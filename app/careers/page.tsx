@@ -14,17 +14,17 @@ export default function Careers() {
       <main className="careers-container">
         <section className="careers-hero">
           <h1>Career Awareness</h1>
-          <p>Thinking clearly about your future without panic, pressure, or comparison</p>
+          <p>Thinking clearly about your future without panic, pressure or comparison</p>
         </section>
 
         {/* Opening Section */}
         <section className="careers-section">
           <div className="section-content">
             <p className="intro-text">
-              Career awareness is not about reaching certainty early. It is about learning to think clearly about the future without panic, pressure, or comparison.
+              Career awareness is not about reaching certainty early. It is about learning to think clearly about the future without panic, pressure or comparison.
             </p>
             <p className="intro-text">
-              At Ishan Learning, career awareness is treated as a supportive process. This space exists to help students slow down, reflect, and understand that career development happens gradually, not in a single moment.
+              At Ishan Learning, career awareness is treated as a supportive process. This space exists to help students slow down, reflect and understand that career development happens gradually, not in a single moment.
             </p>
           </div>
         </section>
@@ -37,7 +37,7 @@ export default function Careers() {
               For many students, the word "career" brings anxiety. This anxiety usually comes from the idea that one decision will decide everything that follows.
             </p>
             <p>
-              Very early in school life, students begin to hear that they must be clear, confident, and sure. Marks, rankings, and comparisons slowly start defining self-worth. When clarity does not come immediately, uncertainty begins to feel like failure. Over time, even capable students start doubting themselves.
+              Very early in school life, students begin to hear that they must be clear, confident and sure. Marks, rankings and comparisons slowly start defining self-worth. When clarity does not come immediately, uncertainty begins to feel like failure. Over time even capable students start doubting themselves.
             </p>
             <p className="emphasis">
               This page exists to interrupt that pressure and remind students that uncertainty during school years is common and normal.
@@ -50,10 +50,10 @@ export default function Careers() {
           <div className="section-content">
             <h2>Career as a Developing Process</h2>
             <p>
-              Careers rarely follow a straight or fixed path. For most people, interests change, skills develop, and opportunities appear only after time and exposure.
+              Careers rarely follow a straight or fixed path. For most people, interests change, skills develop and opportunities appear only after time and exposure.
             </p>
             <p>
-              Many individuals understand what they enjoy only after trying different subjects, roles, or environments. Some change directions completely, while others combine skills in unexpected ways. Early uncertainty does not indicate poor planning. In many cases, it reflects growth that is still unfolding.
+              Many individuals understand what they enjoy only after trying different subjects, roles or environments. Some change directions completely, while others combine skills in unexpected ways. Early uncertainty does not indicate poor planning. In many cases, it reflects growth that is still unfolding.
             </p>
             <p className="emphasis">
               Career awareness begins with accepting that not knowing everything yet is part of the process.
@@ -66,10 +66,10 @@ export default function Careers() {
           <div className="section-content">
             <h2>After Class 10: Direction, Not Definition</h2>
             <p>
-              After Class 10, students usually move into broader academic directions such as science, commerce, humanities, or skill-based pathways. These choices provide structure for learning, but they do not define an entire future.
+              After Class 10, students usually move into broader academic directions such as science, commerce, humanities or skill-based pathways. These choices provide structure for learning, but they do not define an entire future.
             </p>
             <p>
-              At this stage, the focus should remain on understanding subjects, developing learning habits, and observing interests as they form. Decisions made here are starting directions, not permanent commitments.
+              At this stage, the focus should remain on understanding subjects, developing learning habits and observing interests as they form. Decisions made here are starting directions, not permanent commitments.
             </p>
           </div>
         </section>
@@ -79,10 +79,10 @@ export default function Careers() {
           <div className="section-content">
             <h2>After Class 12: Paths That Continue to Evolve</h2>
             <p>
-              After Class 12, career possibilities often widen into academic, professional, creative, or skill-based fields. These paths are not final destinations. They are entry points that can continue to change as students gain experience and exposure.
+              After Class 12, career possibilities often widen into academic, professional, creative or skill-based fields. These paths are not final destinations. They are entry points that can continue to change as students gain experience and exposure.
             </p>
             <p>
-              Expecting complete certainty at this stage often adds pressure without improving clarity. Growth continues beyond formal education, and career understanding keeps evolving with time.
+              Expecting complete certainty at this stage often adds pressure without improving clarity. Growth continues beyond formal education and career understanding keeps evolving with time.
             </p>
           </div>
         </section>
@@ -98,7 +98,7 @@ export default function Careers() {
               Some students enjoy reading and understanding concepts deeply. Others prefer applying ideas practically. Some feel comfortable with structure and routine, while others learn better with flexibility. These preferences are not right or wrong. They simply show how a student engages with learning.
             </p>
             <p>
-              Perfect answers are not required. Noticing patterns in how you study, think, and feel is enough at this stage.
+              Perfect answers are not required. Noticing patterns in how you study, think and feel is enough at this stage.
             </p>
           </div>
         </section>
@@ -111,7 +111,7 @@ export default function Careers() {
               Many students believe that interest should be clear from the beginning. Psychology suggests that this is rarely true.
             </p>
             <p>
-              Interest usually develops after exposure, not before it. As understanding increases, confidence grows, and curiosity often follows. It is common for a subject to feel boring or difficult at first and meaningful later. It is also common to like something only after spending time with it.
+              Interest usually develops after exposure, not before it. As understanding increases, confidence grows and curiosity often follows. It is common for a subject to feel boring or difficult at first and meaningful later. It is also common to like something only after spending time with it.
             </p>
             <p className="emphasis">
               Students are not expected to feel passion immediately.
@@ -122,12 +122,12 @@ export default function Careers() {
         {/* Pressure and Reality */}
         <section className="careers-section highlight-section">
           <div className="section-content">
-            <h2>Pressure, Marks, and Reality</h2>
+            <h2>Pressure, Marks and Reality</h2>
             <p>
               Marks are important, but they do not tell the full story of a student's future. They reflect performance within a specific system at a specific time.
             </p>
             <p>
-              Pressure, comparison, and fear tend to narrow thinking. When the mind feels rushed, it tries to escape uncertainty rather than understand it. If career thoughts feel confusing or anxiety-provoking, pausing is often more helpful than forcing clarity.
+              Pressure, comparison and fear tend to narrow thinking. When the mind feels rushed, it tries to escape uncertainty rather than understand it. If career thoughts feel confusing or anxiety-provoking, pausing is often more helpful than forcing clarity.
             </p>
             <p className="emphasis">
               Clarity does not come from panic.
@@ -159,7 +159,7 @@ export default function Careers() {
               Career clarity develops at different speeds for different people. Being clear early is not an achievement. Taking time is not a failure.
             </p>
             <p>
-              Some students need more exposure, some need reassurance, and some need space to think without pressure. Growth into clarity happens gradually.
+              Some students need more exposure, some need reassurance and some need space to think without pressure. Growth into clarity happens gradually.
             </p>
             <p className="emphasis">
               Students are allowed to take time.
@@ -189,7 +189,7 @@ export default function Careers() {
                 Career development is deeply influenced by the environment students grow up in. Support works best when it reduces fear rather than increases urgency.
               </p>
               <p>
-                When students are given space to think, allowed to grow at their own pace, and valued for effort as well as results, confidence develops more naturally. Comparison and constant pressure often increase anxiety without improving clarity.
+                When students are given space to think, allowed to grow at their own pace and valued for effort as well as results, confidence develops more naturally. Comparison and constant pressure often increase anxiety without improving clarity.
               </p>
             </div>
 
@@ -197,7 +197,7 @@ export default function Careers() {
               <div className="note-icon">🏫</div>
               <h3>A Note for Teachers</h3>
               <p>
-                Teachers play an important role in shaping how students view their abilities and future possibilities. Classroom experiences often influence confidence, interest, and self-belief.
+                Teachers play an important role in shaping how students view their abilities and future possibilities. Classroom experiences often influence confidence, interest and self-belief.
               </p>
               <p>
                 When expectations are realistic and guidance is patient, students feel safer exploring options. Learning environments that reduce fear and judgement support healthier career thinking.
@@ -225,7 +225,7 @@ export default function Careers() {
             <div className="boundary-box">
               <h3>⚠️ Important Boundary</h3>
               <p>
-                Ishan Learning does not provide career prediction, aptitude testing, counselling, or placement guidance. This page exists only for awareness and reflection.
+                Ishan Learning does not provide career prediction, aptitude testing, counselling or placement guidance. This page exists only for awareness and reflection.
               </p>
               <p className="emphasis">
                 Its purpose is to support thoughtful thinking, not to define outcomes.
@@ -242,10 +242,10 @@ export default function Careers() {
               Career development is not a race.
             </p>
             <p className="closing-text">
-              Most clarity comes with time, learning, and experience.
+              Most clarity comes with time, learning and experience.
             </p>
             <p className="closing-text">
-              Exploring options, asking questions, and allowing uncertainty are part of responsible planning—not signs of delay or failure.
+              Exploring options, asking questions and allowing uncertainty are part of responsible planning-not signs of delay or failure.
             </p>
           </div>
         </section>

@@ -13,7 +13,7 @@ export default function AboutUs() {
       <main className="about-container">
         <section className="about-hero">
           <h1>About Ishan Learning</h1>
-          <p>Clarity, Confidence, and Supportive Learning</p>
+          <p>Clarity, Confidence and Supportive Learning</p>
         </section>
 
         {/* Ishan Learning */}
@@ -24,10 +24,10 @@ export default function AboutUs() {
               Ishan Learning is a learning support platform designed to work alongside the school education system, not to replace it.
             </p>
             <p>
-              Schools play a central role in shaping a student's academic foundation. However, due to limited classroom time, syllabus pressure, and large class sizes, many students are unable to fully understand what is taught in school. Over time, doubts remain unresolved and learning begins to feel stressful rather than meaningful.
+              Schools play a central role in shaping a student's academic foundation. However, due to limited classroom time, syllabus pressure and large class sizes, many students are unable to fully understand what is taught in school. Over time, doubts remain unresolved and learning begins to feel stressful rather than meaningful.
             </p>
             <p>
-              <strong>Ishan Learning exists to support students in understanding school subjects clearly, strengthening their conceptual foundations, and studying with confidence in a calm and supportive learning environment.</strong>
+              <strong>Ishan Learning exists to support students in understanding school subjects clearly, strengthening their conceptual foundations and studying with confidence in a calm and supportive learning environment.</strong>
             </p>
           </div>
         </section>
@@ -45,7 +45,7 @@ export default function AboutUs() {
                 <li>✓ A supportive learning environment free from fear and unnecessary pressure</li>
               </ul>
               <p className="belief-note">
-                While pressure and fear may push short-term performance, clarity, confidence, and emotional safety support long-term learning and growth.
+                While pressure and fear may push short-term performance, clarity, confidence and emotional safety support long-term learning and growth.
               </p>
             </div>
           </div>
@@ -66,7 +66,7 @@ export default function AboutUs() {
               <li>Academic pressure continues to increase</li>
             </ul>
             <p>
-              Ishan Learning was created as a learning support system to help students revisit concepts, clear doubts, and build confidence—without fear, comparison, or unnecessary stress.
+              Ishan Learning was created as a learning support system to help students revisit concepts, clear doubts and build confidence-without fear, comparison or unnecessary stress.
             </p>
           </div>
         </section>
@@ -97,7 +97,7 @@ export default function AboutUs() {
               </div>
             </div>
             <p className="note">
-              <em>This platform does not provide clinical, counselling, or therapeutic services. However, learning is guided with psychological sensitivity, recognising attention span, learning pace, and emotional readiness.</em>
+              <em>This platform does not provide clinical, counselling or therapeutic services. However, learning is guided with psychological sensitivity, recognising attention span, learning pace and emotional readiness.</em>
             </p>
           </div>
         </section>
@@ -121,8 +121,8 @@ export default function AboutUs() {
               <ul>
                 <li>Reinforce classroom learning rather than compete with schools</li>
                 <li>Encourage understanding instead of rote memorisation</li>
-                <li>Apply psychology-informed principles related to attention, understanding, and learning pace</li>
-                <li>Support students with responsibility, care, and academic integrity</li>
+                <li>Apply psychology-informed principles related to attention, understanding and learning pace</li>
+                <li>Support students with responsibility, care and academic integrity</li>
               </ul>
             </div>
           </div>
@@ -139,15 +139,15 @@ export default function AboutUs() {
               </div>
               <div className="difference-card">
                 <h4>Focus on Conceptual Clarity</h4>
-                <p>Priority is given to understanding, revision, and doubt resolution.</p>
+                <p>Priority is given to understanding, revision and doubt resolution.</p>
               </div>
               <div className="difference-card">
                 <h4>Psychology-Informed Learning</h4>
-                <p>Teaching is guided by attention span, learning pace, and emotional comfort.</p>
+                <p>Teaching is guided by attention span, learning pace and emotional comfort.</p>
               </div>
               <div className="difference-card">
                 <h4>Student-Centred Guidance</h4>
-                <p>Students are supported without comparison, fear, or pressure.</p>
+                <p>Students are supported without comparison, fear or pressure.</p>
               </div>
             </div>
           </div>
@@ -178,10 +178,10 @@ export default function AboutUs() {
                 Ishan Learning was created to support school students in understanding their subjects clearly and studying with confidence.
               </p>
               <p>
-                The platform is guided by Abhishek Saini, who holds Master's degrees in Psychology and Sociology. He is a Gold Medalist in Psychology, has qualified UGC-NET in Psychology and UGC-NET with JRF in Sociology, and is currently pursuing a PhD in Sociology.
+                The platform is guided by Abhishek Saini, who holds Master's degrees in Psychology and Sociology. He is a Gold Medalist in Psychology, has qualified UGC-NET in Psychology and UGC-NET with JRF in Sociology and is currently pursuing a PhD in Sociology.
               </p>
               <p>
-                Drawing from his academic training, Abhishek focuses on clarity-based learning, balanced academic expectations, and responsible student guidance.
+                Drawing from his academic training, Abhishek focuses on clarity-based learning, balanced academic expectations and responsible student guidance.
               </p>
               <div className="founder-quote">
                 <blockquote>
@@ -199,9 +199,9 @@ export default function AboutUs() {
             <h2>Our Role & Responsibility</h2>
             <div className="responsibility-box">
               <p><strong>Ishan Learning is an academic learning support platform.</strong></p>
-              <p>We do not replace schools, formal education systems, or clinical or therapeutic services.</p>
+              <p>We do not replace schools, formal education systems or clinical or therapeutic services.</p>
               <p>
-                Our role is to support learning, reinforce understanding, and promote a healthy and balanced academic approach.
+                Our role is to support learning, reinforce understanding and promote a healthy and balanced academic approach.
               </p>
             </div>
           </div>
@@ -212,10 +212,10 @@ export default function AboutUs() {
           <div className="section-content">
             <h2>Join Our Learning Journey</h2>
             <p>
-              We believe schools build the foundation, and supportive learning helps strengthen it.
+              We believe schools build the foundation and supportive learning helps strengthen it.
             </p>
             <p>
-              At Ishan Learning, we invite students and parents to be part of a learning journey based on clarity, balance, and understanding.
+              At Ishan Learning, we invite students and parents to be part of a learning journey based on clarity, balance and understanding.
             </p>
             <div className="journey-tagline">
               <p><strong>Learn clearly.</strong></p>

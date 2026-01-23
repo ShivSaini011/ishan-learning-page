@@ -10,33 +10,39 @@ export default function Beyond() {
   const classes = [
     {
       image: "/1.jpg",
-      name: "Real stories that spark dreams, build confidence, and shape strong values.",
+      name: "Real stories that spark dreams, build confidence and shape strong values.",
       button: "Stories That Inspire",
+      link: "/abc",
     },
     {
       image: "/2.jpg",
-      name: "Ask questions, explore ideas, and learn how to think, not just memorize.",
+      name: "Ask questions, explore ideas and learn how to think, not just memorize.",
       button: "Think & Explore",
+      link: "/abc",
     },
     {
       image: "/3.jpg",
-      name: "Break learning myths, discover the truth, and grow with the right mindset.",
+      name: "Break learning myths, discover the truth and grow with the right mindset.",
       button: "Learning Myths & Facts",
+      link: "/abc",
     },
     {
       image: "/4.jpg",
       name: "Fun, bite-sized challenges that turn learning into an exciting habit.",
       button: "Mini Challenges",
+      link: "/abc",
     },
     {
       image: "/5.jpg",
-      name: "Create, express, and share thoughts through art and imagination.",
+      name: "Create, express and share thoughts through art and imagination.",
       button: "Art & Creative Expression",
+      link: "/abc",
     },
     {
       image: "/6.jpg",
-      name: "Calm the mind, sharpen focus, and build inner strength every day.",
+      name: "Calm the mind, sharpen focus and build inner strength every day.",
       button: "Yoga & Mind Discipline",
+      link: "/abc",
     },
   ];
 
@@ -68,7 +74,8 @@ export default function Beyond() {
                 </div>
                 <div className="card-name">{cls.name}</div>
                 {/* <div className="card-subtitle">Special Programs</div> */}
-                <button className="card-button">{cls.button}</button>
+                <a className="card-button" href={cls.link} target="_blank">
+                  <button className="card-bt" >{cls.button}</button></a>
               </div>
             ))}
           </div>
@@ -80,7 +87,7 @@ export default function Beyond() {
           <button className="cta-button">Get Started</button>
         </section> */}
       </main>
-    
+
       <HomeButton />
       <Footer />
     </div>

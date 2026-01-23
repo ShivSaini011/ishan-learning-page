@@ -115,12 +115,19 @@
   padding: 20px;
   box-shadow: 0 15px 40px rgba(139, 92, 246, 0.3);
 }
-
+.whyimg{
+  /* align-items: center; */
+  margin: 20px;
+  /* padding: 20px; */
+  /* justify-content: center; */
+  border-radius: 20px;
+}
 .image-inner {
   width: 180px;
   height: 200px;
+
   background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
+  border-radius: 50px;
   margin-bottom: 20px;
 }
 
@@ -157,4 +164,85 @@
     width: 200px;
     height: 250px;
   }
+}
+/* =========================
+   DARK MODE – WHY CHOOSE
+   ========================= */
+
+:root.dark-mode .why-choose {
+  background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+}
+
+/* Container text */
+:root.dark-mode .why-choose-content > p {
+  color: #cbd5f5;
+}
+
+/* Heading gradient */
+:root.dark-mode .why-choose-content h2 {
+  background: linear-gradient(135deg, #e0e7ff, #c084fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Feature cards */
+:root.dark-mode .feature-item {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+  border-left-color: #8b5cf6;
+}
+
+/* 2nd & 3rd feature card variations */
+:root.dark-mode .feature-item:nth-child(2) {
+  background: linear-gradient(135deg, #0f2a3d 0%, #020617 100%);
+  border-left-color: #38bdf8;
+}
+
+:root.dark-mode .feature-item:nth-child(3) {
+  background: linear-gradient(135deg, #3b0a2a 0%, #020617 100%);
+  border-left-color: #f472b6;
+}
+
+/* Feature text */
+:root.dark-mode .feature-item span {
+  color: #e5e7eb;
+}
+
+:root.dark-mode .feature-item p {
+  color: #9ca3af;
+}
+
+/* Checkbox color */
+:root.dark-mode .feature-item input[type="checkbox"] {
+  accent-color: #a78bfa;
+}
+
+/* Query card / right section */
+:root.dark-mode .query-form-container {
+  background: linear-gradient(135deg, #020617, #1e293b);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.7);
+}
+
+/* Query text */
+:root.dark-mode .qrtxt {
+  color: #e5e7eb;
+}
+
+/* Submit button */
+:root.dark-mode .submit-query-btn {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  border-color: transparent;
+  color: #ffffff;
+}
+
+:root.dark-mode .submit-query-btn:hover {
+  opacity: 0.9;
+}
+
+/* QR image subtle glow */
+:root.dark-mode .why-choose-image img {
+  filter: drop-shadow(0 0 15px rgba(139, 92, 246, 0.4));
 }

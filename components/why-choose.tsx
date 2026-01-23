@@ -25,7 +25,7 @@ export default function WhyChoose() {
             <div className="feature-item">
               <input type="checkbox" checked readOnly />
               <span>Guidance and Mental Wellbeing</span>
-              <p>Support that helps you stay confident, focused, and consistent.</p>
+              <p>Support that helps you stay confident, focused and consistent.</p>
             </div>
           </div>
         </div>
@@ -33,7 +33,7 @@ export default function WhyChoose() {
         <div className="why-choose-image">
           <div className="query-form-container">
             <h2 className="qrtxt">Have Questions?</h2>
-            <img src="/qr.png" alt="Query Illustration" width={400} height={200} />
+            <img className="whyimg" src="/qr.png" alt="Query Illustration" width={380} height={380} />
               <div className="query-instructions">
               <h2  className="qrtxt">Submit Your Query....</h2>
               <a href="\submit"  target="_blank">

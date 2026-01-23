@@ -20,7 +20,7 @@ export default function Contact() {
         <div className="contact-card">
           <div className="card-icon">📚</div>
           <h3>Academic Queries & Guidance</h3>
-          <p>For questions related to learning, concepts, or guidance requests, please use:</p>
+          <p>For questions related to learning, concepts or guidance requests, please use:</p>
           
           <div className="contact-actions">
             <a href="/ask-query" className="contact-button query-button" target="_blank">

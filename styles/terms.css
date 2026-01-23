@@ -1,5 +1,5 @@
 .terms-container {
-  max-width: 900px;
+  max-width: auto;
   margin: 40px auto;
   padding: 0 20px;
   font-family: inherit;
@@ -117,4 +117,85 @@
   .intro {
     padding: 15px;
   }
+}
+
+/* =========================
+   DARK MODE – TERMS OF SERVICE
+   ========================= */
+:root.dark-mode .terms-container {
+  color: #e5e7eb;
+}
+
+/* Main card */
+:root.dark-mode .terms-content {
+  background-color: #0f172a; /* deep slate */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+}
+
+/* Page title */
+:root.dark-mode .terms-content h1 {
+  color: #f8fafc;
+}
+
+/* Effective date */
+:root.dark-mode .effective-date {
+  color: #94a3b8;
+}
+
+/* Intro highlight box */
+:root.dark-mode .intro {
+  background-color: #020617;
+  color: #cbd5f5;
+  border-left-color: #dc3545; /* brand red */
+}
+
+/* Section headings */
+:root.dark-mode .terms-content h2 {
+  color: #e0e7ff;
+  border-bottom-color: #dc3545;
+}
+
+/* Paragraph text */
+:root.dark-mode .terms-content p {
+  color: #cbd5e1;
+}
+
+/* Lists */
+:root.dark-mode .terms-content ul {
+  color: #cbd5e1;
+}
+
+:root.dark-mode .terms-content li {
+  color: #cbd5e1;
+}
+
+/* Nested lists */
+:root.dark-mode .terms-content ul ul li {
+  color: #94a3b8;
+}
+
+/* Contact list icons/text */
+:root.dark-mode .contact-list li {
+  color: #e5e7eb;
+}
+
+/* Subtle section spacing glow */
+:root.dark-mode .terms-content section {
+  border-radius: 8px;
+}
+
+/* Smooth transition */
+.terms-container,
+.terms-content,
+.intro,
+.terms-content h1,
+.terms-content h2,
+.terms-content p {
+  transition:
+    background-color
+    var(--transition-speed),
+    color
+    var(--transition-speed),
+    border-color
+    var(--transition-speed);
 }

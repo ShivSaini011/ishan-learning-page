@@ -28,7 +28,6 @@ const translations: Translations = {
   whyChoose: { en: "Why Indian Students Choose Ishan", hi: "भारतीय छात्र इशान को क्यों चुनते हैं" },
   guidance_title: { en: "Guidance & Well-Being Corner", hi: "मार्गदर्शन और कल्याण कोने" },
   learnOnGo: { en: "Learn on the Go", hi: "चलते-चलते सीखें" },
-  downloadApp: { en: "Download the Ishan App", hi: "इशान ऐप डाउनलोड करें" },
 }
 
 interface LanguageContextType {

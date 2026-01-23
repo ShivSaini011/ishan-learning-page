@@ -87,6 +87,8 @@
 .card-image img {
   /* max-width: 100%; */
   /* max-height: 120px; */
+  border-radius: 15px;
+  padding: 10px;
   object-fit: contain;
 }
 
@@ -127,6 +129,9 @@
 .card-button {
   margin: 20px;
   padding: 12px 24px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
   border: none;
@@ -237,4 +242,29 @@
   .beyond-cta p {
     font-size: 1rem;
   }
+}
+
+/* =========================
+   DARK MODE – BEYOND FEATURES
+   ========================= */
+:root.dark-mode .beyond-container {
+  background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+}
+:root.dark-mode .beyond-hero h1,
+:root.dark-mode .beyond-cta h2 {
+  color: #e2e8f0;
+} 
+:root.dark-mode .beyond-hero p,
+:root.dark-mode .beyond-description {
+  color: #cbd5e0;
+}
+:root.dark-mode .beyond-card {
+  background: #2d3748;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+:root.dark-mode .card-name {
+  color: #e2e8f0;
+}
+:root.dark-mode .card-features li {
+  color: #cbd5e0;
 }

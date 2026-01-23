@@ -5,6 +5,21 @@
   display: flex;
   align-items: center;
 }
+.education-right{
+  font-size: 1.9rem;
+  font-weight: 600;
+  font-style: italic;
+color: #133258;
+}
+:root.dark-mode .education-right{
+  color: #bbbbbb;
+}
+@media screen and (max-width: 768px) {
+  .education-right{
+    text-align: center;
+  }
+}
+
 
 /* Updated dark mode background for hero section */
 :root.dark-mode .hero {
@@ -43,10 +58,10 @@
   border-color: #9f7aea;
 }
 
-.hero-title {
+/* .hero-title {
   margin-bottom: 30px;
   color: var(--text-dark);
-}
+} */
 
 .hero-description {
   font-size: 1.1rem;
@@ -71,9 +86,13 @@
   width: fit-content;
 }
 .youtubeican{
-  /* background-color:red; */
+  background-color: #4655da;
+  padding: 7px 20px;
   margin: 10px;
-  width: 100%;
+  border-radius: 50px;
+  width: fit-content;
+  box-shadow: 1px 1px 12px 1px #6f78f7;
+  max-width: 100%;
   margin-bottom: 30px;
   height: 100%;
   gap: 20px;
@@ -84,7 +103,35 @@
   font-size: 1.9rem;
   font-weight: 700;
   margin-bottom: 10PX;
-  color: var(--primary-color);
+  color: white;
+  /* color: var(--primary-color); */
+}
+@media screen and (max-width: 768px) {
+  .youtubeican{
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }   
+  
+}
+.socialyt{
+  background-color:red;
+  width: 65px;
+  height: 45px;
+  border-radius: 25%;
+  color: white;
+  /* background: linear-gradient(135deg, var(--primary-color), var(--purple)); */
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* Dark mode stat card background */
@@ -116,15 +163,7 @@
   justify-content: center;
   align-items: center;
 }
-.insta{
-  /* background: #ffffff; */
-  /* border-radius: 50%; */
-  /* width: 65px;
-  height: 65px; */
-  /* display: flex;   */
-  /* justify-content: center;
-  align-items: center; */
-}
+
 
 .image-placeholder {
   display: flex;
@@ -342,23 +381,39 @@
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-.socialyt{
-  background-color:red;
-  width: 65px;
-  height: 45px;
-   border-radius: 25%;
-  /* background: linear-gradient(135deg, var(--primary-color), var(--purple)); */
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1.1rem;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+.hero-txt{
+  font-family: 'Poppins', 'Inter', sans-serif;
+  font-size: 2.7rem; 
+  font-weight: 900;
+  /* color: #313dc0; */
+  line-height: 1.2;
+  background: linear-gradient(120deg, #1e3799 0%, #0984e3 100%);
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text;
+  letter-spacing: -0.02em; 
+}
+.highlight{
+  font-family: 'Poppins', 'Inter', sans-serif;
+  font-size: 2.7rem; 
+  
+  font-weight: 700;
+  display: inline-block;
+  /* Premium Gold/Blue Gradient to match your logo */
+  background: linear-gradient(120deg, #1e3799 0%, #0984e3 100%);
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text;
+  
+  /* Adds a slight 'lift' to the text */
+  filter: drop-shadow(0px 2px 2px rgba(0,0,0,0.1));
+}
+:root.dark-mode .hero-txt{
+  background: linear-gradient(120deg, #e8f5e9 0%, #abd3ff 100%);
+}
+:root.dark-mode .highlight{
+  background: linear-gradient(120deg, #e8f5e9 0%, #abd3ff 100%);
 }
 
 @keyframes float {
@@ -382,10 +437,18 @@
     gap: 30px;
   }
 
-  .hero-title {
-    font-size: 1.75rem;
-  }
 
+
+
+/* The "Stay Confident" highlight */
+
+/* Responsive adjustment for mobile */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
   .hero-buttons {
     flex-direction: column;
   }

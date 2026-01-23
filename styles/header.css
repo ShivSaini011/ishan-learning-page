@@ -5,6 +5,8 @@
   position: relative;
   top: 0;
   z-index: 100;
+  border-top:2px solid #8b5cf6;
+  border-bottom: 2px solid #8b5cf6;
   box-shadow: var(--shadow);
   transition: all 0.3s ease;
   background-color: #ffffff;
@@ -67,7 +69,7 @@
 
 .header-nav {
   /* color: #f8f7ff; */
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   display: flex;
   gap: 30px;
   align-items: center;
@@ -204,6 +206,7 @@
     right: 0;
     flex-direction: column;
     gap: 15px;
+    /* background-color: transparent; */
     background-color: white;
     padding: 20px;
     border-bottom: 1px solid var(--border-color);

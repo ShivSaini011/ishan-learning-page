@@ -133,7 +133,7 @@ export default function Teachers() {
               At Ishan Learning, we believe that great teachers are the backbone of meaningful education. Our team consists of experienced educators who are passionate about helping students understand concepts clearly and develop a genuine love for learning.
             </p>
             <p>
-              Each teacher brings unique expertise and a student-centered approach to ensure that every learner feels supported, valued, and confident in their academic journey.
+              Each teacher brings unique expertise and a student-centered approach to ensure that every learner feels supported, valued and confident in their academic journey.
             </p>
           </div>
         </section>
@@ -182,34 +182,11 @@ export default function Teachers() {
 
         {/* //add two buttons here one is View your teacer and meet your teacher */}
         <div className="teacher-buttons">
-          <a href="#your-teacher" className="teacher-btn" onClick={handleViewTeachers}>View Your Teacher</a>
-          <a href="#meet-teacher" className="teacher-btn secondary" onClick={handleMeetTeacher}>Meet Your Teacher</a>
+          <a href="/your-teacher" className="teacher-btn" target="_blank">View Your Teacher</a>
+          <a href="/meet-teacher" className="teacher-btn secondary" target="_blank">Meet Your Teacher</a>
         </div>
 
         {/* Meet Your Teacher Modal */}
-        {showModal && (
-          <div className="teacher-modal-overlay" onClick={closeModal}>
-            <div className="teacher-modal" onClick={e => e.stopPropagation()}>
-              <button className="modal-close" onClick={closeModal}>&times;</button>
-              <h2>Meet Your Teacher</h2>
-              <form className="meet-form">
-                <label>
-                  Your Name
-                  <input type="text" name="name" required />
-                </label>
-                <label>
-                  Your Email
-                  <input type="email" name="email" required />
-                </label>
-                <label>
-                  Message
-                  <textarea name="message" rows={3} required placeholder="Ask a question or request a meeting..."></textarea>
-                </label>
-                <button type="submit" className="teacher-btn">Send Request</button>
-              </form>
-            </div>
-          </div>
-        )}
 
         <section className="teaching-philosophy">
           <h2>Our Teaching Philosophy</h2>
@@ -239,7 +216,7 @@ export default function Teachers() {
             </div>
           </div>
         </section>
-
+        
         <section className="teacher-cta">
           <h2>Ready to Learn?</h2>
           <p>Start your learning journey with our experienced teachers</p>

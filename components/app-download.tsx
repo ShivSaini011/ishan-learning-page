@@ -8,7 +8,7 @@ export default function AppDownload() {
           <h2>Learn on the Go.</h2>
           <h3>Download the Ishan App.</h3>
           <p>
-            Download our mobile app to access lectures offline, take mock tests, and chat with mentors anytime,
+            Download our mobile app to access lectures offline, take mock tests and chat with mentors anytime,
             anywhere.
           </p>
 
