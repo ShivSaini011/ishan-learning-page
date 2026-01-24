@@ -1,0 +1,8 @@
+:HL["/ishan-learning-page/_next/static/chunks/8a80e7184ad3a13f.css","style"]
+:HL["/ishan-learning-page/_next/static/chunks/f041f967fe9639dc.css","style"]
+:HL["/ishan-learning-page/_next/static/media/797e433ab948586e-s.p.dbea232f.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/ishan-learning-page/_next/static/media/caa3a2e1cccd8315-s.p.853070df.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/ishan-learning-page/_next/static/chunks/f1d3daaeb262d43e.css","style"]
+:HL["/ishan-learning-page/_next/static/chunks/8d47c08d8b7dcafe.css","style"]
+:HL["/ishan-learning-page/_next/static/chunks/06bb4658c208ec9c.css","style"]
+0:{"buildId":"SaPlP3m1MRpThWlcLbBZh","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"wellbeing","paramType":null,"paramKey":"wellbeing","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}

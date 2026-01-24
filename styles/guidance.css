@@ -214,14 +214,14 @@ margin: 0;
     font-size: 2rem;
   }
 }
-.home-button1 {
+/*.home-button1 {
   position: fixed;
   bottom: 70px;
   padding: 10px;
   right: 30px;
   width: auto;
   height: auto;
-  border-radius: 50px;
+  border-radius: 0px;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   display: flex;
   align-items: center;
@@ -265,4 +265,4 @@ margin: 0;
 
 [data-theme="dark"] .home-button1:hover {
   box-shadow: 0 8px 20px rgba(102, 126, 234, 0.8);
-}
+} 

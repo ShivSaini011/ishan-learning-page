@@ -17,6 +17,7 @@ const translations: Translations = {
   about: { en: "About US", hi: "हमारे बारे में" },
   classes: { en: "Classes", hi: "कक्षाएं" },
   guidance: { en: "Guidance", hi: "मार्गदर्शन" },
+  "Know Your Teacher": { en: "Know Your Teacher", hi: "अपने शिक्षक को जानें" },
   continueGoogle: { en: "Continue with Google", hi: "Google के साथ जारी रखें" },
   classHeading: { en: "Class 6 to 12", hi: "कक्षा 6 से 12" },
   learnSmart: { en: "Learn Smart,", hi: "स्मार्ट सीखें," },

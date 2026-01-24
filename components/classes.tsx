@@ -31,10 +31,18 @@ export default function Classes() {
       <div className="note">
         Learning resources are being added progressively.
       </div>
+      <div className="Schedule">
+        <div className="Schedule-placeholder">
+          <a href="Class Schedule Link" target="_blank" rel="noopener noreferrer">
+            <img src="Schedule.png" alt="Logo" className="Schedule-image" />
+            <div className="TDYC">Today's Class Schedule</div>
+          </a>
+        </div>
+      </div>
       <div className="request-a-session">
         <Link href="/beyond">
           <button className="classbtn">Beyond the Classroom
-          <h5 className="bytxt">learning through experience, creativity and inspiration</h5>
+            <h5 className="bytxt">learning through experience, creativity and inspiration</h5>
           </button>
         </Link>
       </div>

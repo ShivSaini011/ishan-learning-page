@@ -53,6 +53,7 @@ export default function Hero() {
             <a href="#" className="social-icon1 whatsapp" title="YouTube" target="_blank">
               <img src="/what.png" alt="Instagram" width={45} height={45} />
             </a>
+    
           </div>
         </div>
       </div>
