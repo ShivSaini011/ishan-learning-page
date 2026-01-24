@@ -1,27 +1,30 @@
 import "@/styles/features.css"
+import { useLanguage } from "@/components/language-context"
 
 export default function Features() {
+  const { t } = useLanguage()
+  
   const features = [
     {
       icon: "🎓",
-      title: "Strong Conceptual Foundation",
-      description: "Clear and structured aligned with CBSC and state boards curricula, helping students understand concepts deeply and learn with confidence without unnecessary stress.",
+      title: t("strongConceptual"),
+      description: t("conceptDesc"),
     },
     {
       icon: "🌱",
-      title: "Holistic Growth",
-      description: "Focusing on emotional intelligence, confidence building and personality development.",
+      title: t("holisticGrowthTitle"),
+      description: t("holisticDesc"),
     },
     {
       icon: "👥",
-      title: "Student Support",
-      description: "24/7 access to dedicated mentors who guide you through every academic and personal hurdle.",
+      title: t("studentSupportTitle"),
+      description: t("studentSupportDesc"),
     },
   ]
 
   return (
     <section className="features classes-container">
-      <h2>Our Learning Approach</h2>
+      <h2>{t("ourLearningApproach")}</h2>
       <div className="features-container">
         {features.map((feature, index) => (
           <div key={index} className="feature-card">

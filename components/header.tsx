@@ -26,7 +26,7 @@ export default function Header() {
           <a href="/aboutus">{t("about")}</a>
           <a href="/#classes">{t("classes")}</a>
           <a href="/#guidance">{t("guidance")}</a>
-          <a href="/teachers">{t("Know Your Teacher")}</a>
+          <a href="/teachers">{t("KnowYourTeacher")}</a>
         </nav>
 
         {/* <button className="header-cta">🔗 {t("continueGoogle")}</button> */}

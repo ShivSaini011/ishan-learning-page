@@ -5,6 +5,7 @@ import Header from "@/components/header"
 import Footer from "@/components/footer"
 import Backtotest from "@/components/back-to-test"
 import HomeButton from "@/components/home-button"
+import { useLanguage } from "@/components/language-context"
 import "@/styles/wellbeing.css"
 
 interface Test {
@@ -596,11 +597,577 @@ const tests: Test[] = [
 ]
 
 export default function WellBeing() {
+  const { t } = useLanguage()
   const [selectedTestId, setSelectedTestId] = useState<string | null>(null)
   const [responses, setResponses] = useState<Record<number, string>>({})
   const [showResults, setShowResults] = useState(false)
 
-  const currentTest = selectedTestId ? tests.find(t => t.id === selectedTestId) : null
+  // Create translated tests array using translation function
+  const getTests = (): Test[] => [
+    {
+      id: "exam-stress",
+      title: t("examStressTitle"),
+      category: t("academicLoadCategory"),
+      why: t("examStressDesc"),
+      statements: [
+        t("examStress1"),
+        t("examStress2"),
+        t("examStress3"),
+        t("examStress4"),
+        t("examStress5"),
+        t("examStress6"),
+        t("examStress7"),
+        t("examStress8"),
+        t("examStress9"),
+        t("examStress10"),
+      ],
+      results: {
+        rarely: {
+          title: "✨ " + t("examStressRarelyTitle"),
+          description: t("examStressRarelyDesc"),
+          note: t("examStressRarelyNote"),
+        },
+        sometimes: {
+          title: "🌤️ " + t("examStressSometimesTitle"),
+          description: t("examStressSometimesDesc"),
+          note: t("examStressSometimesNote"),
+        },
+        often: {
+          title: "🌧️ " + t("examStressOftenTitle"),
+          description: t("examStressOftenDesc"),
+          note: t("examStressOftenNote"),
+        }
+      }
+    },
+    {
+      id: "learning-energy",
+      title: t("learningEnergyTitle"),
+      category: t("academicLoadCategory"),
+      why: t("learningEnergyWhyDesc"),
+      statements: [
+        t("learningEnergy1"),
+        t("learningEnergy2"),
+        t("learningEnergy3"),
+        t("learningEnergy4"),
+        t("learningEnergy5"),
+        t("learningEnergy6"),
+        t("learningEnergy7"),
+        t("learningEnergy8"),
+        t("learningEnergy9"),
+        t("learningEnergy10"),
+      ],
+      results: {
+        rarely: {
+          title: "✨ " + t("learningEnergyRarelyTitle"),
+          description: t("learningEnergyRarelyDesc"),
+          note: t("learningEnergyRarelyNote"),
+        },
+        sometimes: {
+          title: "🌤️ " + t("learningEnergySometimesTitle"),
+          description: t("learningEnergySometimesDesc"),
+          note: t("learningEnergySometimesNote"),
+        },
+        often: {
+          title: "🌧️ " + t("learningEnergyOftenTitle"),
+          description: t("learningEnergyOftenDesc"),
+          note: t("learningEnergyOftenNote"),
+        }
+      }
+    },
+    {
+      id: "focus-distraction",
+      title: t("focusDistractionTitle"),
+      category: t("academicLoadCategory"),
+      why: t("focusDistractionWhyDesc"),
+      statements: [
+        t("focusDistraction1"),
+        t("focusDistraction2"),
+        t("focusDistraction3"),
+        t("focusDistraction4"),
+        t("focusDistraction5"),
+        t("focusDistraction6"),
+        t("focusDistraction7"),
+        t("focusDistraction8"),
+        t("focusDistraction9"),
+        t("focusDistraction10"),
+      ],
+      results: {
+        rarely: {
+          title: "✨ " + t("focusDistractionRarelyTitle"),
+          description: t("focusDistractionRarelyDesc"),
+          note: t("focusDistractionRarelyNote"),
+        },
+        sometimes: {
+          title: "🌤️ " + t("focusDistractionSometimesTitle"),
+          description: t("focusDistractionSometimesDesc"),
+          note: t("focusDistractionSometimesNote"),
+        },
+        often: {
+          title: "🌧️ " + t("focusDistractionOftenTitle"),
+          description: t("focusDistractionOftenDesc"),
+          note: t("focusDistractionOftenNote"),
+        }
+      }
+    },
+    {
+      id: "study-rest",
+      title: t("studyRestTitle"),
+      category: t("academicLoadCategory"),
+      why: t("studyRestWhyDesc"),
+      statements: [
+        t("studyRest1"),
+        t("studyRest2"),
+        t("studyRest3"),
+        t("studyRest4"),
+        t("studyRest5"),
+        t("studyRest6"),
+        t("studyRest7"),
+        t("studyRest8"),
+        t("studyRest9"),
+        t("studyRest10"),
+      ],
+      results: {
+        rarely: {
+          title: "✨ " + t("studyRestRarelyTitle"),
+          description: t("studyRestRarelyDesc"),
+          note: t("studyRestRarelyNote"),
+        },
+        sometimes: {
+          title: "🌤️ " + t("studyRestSometimesTitle"),
+          description: t("studyRestSometimesDesc"),
+          note: t("studyRestSometimesNote"),
+        },
+        often: {
+          title: "🌧️ " + t("studyRestOftenTitle"),
+          description: t("studyRestOftenDesc"),
+          note: t("studyRestOftenNote"),
+        }
+      }
+    },
+    {
+      id: "emotional-balance",
+      title: t("emotionalBalanceTitle"),
+      category: t("emotionalExperienceCategory"),
+      why: t("emotionalBalanceWhyDesc"),
+      statements: [
+        t("emotionalBalance1"),
+        t("emotionalBalance2"),
+        t("emotionalBalance3"),
+        t("emotionalBalance4"),
+        t("emotionalBalance5"),
+        t("emotionalBalance6"),
+        t("emotionalBalance7"),
+        t("emotionalBalance8"),
+        t("emotionalBalance9"),
+        t("emotionalBalance10"),
+      ],
+      results: {
+        rarely: {
+          title: "✨ " + t("emotionalBalanceRarelyTitle"),
+          description: t("emotionalBalanceRarelyDesc"),
+          note: t("emotionalBalanceRarelyNote"),
+        },
+        sometimes: {
+          title: "🌤️ " + t("emotionalBalanceSometimesTitle"),
+          description: t("emotionalBalanceSometimesDesc"),
+          note: t("emotionalBalanceSometimesNote"),
+        },
+        often: {
+          title: "🌧️ " + t("emotionalBalanceOftenTitle"),
+          description: t("emotionalBalanceOftenDesc"),
+          note: t("emotionalBalanceOftenNote"),
+        }
+      }
+    },
+    {
+      id: "mood-motivation",
+      title: t("moodMotivationTitle"),
+      category: t("emotionalExperienceCategory"),
+      why: t("moodMotivationWhyDesc"),
+      statements: [
+        t("moodMotivation1"),
+        t("moodMotivation2"),
+        t("moodMotivation3"),
+        t("moodMotivation4"),
+        t("moodMotivation5"),
+        t("moodMotivation6"),
+        t("moodMotivation7"),
+        t("moodMotivation8"),
+        t("moodMotivation9"),
+        t("moodMotivation10"),
+      ],
+      results: {
+        rarely: {
+          title: "✨ " + t("moodMotivationRarelyTitle"),
+          description: t("moodMotivationRarelyDesc"),
+          note: t("moodMotivationRarelyNote"),
+        },
+        sometimes: {
+          title: "🌤️ " + t("moodMotivationSometimesTitle"),
+          description: t("moodMotivationSometimesDesc"),
+          note: t("moodMotivationSometimesNote"),
+        },
+        often: {
+          title: "🌧️ " + t("moodMotivationOftenTitle"),
+          description: t("moodMotivationOftenDesc"),
+          note: t("moodMotivationOftenNote"),
+        }
+      }
+    },
+    {
+      id: "academic-anxiety",
+      title: t("academicAnxietyTitle"),
+      category: t("emotionalExperienceCategory"),
+      why: t("academicAnxietyWhyDesc"),
+      statements: [
+        t("academicAnxiety1"),
+        t("academicAnxiety2"),
+        t("academicAnxiety3"),
+        t("academicAnxiety4"),
+        t("academicAnxiety5"),
+        t("academicAnxiety6"),
+        t("academicAnxiety7"),
+        t("academicAnxiety8"),
+        t("academicAnxiety9"),
+        t("academicAnxiety10"),
+      ],
+      results: {
+        rarely: {
+          title: "✨ " + t("academicAnxietyRarelyTitle"),
+          description: t("academicAnxietyRarelyDesc"),
+          note: t("academicAnxietyRarelyNote"),
+        },
+        sometimes: {
+          title: "🌤️ " + t("academicAnxietySometimesTitle"),
+          description: t("academicAnxietySometimesDesc"),
+          note: t("academicAnxietySometimesNote"),
+        },
+        often: {
+          title: "🌧️ " + t("academicAnxietyOftenTitle"),
+          description: t("academicAnxietyOftenDesc"),
+          note: t("academicAnxietyOftenNote"),
+        }
+      }
+    },
+    {
+      id: "grit-persistence",
+      title: t("gritPersistenceTitle"),
+      category: t("learningStrengthsCategory"),
+      why: t("gritPersistenceWhyDesc"),
+      statements: [
+        t("gritPersistence1"),
+        t("gritPersistence2"),
+        t("gritPersistence3"),
+        t("gritPersistence4"),
+        t("gritPersistence5"),
+        t("gritPersistence6"),
+        t("gritPersistence7"),
+        t("gritPersistence8"),
+        t("gritPersistence9"),
+        t("gritPersistence10"),
+      ],
+      results: {
+        rarely: {
+          title: "✨ " + t("gritPersistenceRarelyTitle"),
+          description: t("gritPersistenceRarelyDesc"),
+          note: t("gritPersistenceRarelyNote"),
+        },
+        sometimes: {
+          title: "🌤️ " + t("gritPersistenceSometimesTitle"),
+          description: t("gritPersistenceSometimesDesc"),
+          note: t("gritPersistenceSometimesNote"),
+        },
+        often: {
+          title: "🌧️ " + t("gritPersistenceOftenTitle"),
+          description: t("gritPersistenceOftenDesc"),
+          note: t("gritPersistenceOftenNote"),
+        }
+      }
+    },
+    {
+      id: "learning-confidence",
+      title: t("learningConfidenceTitle"),
+      category: t("learningStrengthsCategory"),
+      why: t("learningConfidenceWhyDesc"),
+      statements: [
+        t("learningConfidence1"),
+        t("learningConfidence2"),
+        t("learningConfidence3"),
+        t("learningConfidence4"),
+        t("learningConfidence5"),
+        t("learningConfidence6"),
+        t("learningConfidence7"),
+        t("learningConfidence8"),
+        t("learningConfidence9"),
+        t("learningConfidence10"),
+      ],
+      results: {
+        rarely: {
+          title: "✨ " + t("learningConfidenceRarelyTitle"),
+          description: t("learningConfidenceRarelyDesc"),
+          note: t("learningConfidenceRarelyNote"),
+        },
+        sometimes: {
+          title: "🌤️ " + t("learningConfidenceSometimesTitle"),
+          description: t("learningConfidenceSometimesDesc"),
+          note: t("learningConfidenceSometimesNote"),
+        },
+        often: {
+          title: "🌧️ " + t("learningConfidenceOftenTitle"),
+          description: t("learningConfidenceOftenDesc"),
+          note: t("learningConfidenceOftenNote"),
+        }
+      }
+    },
+    {
+      id: "growth-mindset",
+      title: t("growthMindsetTitle"),
+      category: t("learningStrengthsCategory"),
+      why: t("growthMindsetWhyDesc"),
+      statements: [
+        t("growthMindset1"),
+        t("growthMindset2"),
+        t("growthMindset3"),
+        t("growthMindset4"),
+        t("growthMindset5"),
+        t("growthMindset6"),
+        t("growthMindset7"),
+        t("growthMindset8"),
+        t("growthMindset9"),
+        t("growthMindset10"),
+      ],
+      results: {
+        rarely: {
+          title: "✨ " + t("growthMindsetRarelyTitle"),
+          description: t("growthMindsetRarelyDesc"),
+          note: t("growthMindsetRarelyNote"),
+        },
+        sometimes: {
+          title: "🌤️ " + t("growthMindsetSometimesTitle"),
+          description: t("growthMindsetSometimesDesc"),
+          note: t("growthMindsetSometimesNote"),
+        },
+        often: {
+          title: "🌧️ " + t("growthMindsetOftenTitle"),
+          description: t("growthMindsetOftenDesc"),
+          note: t("growthMindsetOftenNote"),
+        }
+      }
+    },
+    {
+      id: "home-adjustment",
+      title: t("homeAdjustmentTitle"),
+      category: t("adjustmentSupportCategory"),
+      why: t("homeAdjustmentWhyDesc"),
+      statements: [
+        t("homeAdjustment1"),
+        t("homeAdjustment2"),
+        t("homeAdjustment3"),
+        t("homeAdjustment4"),
+        t("homeAdjustment5"),
+        t("homeAdjustment6"),
+        t("homeAdjustment7"),
+        t("homeAdjustment8"),
+        t("homeAdjustment9"),
+        t("homeAdjustment10"),
+      ],
+      results: {
+        rarely: {
+          title: "✨ " + t("homeAdjustmentRarelyTitle"),
+          description: t("homeAdjustmentRarelyDesc"),
+          note: t("homeAdjustmentRarelyNote"),
+        },
+        sometimes: {
+          title: "🌤️ " + t("homeAdjustmentSometimesTitle"),
+          description: t("homeAdjustmentSometimesDesc"),
+          note: t("homeAdjustmentSometimesNote"),
+        },
+        often: {
+          title: "🌧️ " + t("homeAdjustmentOftenTitle"),
+          description: t("homeAdjustmentOftenDesc"),
+          note: t("homeAdjustmentOftenNote"),
+        }
+      }
+    },
+    {
+      id: "school-adjustment",
+      title: t("schoolAdjustmentTitle"),
+      category: t("adjustmentSupportCategory"),
+      why: t("schoolAdjustmentWhyDesc"),
+      statements: [
+        t("schoolAdjustment1"),
+        t("schoolAdjustment2"),
+        t("schoolAdjustment3"),
+        t("schoolAdjustment4"),
+        t("schoolAdjustment5"),
+        t("schoolAdjustment6"),
+        t("schoolAdjustment7"),
+        t("schoolAdjustment8"),
+        t("schoolAdjustment9"),
+        t("schoolAdjustment10"),
+      ],
+      results: {
+        rarely: {
+          title: "✨ " + t("schoolAdjustmentRarelyTitle"),
+          description: t("schoolAdjustmentRarelyDesc"),
+          note: t("schoolAdjustmentRarelyNote"),
+        },
+        sometimes: {
+          title: "🌤️ " + t("schoolAdjustmentSometimesTitle"),
+          description: t("schoolAdjustmentSometimesDesc"),
+          note: t("schoolAdjustmentSometimesNote"),
+        },
+        often: {
+          title: "🌧️ " + t("schoolAdjustmentOftenTitle"),
+          description: t("schoolAdjustmentOftenDesc"),
+          note: t("schoolAdjustmentOftenNote"),
+        }
+      }
+    },
+    {
+      id: "social-support",
+      title: t("socialSupportTitle"),
+      category: t("adjustmentSupportCategory"),
+      why: t("socialSupportWhyDesc"),
+      statements: [
+        t("socialSupport1"),
+        t("socialSupport2"),
+        t("socialSupport3"),
+        t("socialSupport4"),
+        t("socialSupport5"),
+        t("socialSupport6"),
+        t("socialSupport7"),
+        t("socialSupport8"),
+        t("socialSupport9"),
+        t("socialSupport10"),
+      ],
+      results: {
+        rarely: {
+          title: "✨ " + t("socialSupportRarelyTitle"),
+          description: t("socialSupportRarelyDesc"),
+          note: t("socialSupportRarelyNote"),
+        },
+        sometimes: {
+          title: "🌤️ " + t("socialSupportSometimesTitle"),
+          description: t("socialSupportSometimesDesc"),
+          note: t("socialSupportSometimesNote"),
+        },
+        often: {
+          title: "🌧️ " + t("socialSupportOftenTitle"),
+          description: t("socialSupportOftenDesc"),
+          note: t("socialSupportOftenNote"),
+        }
+      }
+    },
+    {
+      id: "self-discipline",
+      title: t("selfDisciplineTitle"),
+      category: t("selfManagementCategory"),
+      why: t("selfDisciplineWhyDesc"),
+      statements: [
+        t("selfDiscipline1"),
+        t("selfDiscipline2"),
+        t("selfDiscipline3"),
+        t("selfDiscipline4"),
+        t("selfDiscipline5"),
+        t("selfDiscipline6"),
+        t("selfDiscipline7"),
+        t("selfDiscipline8"),
+        t("selfDiscipline9"),
+        t("selfDiscipline10"),
+      ],
+      results: {
+        rarely: {
+          title: "✨ " + t("selfDisciplineRarelyTitle"),
+          description: t("selfDisciplineRarelyDesc"),
+          note: t("selfDisciplineRarelyNote"),
+        },
+        sometimes: {
+          title: "🌤️ " + t("selfDisciplineSometimesTitle"),
+          description: t("selfDisciplineSometimesDesc"),
+          note: t("selfDisciplineSometimesNote"),
+        },
+        often: {
+          title: "🌧️ " + t("selfDisciplineOftenTitle"),
+          description: t("selfDisciplineOftenDesc"),
+          note: t("selfDisciplineOftenNote"),
+        }
+      }
+    },
+    {
+      id: "emotional-regulation",
+      title: t("emotionalRegulationTitle"),
+      category: t("selfManagementCategory"),
+      why: t("emotionalRegulationWhyDesc"),
+      statements: [
+        t("emotionalRegulation1"),
+        t("emotionalRegulation2"),
+        t("emotionalRegulation3"),
+        t("emotionalRegulation4"),
+        t("emotionalRegulation5"),
+        t("emotionalRegulation6"),
+        t("emotionalRegulation7"),
+        t("emotionalRegulation8"),
+        t("emotionalRegulation9"),
+        t("emotionalRegulation10"),
+      ],
+      results: {
+        rarely: {
+          title: "✨ " + t("emotionalRegulationRarelyTitle"),
+          description: t("emotionalRegulationRarelyDesc"),
+          note: t("emotionalRegulationRarelyNote"),
+        },
+        sometimes: {
+          title: "🌤️ " + t("emotionalRegulationSometimesTitle"),
+          description: t("emotionalRegulationSometimesDesc"),
+          note: t("emotionalRegulationSometimesNote"),
+        },
+        often: {
+          title: "🌧️ " + t("emotionalRegulationOftenTitle"),
+          description: t("emotionalRegulationOftenDesc"),
+          note: t("emotionalRegulationOftenNote"),
+        }
+      }
+    },
+    {
+      id: "purpose-direction",
+      title: t("purposeDirectionTitle"),
+      category: t("selfManagementCategory"),
+      why: t("purposeDirectionWhyDesc"),
+      statements: [
+        t("purposeDirection1"),
+        t("purposeDirection2"),
+        t("purposeDirection3"),
+        t("purposeDirection4"),
+        t("purposeDirection5"),
+        t("purposeDirection6"),
+        t("purposeDirection7"),
+        t("purposeDirection8"),
+        t("purposeDirection9"),
+        t("purposeDirection10"),
+      ],
+      results: {
+        rarely: {
+          title: "✨ " + t("purposeDirectionRarelyTitle"),
+          description: t("purposeDirectionRarelyDesc"),
+          note: t("purposeDirectionRarelyNote"),
+        },
+        sometimes: {
+          title: "🌤️ " + t("purposeDirectionSometimesTitle"),
+          description: t("purposeDirectionSometimesDesc"),
+          note: t("purposeDirectionSometimesNote"),
+        },
+        often: {
+          title: "🌧️ " + t("purposeDirectionOftenTitle"),
+          description: t("purposeDirectionOftenDesc"),
+          note: t("purposeDirectionOftenNote"),
+        }
+      }
+    }
+  ]
+
+  const allTests = getTests()
+  const currentTest = selectedTestId ? allTests.find(t => t.id === selectedTestId) : null
   const statements = currentTest?.statements || []
 
   const handleResponse = (index: number, response: string) => {
@@ -666,33 +1233,33 @@ export default function WellBeing() {
         <Header />
         <main className="wellbeing-container">
           <section className="wellbeing-hero">
-            <h1>Mental Well-Being Self-Reflection</h1>
-            <p className="subtitle">Psychology-Informed | Reflective | Non-Clinical</p>
-            <p className="tagline">Because learning works best when the mind feels supported, not pressured.</p>
+            <h1>{t("mentalWellbeingTitle")}</h1>
+            <p className="subtitle">{t("reflectionSubtitle")}</p>
+            <p className="tagline">{t("supportedNotPressured")}</p>
           </section>
 
           <section className="wellbeing-intro">
             <div className="intro-content">
               <p className="intro-text">
-                These reflections are designed using principles from psychology related to stress, learning and emotional regulation, without applying diagnostic labels.
+                {t("reflectionDesigned")}
               </p>
               <div className="disclaimer-box">
-                <h3>⚠️ Important</h3>
-                <p>These are not diagnoses, counselling sessions or treatment. They are psychology-informed awareness tools intended to support reflection, balance and responsible learning.</p>
+                <h3>{t("important")}</h3>
+                <p>{t("notDiagnosis")}</p>
               </div>
             </div>
           </section>
 
           <section className="tests-selection">
-            <h2>Choose a Reflection to Explore</h2>
-            <p className="selection-intro">Select the area you would like to reflect on. Each reflection takes about 5-10 minutes.</p>
+            <h2>{t("chooseReflection")}</h2>
+            <p className="selection-intro">{t("selectionIntro")}</p>
             
             <div className="categories-grid">
-              {Array.from(new Set(tests.map(t => t.category))).map(category => (
+              {Array.from(new Set(allTests.map(test => test.category))).map(category => (
                 <div key={category} className="category-group">
                   <h3 className="category-title">{category}</h3>
                   <div className="tests-list">
-                    {tests.filter(t => t.category === category).map(test => (
+                    {allTests.filter(test => test.category === category).map(test => (
                       <button
                         key={test.id}
                         className="test-card"
@@ -700,7 +1267,7 @@ export default function WellBeing() {
                       >
                         <h4>{test.title}</h4>
                         <p className="test-description">{test.why.substring(0, 100)}...</p>
-                        <span className="test-cta">Start Reflection →</span>
+                        <span className="test-cta">{t("startReflection")}</span>
                       </button>
                     ))}
                   </div>
@@ -724,7 +1291,7 @@ export default function WellBeing() {
           <>
             <section className="wellbeing-hero">
               <div className="test-header-content">
-                <button className="BTT" onClick={resetToSelection}>Back</button>
+                <button className="BTT" onClick={resetToSelection}>{t("back")}</button>
                 <h1>{currentTest?.title}</h1>
                 <p className="subtitle">{currentTest?.category}</p>
               </div>
@@ -733,21 +1300,21 @@ export default function WellBeing() {
             <section className="wellbeing-intro">
               <div className="intro-content">
                 <div className="test-why-box">
-                  <h3>Why This Self-Reflection Exists</h3>
+                  <h3>{t("whyThisReflection")}</h3>
                   <p>{currentTest?.why}</p>
                 </div>
                 <div className="disclaimer-box">
-                  <h3>⚠️ Important</h3>
-                  <p>This self-reflection does not provide diagnosis, counselling or treatment. It is a psychology-informed awareness tool intended to support reflection and responsible learning.</p>
+                  <h3>{t("important")}</h3>
+                  <p>{t("notDiagnosis")}</p>
                 </div>
               </div>
             </section>
 
             <section className="wellbeing-reflection">
               <div className="reflection-header">
-                <h2>Self-Reflection Statements</h2>
+                <h2>{t("selfReflectionStatements")}</h2>
                 <p className="instruction">
-                  Choose the option that feels most true overall. There is no need to overthink. There are no right or wrong answers. Respond based on your recent experience.
+                  {t("instruction")}
                 </p>
               </div>
 
@@ -762,19 +1329,19 @@ export default function WellBeing() {
                           className={`response-btn ${responses[index] === "often" ? "active often" : ""}`}
                           onClick={() => handleResponse(index, "often")}
                         >
-                          Often
+                          {t("often")}
                         </button>
                         <button
                           className={`response-btn ${responses[index] === "sometimes" ? "active sometimes" : ""}`}
                           onClick={() => handleResponse(index, "sometimes")}
                         >
-                          Sometimes
+                          {t("sometimes")}
                         </button>
                         <button
                           className={`response-btn ${responses[index] === "rarely" ? "active rarely" : ""}`}
                           onClick={() => handleResponse(index, "rarely")}
                         >
-                          Rarely
+                          {t("rarely")}
                         </button>
                       </div>
                     </div>
@@ -789,8 +1356,8 @@ export default function WellBeing() {
                   disabled={Object.keys(responses).length !== statements.length}
                 >
                   {Object.keys(responses).length === statements.length 
-                    ? "See My Reflection" 
-                    : `Complete all statements (${Object.keys(responses).length}/${statements.length})`}
+                    ? t("seeReflection") 
+                    : `${t("completeStatements")} (${Object.keys(responses).length}/${statements.length})`}
                 </button>
               </div>
             </section>
@@ -798,7 +1365,7 @@ export default function WellBeing() {
         ) : (
           <>
             <section className="wellbeing-results">
-              <h2>Understanding Your Responses</h2>
+              <h2>{t("understandingResponses")}</h2>
               
               {getRecommendation() === "rarely" && (
                 <div className="result-card rarely">
@@ -826,64 +1393,64 @@ export default function WellBeing() {
             </section>
 
             <section className="wellbeing-support">
-              <h2>When Seeking Support Can Be Helpful</h2>
-              <p className="support-intro">You may consider reaching out if you experience any of these:</p>
+              <h2>{t("whenSeeking")}</h2>
+              <p className="support-intro">{t("supportIntro")}</p>
               <div className="support-indicators">
                 <div className="indicator">
                   <span className="indicator-icon">✓</span>
-                  <p>Feelings feel constant rather than temporary</p>
+                  <p>{t("feelingsConstant")}</p>
                 </div>
                 <div className="indicator">
                   <span className="indicator-icon">✓</span>
-                  <p>Stress affects daily functioning or well-being</p>
+                  <p>{t("stressAffects")}</p>
                 </div>
                 <div className="indicator">
                   <span className="indicator-icon">✓</span>
-                  <p>You feel emotionally exhausted most days</p>
+                  <p>{t("emotionallyExhausted")}</p>
                 </div>
                 <div className="indicator">
                   <span className="indicator-icon">✓</span>
-                  <p>You feel stuck or unable to cope on your own</p>
+                  <p>{t("feelStuck")}</p>
                 </div>
               </div>
-              <p className="support-note">Seeking support is a sign of awareness and self-respect-not weakness.</p>
+              <p className="support-note">{t("supportNote")}</p>
             </section>
 
             <section className="wellbeing-boundaries">
-              <h2>Important Boundaries</h2>
+              <h2>{t("importantBoundaries")}</h2>
               <div className="boundaries-content">
                 <p>
-                  <strong>Ishan Learning does not provide counselling, therapy or clinical mental health services.</strong> This self-reflection is intended for awareness and learning support only.
+                  <strong>{t("ishanDoesNotProvide")}</strong> {t("reflectionOnlyForAwareness")}
                 </p>
-                <p>If emotional distress feels intense or long-lasting, students are encouraged to seek support from:</p>
+                <p>{t("ifEmotional")}</p>
                 <div className="support-resources">
                   <div className="resource">
                     <span className="resource-icon">👨‍👩‍👧</span>
-                    <p>Parents or trusted family members</p>
+                    <p>{t("parents")}</p>
                   </div>
                   <div className="resource">
                     <span className="resource-icon">🏫</span>
-                    <p>Teachers or school counsellors</p>
+                    <p>{t("teachersSchoolCounselors")}</p>
                   </div>
                   <div className="resource">
                     <span className="resource-icon">🏥</span>
-                    <p>Qualified mental health professionals</p>
+                    <p>{t("qualifiedMental")}</p>
                   </div>
                   <div className="resource">
                     <span className="resource-icon">📞</span>
-                    <p>Appropriate local support services or helplines</p>
+                    <p>{t("appropriateSupport")}</p>
                   </div>
                 </div>
               </div>
             </section>
 
             <section className="wellbeing-closing">
-              <h2>A Closing Thought</h2>
+              <h2>{t("closingThought")}</h2>
               <p className="closing-main">
-                Your mental and emotional experiences shape how you learn, grow and persist.
+                {t("yourMental")}
               </p>
               <p className="closing-sub">
-                Taking time to reflect is not a distraction from learning-it is part of learning responsibly.
+                {t("takingTime")}
               </p>
             </section>
 
@@ -896,13 +1463,13 @@ export default function WellBeing() {
                   window.scrollTo({ top: 0, behavior: "smooth" })
                 }}
               >
-                Retake This Reflection
+                {t("retakeReflection")}
               </button>
               <button 
                 className="explore-btn"
                 onClick={resetToSelection}
               >
-                Explore Other Reflections
+                {t("exploreOther")}
               </button>
             </div>
           </>

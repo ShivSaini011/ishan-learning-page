@@ -1,6 +1,10 @@
+"use client"
+
 import "@/styles/footer.css"
+import { useLanguage } from "@/components/language-context"
 
 export default function Footer() {
+  const { t } = useLanguage()
   return (
     <footer className="footer">
       <div className="footer-container">
@@ -10,48 +14,48 @@ export default function Footer() {
             {/* <h4>Ishan Learning</h4> */}
           </div>
           <p>
-           A learning support platform for clear and stress-free learning.
+           {t("footerTagline")}
           </p>
         </div>
 
         <div className="footer-section">
-          <h4>EXPLORE</h4>
+          <h4>{t("footerExplore")}</h4>
           <ul>
             <li>
-              <a href="\#classes">Upper Primary Classes 6 - 8</a>
+              <a href="\#classes">{t("footerClass6to8")}</a>
             </li>
             <li>
-              <a href="\#classes">High School Classes 9 - 10</a>
+              <a href="\#classes">{t("footerClass9to10")}</a>
             </li>
             <li>
-              <a href="\#classes">Intermediate Classes 11 - 12</a>
+              <a href="\#classes">{t("footerClass11to12")}</a>
             </li>
           </ul>
         </div>
 
         <div className="footer-section">
-          <h4>SUPPORT</h4>
+          <h4>{t("footerSupport")}</h4>
           <ul>
             <li>
-              <a href="/help" target="_blank">Help Center</a>
+              <a href="/help" target="_blank">{t("footerHelpCenter")}</a>
             </li>
             <li>
-              <a href="/faq">Frequently Asked Questions</a>
+              <a href="/faq">{t("footerFAQ")}</a>
             </li>
             <li>
-              <a href="/contact">Contact Us</a>
+              <a href="/contact">{t("footerContactUs")}</a>
             </li>
           </ul>
         </div>
 
         <div className="footer-section">
-          <h4>LEGAL</h4>
+          <h4>{t("footerLegal")}</h4>
           <ul>
             <li>
-              <a href="/privacy">Privacy Policy</a>
+              <a href="/privacy">{t("footerPrivacy")}</a>
             </li>
             <li>
-              <a href="/terms">Terms of Service</a>
+              <a href="/terms">{t("footerTerms")}</a>
             </li>
             {/* <li>
               <a href="#cookies">Cookie Settings</a>
@@ -61,12 +65,13 @@ export default function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <p>&copy; 2026 Ishan Learning. All rights reserved.</p>
+        <p>{t("footerCopyright")}</p>
         <div className="footer-socials">
           <a href="\fb" target="_blank"><img src="\fb.png" alt="facebook" /></a>
           <a href="\tw" target="_blank"><img src="\tw.png" alt="twitter" /></a>
           <a href="\ins" target="_blank"><img src="\ins.png" alt="instagrem" /></a>
           <a href="\tel" target="_blank"><img src="\tel.png" alt="telegram" /></a>
+          <a href="\in" target="_blank"><img src="\i.png" alt="linkedin" /></a>
           <a href="\w" target="_blank"><img src="\w.png" alt="whatsapp" /></a>
           <a href="\yt" target="_blank"><img src="\yt.png" alt="youtube" /></a>
         </div>

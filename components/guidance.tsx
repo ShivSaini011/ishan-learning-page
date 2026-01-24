@@ -1,28 +1,31 @@
 import Link from "next/link"
+import { useLanguage } from "@/components/language-context"
 import "@/styles/guidance.css"
 
 export default function Guidance() {
+  const { t } = useLanguage()
+  
   const cards = [
     {
       icon: "🧘",
-      title: "Exam Stress Support",
-      description: "Techniques to manage exam anxiety and boost confidence.",
-      link: "Read Guide",
+      title: t("examStressSupport"),
+      description: t("examStressDesc"),
+      link: t("readGuide"),
       href: "/exam-stress"
     },
     {
       icon: "🎯",
-      title: "Career Awareness",
-      description: "Discover your passion. Navigate your way to success.",
-      link: "Explore Careers",
+      title: t("careerAwareness"),
+      description: t("careerDesc"),
+      link: t("exploreCareers"),
       href: "/careers"
     },
     {
       icon: "❤️",
-      title: "Mental Well-Being ",
-      title1:"Self-Reflection",
-      description: "Because learning works best when the mind feels supported, not pressured.",
-      link: "Start Check",
+      title: t("mentalWellbeing"),
+      title1: t("selfReflection"),
+      description: t("wellbeingDesc"),
+      link: t("startCheck"),
       href: "/wellbeing"
     },
   ]
@@ -31,8 +34,8 @@ export default function Guidance() {
     <section className="guidance" id="guidance">
       <div className="guidance-container">
         <div className="guidance-header">
-          <h2>Guidance & Well-Being Corner</h2>
-          <p>Because a calm mind learns better. Access curated health resources designed for students.</p>
+          <h2>{t("guidanceWellbeingCorner")}</h2>
+          <p>{t("calmMindLearns")}</p>
         </div>
 
         <div className="guidance-cards">
@@ -55,7 +58,7 @@ export default function Guidance() {
           ))}
         </div>
         <a className="request-a-session" href="/reqest" target="_blank"> 
-          <button className="session-btn">Request a Counseling Session</button>
+          <button className="session-btn">{t("requestCounseling")}</button>
         </a>
       <Link href="\tdy" className="home-button1" target="_blank">
       {/* <span className="home-icon-txt">Today's Class Schedule </span> */}

@@ -3,31 +3,34 @@
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import HomeButton from "@/components/home-button"
+import { useLanguage } from "@/components/language-context"
 import "@/styles/about.css"
 
 export default function AboutUs() {
+  const { t } = useLanguage()
+  
   return (
     <div className="app">
       <Header />
       
       <main className="about-container">
         <section className="about-hero">
-          <h1>About Ishan Learning</h1>
-          <p>Clarity, Confidence and Supportive Learning</p>
+          <h1>{t("aboutPageTitle")}</h1>
+          <p>{t("clarityConfidenceSupport")}</p>
         </section>
 
         {/* Ishan Learning */}
         <section className="about-section">
           <div className="section-content">
-            <h2>Ishan Learning</h2>
+            <h2>{t("ishanLearning")}</h2>
             <p>
-              Ishan Learning is a learning support platform designed to work alongside the school education system, not to replace it.
+              {t("ishanDesc1")}
             </p>
             <p>
-              Schools play a central role in shaping a student's academic foundation. However, due to limited classroom time, syllabus pressure and large class sizes, many students are unable to fully understand what is taught in school. Over time, doubts remain unresolved and learning begins to feel stressful rather than meaningful.
+              {t("ishanDesc2")}
             </p>
             <p>
-              <strong>Ishan Learning exists to support students in understanding school subjects clearly, strengthening their conceptual foundations and studying with confidence in a calm and supportive learning environment.</strong>
+              <strong>{t("ishanDesc3")}</strong>
             </p>
           </div>
         </section>
@@ -35,17 +38,17 @@ export default function AboutUs() {
         {/* Core Belief */}
         <section className="about-section highlight-section">
           <div className="section-content">
-            <h2>Our Core Belief</h2>
+            <h2>{t("coreBeliefs")}</h2>
             <div className="belief-box">
-              <h3>Education is a right, not a privilege.</h3>
-              <p>We believe every student deserves:</p>
+              <h3>{t("educationRight")}</h3>
+              <p>{t("everyStudentDeserves")}</p>
               <ul className="belief-list">
-                <li>✓ Clear explanations</li>
-                <li>✓ Patient and respectful guidance</li>
-                <li>✓ A supportive learning environment free from fear and unnecessary pressure</li>
+                <li>{t("clearExplanations")}</li>
+                <li>{t("patientGuidance")}</li>
+                <li>{t("supportiveEnvironment")}</li>
               </ul>
               <p className="belief-note">
-                While pressure and fear may push short-term performance, clarity, confidence and emotional safety support long-term learning and growth.
+                {t("pressureVsFear")}
               </p>
             </div>
           </div>
@@ -54,19 +57,19 @@ export default function AboutUs() {
         {/* Why Created */}
         <section className="about-section">
           <div className="section-content">
-            <h2>Why Ishan Learning Was Created</h2>
+            <h2>{t("whyCreated")}</h2>
             <p>
-              While observing students and common classroom learning patterns, one concern consistently stood out:
+              {t("whyCreatedIntro")}
             </p>
-            <p><strong>Many students are capable and genuinely interested in learning, yet struggle because:</strong></p>
+            <p><strong>{t("manyStudentsCapable")}</strong></p>
             <ul className="reason-list">
-              <li>Lessons move too quickly</li>
-              <li>Doubts remain unanswered</li>
-              <li>Exams become more important than understanding</li>
-              <li>Academic pressure continues to increase</li>
+              <li>{t("lessonsMoveFast")}</li>
+              <li>{t("doubtsUnanswered")}</li>
+              <li>{t("examsMoreImportant")}</li>
+              <li>{t("pressureIncreases")}</li>
             </ul>
             <p>
-              Ishan Learning was created as a learning support system to help students revisit concepts, clear doubts and build confidence-without fear, comparison or unnecessary stress.
+              {t("createdAsSupport")}
             </p>
           </div>
         </section>
@@ -74,30 +77,30 @@ export default function AboutUs() {
         {/* Learning & Mental Well-Being */}
         <section className="about-section highlight-section">
           <div className="section-content">
-            <h2>Learning and Mental Well-Being</h2>
+            <h2>{t("learningWellbeing")}</h2>
             <p>
-              We believe meaningful learning is closely connected to mental calmness and emotional safety.
+              {t("meaningfulLearning")}
             </p>
             <div className="wellbeing-grid">
               <div className="wellbeing-item">
-                <h4>No Labels or Judgment</h4>
-                <p>Students are not labeled or judged</p>
+                <h4>{t("noLabels")}</h4>
+                <p>{t("noLabelsDesc")}</p>
               </div>
               <div className="wellbeing-item">
-                <h4>Respected Pace</h4>
-                <p>Learning pace is respected</p>
+                <h4>{t("respectedPace")}</h4>
+                <p>{t("respectedPaceDesc")}</p>
               </div>
               <div className="wellbeing-item">
-                <h4>Fear-Free Learning</h4>
-                <p>Fear-based motivation is avoided</p>
+                <h4>{t("fearFree")}</h4>
+                <p>{t("fearFreeDesc")}</p>
               </div>
               <div className="wellbeing-item">
-                <h4>Clarity First</h4>
-                <p>Clarity and reassurance are prioritised</p>
+                <h4>{t("clarityFirst")}</h4>
+                <p>{t("clarityFirstDesc")}</p>
               </div>
             </div>
             <p className="note">
-              <em>This platform does not provide clinical, counselling or therapeutic services. However, learning is guided with psychological sensitivity, recognising attention span, learning pace and emotional readiness.</em>
+              <em>{t("clinicalNote")}</em>
             </p>
           </div>
         </section>
@@ -106,23 +109,23 @@ export default function AboutUs() {
         <section className="about-section">
           <div className="vision-mission-grid">
             <div className="vision-card">
-              <h3>Our Vision</h3>
-              <p>To build a supportive learning ecosystem that works in coordination with schools and helps students:</p>
+              <h3>{t("ourVision")}</h3>
+              <p>{t("visionDesc")}</p>
               <ul>
-                <li>Develop strong conceptual understanding</li>
-                <li>Reduce academic stress</li>
-                <li>Maintain balance between learning and well-being</li>
-                <li>Grow into confident and independent learners</li>
+                <li>{t("visionPoint1")}</li>
+                <li>{t("visionPoint2")}</li>
+                <li>{t("visionPoint3")}</li>
+                <li>{t("visionPoint4")}</li>
               </ul>
             </div>
             <div className="mission-card">
-              <h3>Our Mission</h3>
-              <p>To simplify school-level concepts through clear and structured teaching:</p>
+              <h3>{t("ourMission")}</h3>
+              <p>{t("missionDesc")}</p>
               <ul>
-                <li>Reinforce classroom learning rather than compete with schools</li>
-                <li>Encourage understanding instead of rote memorisation</li>
-                <li>Apply psychology-informed principles related to attention, understanding and learning pace</li>
-                <li>Support students with responsibility, care and academic integrity</li>
+                <li>{t("missionPoint1")}</li>
+                <li>{t("missionPoint2")}</li>
+                <li>{t("missionPoint3")}</li>
+                <li>{t("missionPoint4")}</li>
               </ul>
             </div>
           </div>
@@ -131,23 +134,23 @@ export default function AboutUs() {
         {/* What Makes Different */}
         <section className="about-section">
           <div className="section-content">
-            <h2>What Makes Ishan Learning Different</h2>
+            <h2>{t("whatMakesDifferent")}</h2>
             <div className="difference-grid">
               <div className="difference-card">
-                <h4>School-Supportive Approach</h4>
-                <p>We strengthen what students learn in school rather than replacing formal education.</p>
+                <h4>{t("schoolSupport")}</h4>
+                <p>{t("schoolSupportDesc")}</p>
               </div>
               <div className="difference-card">
-                <h4>Focus on Conceptual Clarity</h4>
-                <p>Priority is given to understanding, revision and doubt resolution.</p>
+                <h4>{t("conceptualClarity")}</h4>
+                <p>{t("conceptualClarityDesc")}</p>
               </div>
               <div className="difference-card">
-                <h4>Psychology-Informed Learning</h4>
-                <p>Teaching is guided by attention span, learning pace and emotional comfort.</p>
+                <h4>{t("psychologyInformed")}</h4>
+                <p>{t("psychologyInformedDesc")}</p>
               </div>
               <div className="difference-card">
-                <h4>Student-Centred Guidance</h4>
-                <p>Students are supported without comparison, fear or pressure.</p>
+                <h4>{t("studentCentred")}</h4>
+                <p>{t("studentCentredDesc")}</p>
               </div>
             </div>
           </div>
@@ -156,13 +159,13 @@ export default function AboutUs() {
         {/* Who We Serve */}
         <section className="about-section highlight-section">
           <div className="section-content">
-            <h2>Who We Serve</h2>
-            <p>Ishan Learning supports:</p>
+            <h2>{t("whoServe")}</h2>
+            <p>{t("whoServeIntro")}</p>
             <ul className="serve-list">
-              <li>School students seeking clearer understanding of concepts</li>
-              <li>Learners who need reinforcement beyond classrooms</li>
-              <li>Students experiencing academic pressure or confusion</li>
-              <li>Families looking for balanced and stress-aware learning support</li>
+              <li>{t("servePoint1")}</li>
+              <li>{t("servePoint2")}</li>
+              <li>{t("servePoint3")}</li>
+              <li>{t("servePoint4")}</li>
             </ul>
           </div>
         </section>
@@ -170,24 +173,24 @@ export default function AboutUs() {
         {/* Founder */}
         <section className="about-section founder-section">
           <div className="section-content">
-            <h2>Founder</h2>
+            <h2>{t("founder")}</h2>
             <div className="founder-card">
-              <h3>Abhishek Saini</h3>
-              <p className="founder-title">Founder, Ishan Learning</p>
+              <h3>{t("founderName")}</h3>
+              <p className="founder-title">{t("founderTitle")}</p>
               <p>
-                Ishan Learning was created to support school students in understanding their subjects clearly and studying with confidence.
+                {t("founderDesc1")}
               </p>
               <p>
-                The platform is guided by Abhishek Saini, who holds Master's degrees in Psychology and Sociology. He is a Gold Medalist in Psychology, has qualified UGC-NET in Psychology and UGC-NET with JRF in Sociology and is currently pursuing a PhD in Sociology.
+                {t("founderDesc2")}
               </p>
               <p>
-                Drawing from his academic training, Abhishek focuses on clarity-based learning, balanced academic expectations and responsible student guidance.
+                {t("founderDesc3")}
               </p>
               <div className="founder-quote">
                 <blockquote>
-                  "When students are given conceptual clarity and patience, learning becomes meaningful rather than stressful."
+                  "{t("founderQuote")}"
                 </blockquote>
-                <p>— Abhishek Saini</p>
+                <p>— {t("founderName")}</p>
               </div>
             </div>
           </div>
@@ -196,12 +199,12 @@ export default function AboutUs() {
         {/* Role & Responsibility */}
         <section className="about-section highlight-section">
           <div className="section-content">
-            <h2>Our Role & Responsibility</h2>
+            <h2>{t("roleResponsibility")}</h2>
             <div className="responsibility-box">
-              <p><strong>Ishan Learning is an academic learning support platform.</strong></p>
-              <p>We do not replace schools, formal education systems or clinical or therapeutic services.</p>
+              <p><strong>{t("academicPlatform")}</strong></p>
+              <p>{t("doesNotReplace")}</p>
               <p>
-                Our role is to support learning, reinforce understanding and promote a healthy and balanced academic approach.
+                {t("roleSupport")}
               </p>
             </div>
           </div>
@@ -210,17 +213,17 @@ export default function AboutUs() {
         {/* Join Journey */}
         <section className="about-section cta-section">
           <div className="section-content">
-            <h2>Join Our Learning Journey</h2>
+            <h2>{t("joinJourney")}</h2>
             <p>
-              We believe schools build the foundation and supportive learning helps strengthen it.
+              {t("schoolsFoundation")}
             </p>
             <p>
-              At Ishan Learning, we invite students and parents to be part of a learning journey based on clarity, balance and understanding.
+              {t("joinInvite")}
             </p>
             <div className="journey-tagline">
-              <p><strong>Learn clearly.</strong></p>
-              <p><strong>Strengthen foundations.</strong></p>
-              <p><strong>Grow with confidence.</strong></p>
+              <p><strong>{t("learnClearly")}</strong></p>
+              <p><strong>{t("strengthenFoundations")}</strong></p>
+              <p><strong>{t("growConfidence")}</strong></p>
             </div>
           </div>
         </section>

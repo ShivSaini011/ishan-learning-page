@@ -3,10 +3,12 @@
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import HomeButton from "@/components/home-button"
+import { useLanguage } from "@/components/language-context"
 import "@/styles/teachers.css"
 import { useRef, useState } from "react"
 
 export default function Teachers() {
+  const { t } = useLanguage()
   const teachers = [
     {
       id: 1,
@@ -128,12 +130,12 @@ export default function Teachers() {
 
         <section className="teachers-intro teachers-hero">
           <div className="intro-content">
-            <h2>About Our Teaching Team</h2>
+            <h2>{t("aboutTeachingTeam")}</h2>
             <p>
-              At Ishan Learning, we believe that great teachers are the backbone of meaningful education. Our team consists of experienced educators who are passionate about helping students understand concepts clearly and develop a genuine love for learning.
+              {t("greatTeachersBackbone")}
             </p>
             <p>
-              Each teacher brings unique expertise and a student-centered approach to ensure that every learner feels supported, valued and confident in their academic journey.
+              {t("uniqueExpertise")}
             </p>
           </div>
         </section>
@@ -182,45 +184,45 @@ export default function Teachers() {
 
         {/* //add two buttons here one is View your teacer and meet your teacher */}
         <div className="teacher-buttons">
-          <a href="/your-teacher" className="teacher-btn" target="_blank">View Your Teacher</a>
-          <a href="/meet-teacher" className="teacher-btn secondary" target="_blank">Meet Your Teacher</a>
+          <a href="/your-teacher" className="teacher-btn" target="_blank">{t("viewYourTeacher")}</a>
+          <a href="/meet-teacher" className="teacher-btn secondary" target="_blank">{t("meetYourTeacher")}</a>
         </div>
 
         {/* Meet Your Teacher Modal */}
 
         <section className="teaching-philosophy">
-          <h2>Our Teaching Philosophy</h2>
+          <h2>{t("ourTeachingPhilosophy")}</h2>
           <div className="philosophy-grid">
             <div className="philosophy-card">
               <div className="philosophy-icon">🎯</div>
-              <h3>Clarity First</h3>
-              <p>We prioritize clear explanations over rote memorization, ensuring students truly understand concepts.</p>
+              <h3>{t("clarityFirst")}</h3>
+              <p>{t("clarityRote")}</p>
             </div>
             
             <div className="philosophy-card">
               <div className="philosophy-icon">🤝</div>
-              <h3>Student-Centered</h3>
-              <p>Every student is unique. We adapt our teaching methods to individual learning styles and pace.</p>
+              <h3>{t("studentCentered")}</h3>
+              <p>{t("studentCenteredDesc")}</p>
             </div>
             
             <div className="philosophy-card">
               <div className="philosophy-icon">💡</div>
-              <h3>Conceptual Learning</h3>
-              <p>We focus on building strong conceptual foundations that students can apply across different contexts.</p>
+              <h3>{t("conceptualLearning")}</h3>
+              <p>{t("conceptualLearningDesc")}</p>
             </div>
             
             <div className="philosophy-card">
               <div className="philosophy-icon">❤️</div>
-              <h3>Emotional Safety</h3>
-              <p>A fear-free, supportive environment where students feel confident asking questions and learning.</p>
+              <h3>{t("emotionalSafety")}</h3>
+              <p>{t("emotionalSafetyDesc")}</p>
             </div>
           </div>
         </section>
         
         <section className="teacher-cta">
-          <h2>Ready to Learn?</h2>
-          <p>Start your learning journey with our experienced teachers</p>
-          <a href="/#classes" className="cta-button">Explore Classes</a>
+          <h2>{t("readyToLearn")}</h2>
+          <p>{t("startYourJourney")}</p>
+          <a href="/#classes" className="cta-button">{t("exploreClasses")}</a>
         </section>
       </main>
 

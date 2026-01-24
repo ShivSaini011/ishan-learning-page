@@ -1,43 +1,45 @@
 import "@/styles/why-choose.css"
+import { useLanguage } from "@/components/language-context"
 
 export default function WhyChoose() {
+  const { t } = useLanguage()
+  
   return (
     <section className="why-choose">
       <div className="why-choose-container">
         <div className="why-choose-content">
-          <h2>Why Indian Students Choose Ishan</h2>
+          <h2>{t("whyChooseHeading")}</h2>
           <p>
-            We understand the unique pressures of the Indian education system. Our approach is designed to produce
-            results while maintaining peace of mind.
+            {t("whyChooseDesc")}
           </p>
 
           <div className="features-list">
             <div className="feature-item">
               <input type="checkbox" checked readOnly />
-              <span>Interactive Video Lessons</span>
-              <p>Engaging content delivered by expert educators.</p>
+              <span>{t("interactiveVideos")}</span>
+              <p>{t("interactiveDesc")}</p>
             </div>
             <div className="feature-item">
               <input type="checkbox" checked readOnly />
-              <span>NCERT Integrated Notes</span>
-              <p>Comprehensive notes aligned with NCERT textbooks.</p>
+              <span>{t("ncertNotes")}</span>
+              <p>{t("ncertDesc")}</p>
             </div>
             <div className="feature-item">
               <input type="checkbox" checked readOnly />
-              <span>Guidance and Mental Wellbeing</span>
-              <p>Support that helps you stay confident, focused and consistent.</p>
+              <span>{t("guidanceWellbeing")}</span>
+              <p>{t("guidanceDesc")}</p>
             </div>
           </div>
         </div>
 
         <div className="why-choose-image">
           <div className="query-form-container">
-            <h2 className="qrtxt">Have Questions?</h2>
+            <h2 className="qrtxt">{t("haveQuestions")}</h2>
             <img className="whyimg" src="/qr.png" alt="Query Illustration" width={380} height={380} />
               <div className="query-instructions">
-              <h2  className="qrtxt">Submit Your Query....</h2>
+              <h2  className="qrtxt">{t("submitYourQuery")}</h2>
               <a href="\submit"  target="_blank">
-              <button className="submit-query-btn">Submit</button>
+              <button className="submit-query-btn">{t("submitBtn")}</button>
               </a>
               </div>
           </div>

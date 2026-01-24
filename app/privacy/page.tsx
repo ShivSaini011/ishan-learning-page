@@ -1,180 +1,165 @@
+"use client";
+
 import "@/styles/privacy.css";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import HomeButton from "@/components/home-button";
+import { useLanguage } from "@/components/language-context";
 
 export default function PrivacyPolicy() {
+  const { t } = useLanguage()
+  
   return (
     <div>
       <Header />
       <div className="privacy-container">
         <div className="privacy-content">
-          <h1>Privacy Policy</h1>
-          <p className="effective-date">Effective Date: [dd/mm/yyyy]</p>
+          <h1>{t("privacyPolicy")}</h1>
+          <p className="effective-date">{t("effectiveDate")} [dd/mm/yyyy]</p>
 
           <p className="intro">
-            Ishan Learning respects the privacy of all visitors and users. This
-            website is designed to share educational resources and academic
-            guidance. We are committed to transparency and responsible handling
-            of limited information that users may voluntarily share.
+            {t("respects")}
           </p>
 
           <section>
-            <h2>1. Access to Learning Content</h2>
+            <h2>{t("accessContent")}</h2>
             <ul>
               <li>
-                Users can access learning content without login or registration
+                {t("canAccess")}
               </li>
-              <li>No account creation is required</li>
+              <li>{t("noAccount")}</li>
               <li>
-                Learning materials are shared through:
+                {t("materials")}
                 <ul>
-                  <li>YouTube playlist links</li>
-                  <li>PDF resources</li>
+                  <li>{t("youtube")}</li>
+                  <li>{t("pdf")}</li>
                 </ul>
               </li>
               <li>
-                Ishan Learning does not store user profiles or learning history.
+                {t("notStore")}
               </li>
             </ul>
           </section>
 
           <section>
-            <h2>2. Information We Collect (Only Through Google Forms)</h2>
+            <h2>{t("infoCollect")}</h2>
             <p>
-              Personal information is collected only when users voluntarily
-              submit a query or request a guidance session through Google Forms
-              linked on this website.
+              {t("personalInfo")}
             </p>
-            <p>The information may include:</p>
+            <p>{t("mayInclude")}</p>
             <ul>
-              <li>Name</li>
-              <li>Email address or contact number</li>
-              <li>Class or academic details</li>
-              <li>Query or request message</li>
+              <li>{t("name")}</li>
+              <li>{t("email")}</li>
+              <li>{t("classDetails")}</li>
+              <li>{t("queryMessage")}</li>
             </ul>
             <p>
-              This data is collected only for the purpose of responding to the
-              submitted request.
+              {t("collectedOnly")}
             </p>
           </section>
 
           <section>
-            <h2>3. How Submitted Information Is Used</h2>
-            <p>Information received through Google Forms is used solely to:</p>
+            <h2>{t("usedInfo")}</h2>
+            <p>{t("receivedUsed")}</p>
             <ul>
-              <li>Respond to user queries</li>
+              <li>{t("respondQueries")}</li>
               <li>
-                Provide academic guidance or session-related communication
+                {t("provideGuidance")}
               </li>
-              <li>Improve clarity and relevance of learning support</li>
+              <li>{t("improveClarity")}</li>
             </ul>
             <p>
-              We do not sell, rent or share this information with third
-              parties.
+              {t("noSell")}
             </p>
           </section>
 
           <section>
-            <h2>4. Data Storage and Handling</h2>
+            <h2>{t("storage")}</h2>
             <ul>
               <li>
-                Submitted information is stored securely within Google Forms
+                {t("storedSecurely")}
               </li>
               <li>
-                Ishan Learning does not maintain a separate cloud database or
-                user management system
+                {t("noMaintain")}
               </li>
               <li>
-                Data is accessed only when required for response or guidance
-                purposes
+                {t("accessedOnly")}
               </li>
             </ul>
           </section>
 
           <section>
-            <h2>5. Cookies and Tracking</h2>
+            <h2>{t("cookies")}</h2>
             <ul>
               <li>
-                Ishan Learning does not use cookies or tracking tools to monitor
-                individual users.
+                {t("doesNotUse")}
               </li>
               <li>
-                However, external platforms such as Google or YouTube may apply
-                their own cookies and data practices when accessed through
-                links.
+                {t("externalPlatforms")}
               </li>
             </ul>
           </section>
 
           <section>
-            <h2>6. Third-Party Platforms</h2>
-            <p>This website may link to:</p>
+            <h2>{t("thirdParty")}</h2>
+            <p>{t("mayLink")}</p>
             <ul>
-              <li>Google Forms</li>
-              <li>YouTube</li>
-              <li>Other educational resources</li>
+              <li>{t("googleForms")}</li>
+              <li>{t("youtube")}</li>
+              <li>{t("otherResources")}</li>
             </ul>
             <p>
-              Users are subject to the privacy policies of these third-party
-              platforms.
+              {t("subjectTo")}
             </p>
             <p>
-              Ishan Learning is not responsible for their data collection or
-              practices.
+              {t("notResponsible")}
             </p>
           </section>
 
           <section>
-            <h2>7. Children's Privacy</h2>
+            <h2>{t("childrenPrivacy")}</h2>
             <ul>
-              <li>Ishan Learning supports school-level education.</li>
-              <li>No personal data is collected automatically from children</li>
+              <li>{t("schoolLevel")}</li>
+              <li>{t("noAutomatic")}</li>
               <li>
-                Any information submitted through forms should be done with
-                parental or guardian awareness
+                {t("parentalAware")}
               </li>
             </ul>
           </section>
 
           <section>
-            <h2>8. No Clinical or Counselling Services</h2>
+            <h2>{t("clinicalServices")}</h2>
             <ul>
-              <li>Ishan Learning is an academic learning support platform.</li>
+              <li>{t("academicPlatform")}</li>
               <li>
-                We do not provide medical, psychological, counselling or
-                therapeutic services and no data is used for diagnosis or
-                treatment.
+                {t("noMedical")}
               </li>
             </ul>
           </section>
 
           <section>
-            <h2>9. Data Security</h2>
+            <h2>{t("dataSecurity")}</h2>
             <ul>
               <li>
-                We take reasonable care to handle submitted information
-                responsibly.
+                {t("reasonableCare")}
               </li>
               <li>
-                However, since data transmission occurs online, complete
-                security cannot be guaranteed.
+                {t("completeSecurity")}
               </li>
             </ul>
           </section>
 
           <section>
-            <h2>10. Changes to This Privacy Policy</h2>
+            <h2>{t("changes")}</h2>
             <p>
-              This Privacy Policy may be updated if website features or data
-              practices change.
+              {t("mayUpdated")}
             </p>
-            <p>Any updates will be reflected on this page.</p>
+            <p>{t("updatesReflected")}</p>
           </section>
 
           <section>
-            <h2>11. Contact Information</h2>
-            <p>For queries related to learning support or privacy:</p>
+            <h2>{t("contactInfo")}</h2>
+            <p>{t("queriesRelated")}</p>
             <ul className="contact-list">
               <li>📧 Email: [your email here]</li>
               <li>🌐 Website: Ishan Learning</li>

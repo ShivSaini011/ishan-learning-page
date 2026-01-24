@@ -4,44 +4,47 @@ import Image from "next/image";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import HomeButton from "@/components/home-button";
+import { useLanguage } from "@/components/language-context";
 import "@/styles/beyond.css";
 
 export default function Beyond() {
+  const { t } = useLanguage();
+  
   const classes = [
     {
       image: "/1.jpg",
-      name: "Real stories that spark dreams, build confidence and shape strong values.",
-      button: "Stories That Inspire",
+      name: t("storiesInspire"),
+      button: t("storiesInspireBtn"),
       link: "/abc",
     },
     {
       image: "/2.jpg",
-      name: "Ask questions, explore ideas and learn how to think, not just memorize.",
-      button: "Think & Explore",
+      name: t("thinkExplore"),
+      button: t("thinkExploreBtn"),
       link: "/abc",
     },
     {
       image: "/3.jpg",
-      name: "Break learning myths, discover the truth and grow with the right mindset.",
-      button: "Learning Myths & Facts",
+      name: t("learningMyths"),
+      button: t("learningMythsBtn"),
       link: "/abc",
     },
     {
       image: "/4.jpg",
-      name: "Fun, bite-sized challenges that turn learning into an exciting habit.",
-      button: "Mini Challenges",
+      name: t("miniChallenges"),
+      button: t("miniChallengesBtn"),
       link: "/abc",
     },
     {
       image: "/5.jpg",
-      name: "Create, express and share thoughts through art and imagination.",
-      button: "Art & Creative Expression",
+      name: t("artCreative"),
+      button: t("artCreativeBtn"),
       link: "/abc",
     },
     {
       image: "/6.jpg",
-      name: "Calm the mind, sharpen focus and build inner strength every day.",
-      button: "Yoga & Mind Discipline",
+      name: t("yogaMind"),
+      button: t("yogaMindBtn"),
       link: "/abc",
     },
   ];
@@ -52,8 +55,8 @@ export default function Beyond() {
 
       <main className="beyond-container">
         <section className="beyond-hero">
-          <h1>Beyond the Classroom</h1>
-          <p>Learning through experience, creativity and inspiration</p>
+          <h1>{t("beyondTheClassroom")}</h1>
+          <p>{t("learningExperienceCreativity")}</p>
         </section>
         <section className="beyond-content">
           {/* <p className="beyond-description">

@@ -10,8 +10,8 @@ export default function Hero() {
         <div className="hero-content">
           {/* <div className="hero-badge">✨ ENROLLMENT OPEN FOR 2024-25</div> */}
           <div className="hero-title">
-            <div className="hero-txt"> Class 6 to 12 - Learn Smart,</div>
-            <span className="highlight">Stay Confident</span>
+            <div className="hero-txt"> {t("class6to12")}</div>
+            <span className="highlight">{t("stayConfident")}</span>
           </div>
           <a href="https://www.youtube.com/@IshanLearning" className="youtubeican" title="YouTube" target="_blank">
             <div className="socialyt" title="YouTube" >
@@ -20,7 +20,7 @@ export default function Hero() {
             <div className="youtubetxt ">@IshanLearning</div>
           </a>
           {/* <SearchClass/> */}
-          <div className="education-right">Education is a right, not a privilege.</div>
+          <div className="education-right">{t("education_right")}</div>
         </div>
 
         <div className="hero-right-section">
@@ -50,10 +50,12 @@ export default function Hero() {
             <a href="#" className="social-icon" title="LinkedIn" target="_blank">
               <img src="/tele.png" alt="Instagram" width={54} height={54} />
             </a>
+            <a href="#" className="social-icon linkedin" title="YouTube" target="_blank">
+              <img src="/in.png" alt="LinkedIn" width={45} height={45} />
+            </a>
             <a href="#" className="social-icon1 whatsapp" title="YouTube" target="_blank">
               <img src="/what.png" alt="Instagram" width={45} height={45} />
             </a>
-    
           </div>
         </div>
       </div>
