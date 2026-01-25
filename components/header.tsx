@@ -10,6 +10,12 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const { t, language, setLanguage, theme, setTheme } = useLanguage()
 
+  const handleNavMouseLeave = () => {
+    if (window.innerWidth <= 768) {
+      setMobileMenuOpen(false)
+    }
+  }
+
   return (
     <header className="header">
       <div className="header-container">
@@ -21,7 +27,8 @@ export default function Header() {
           </div>
         </Link>
 
-        <nav className={`header-nav ${mobileMenuOpen ? "active" : ""}`}>
+        <nav className={`header-nav ${mobileMenuOpen ? "active" : ""}`} onMouseLeave={handleNavMouseLeave}>
+          <button className="nav-close" onClick={() => setMobileMenuOpen(false)}>✕</button>
           <a href="/">{t("home")}</a>
           <a href="/aboutus">{t("about")}</a>
           <a href="/#classes">{t("classes")}</a>

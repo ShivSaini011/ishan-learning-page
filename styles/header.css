@@ -211,7 +211,6 @@
   }
 
   .header-nav {
-    display: none;
     position: absolute;
     top: 60px;
     left: 0;
@@ -223,6 +222,11 @@
     padding: 20px;
     border-bottom: 1px solid var(--border-color);
     width: 100%;
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s ease, opacity 0.3s ease;
+    pointer-events: none;
   }
 
   :root.dark-mode .header-nav {
@@ -231,7 +235,31 @@
   }
 
   .header-nav.active {
-    display: flex;
+    margin-top: 30px;
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .nav-close {
+    display: block;
+    align-self: flex-end;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-dark);
+    padding: 0;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+  }
+
+  .nav-close:hover {
+    color: var(--purple);
+  }
+
+  :root.dark-mode .nav-close {
+    color: #e0e0e0;
   }
 
   .mobile-toggle {

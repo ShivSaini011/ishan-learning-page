@@ -86,7 +86,7 @@
 @media (max-width: 768px) {
   .privacy-container {
     padding: 0 15px;
-    margin: 20px auto;
+    /* margin: 20px auto; */
   }
 
   .privacy-content {

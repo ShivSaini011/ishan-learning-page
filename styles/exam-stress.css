@@ -1,7 +1,7 @@
 /* Exam Stress Support Page */
 
 .exam-stress-page {
-    margin-top: 80px;
+  padding-top: 100px;
   min-height: 100vh;
   background: linear-gradient(135deg, #f5f3ff 0%, #f0e9ff 100%);
 }
