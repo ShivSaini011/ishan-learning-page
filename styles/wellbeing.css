@@ -1,11 +1,14 @@
 /* Wellbeing Container */
 .wellbeing-container {
+  margin-top: 80px;
+  /* padding-top: 80px; */
   min-height: 100vh;
   z-index: 0;
   background: linear-gradient(135deg, #f5f7fa 0%, #f0f4ff 100%);
   position: relative;
   overflow-x: hidden;
 }
+
 
 :root.dark-mode .wellbeing-container {
   background: linear-gradient(135deg, #1a1a2e 0%, #2a1f3d 100%);

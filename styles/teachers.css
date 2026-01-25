@@ -1,6 +1,7 @@
 /* Teachers Container */
 .teachers-container {
   min-height: 100vh;
+    margin-top: 80px;
   background: linear-gradient(135deg, #f5f7fa 0%, #f0f4ff 100%);
 }
 

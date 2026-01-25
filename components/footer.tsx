@@ -19,7 +19,7 @@ export default function Footer() {
         </div>
 
         <div className="footer-section">
-          <h4>{t("footerExplore")}</h4>
+          <h4>{t("Explore")}</h4>
           <ul>
             <li>
               <a href="\#classes">{t("footerClass6to8")}</a>
@@ -34,7 +34,7 @@ export default function Footer() {
         </div>
 
         <div className="footer-section">
-          <h4>{t("footerSupport")}</h4>
+          <h4>{t("Support")}</h4>
           <ul>
             <li>
               <a href="/help" target="_blank">{t("footerHelpCenter")}</a>
@@ -49,7 +49,7 @@ export default function Footer() {
         </div>
 
         <div className="footer-section">
-          <h4>{t("footerLegal")}</h4>
+          <h4>{t("Legal")}</h4>
           <ul>
             <li>
               <a href="/privacy">{t("footerPrivacy")}</a>

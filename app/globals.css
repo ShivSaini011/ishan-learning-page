@@ -2,7 +2,15 @@
 @import 'tw-animate-css';
 
 @custom-variant dark (&:is(.dark *));
-
+div{
+  padding-top: 2px;
+}
+h2{
+  padding-top: 2px;
+}
+h1{
+  padding-top: 10px;
+}
 :root {
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);

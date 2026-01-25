@@ -190,7 +190,7 @@ export default function AboutUs() {
                 <blockquote>
                   "{t("founderQuote")}"
                 </blockquote>
-                <p>— {t("founderName")}</p>
+                <p>- {t("founderName")}</p>
               </div>
             </div>
           </div>

@@ -5,12 +5,12 @@ import Link from "next/link"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import HomeButton from "@/components/home-button"
-import { useLanguage } from "@/components/language-context
+import { useLanguage } from "@/components/language-context"
 import "@/styles/class-details.css"
 
 export default function ClassPage({ params }: { params: { classNumber: string } }) {
-  const { t } = useLanguage()`n  const [expandedSubject, setExpandedSubject] = useState<string | null>(null)
-
+  const { t } = useLanguage()
+  const [expandedSubject, setExpandedSubject] = useState<string | null>(null)
   const subjectsData = [
     { name: t("science"), options: [{ name: t("syllabus"), icon: "/7.jpg", link: "/resources/class-9/science/syllabus" }, { name: t("watchVideoLesson"), icon: "/9.jpg", link: "/resources/class-9/science/videos" }, { name: t("studyMaterial"), icon: "/8.jpg", link: "/resources/class-9/science/material" }, { name: t("practiceQuestions"), icon: "/10.jpg", link: "/resources/class-9/science/questions" }, { name: t("quickRevisionVideos"), icon: "/13.jpg", link: "/resources/class-9/science/revision" }, { name: t("doubtSession"), icon: "/12.jpg", link: "/resources/class-9/science/doubt-session" }, { name: t("askYourDoubt"), icon: "/11.jpg", link: "/contact?subject=science&class=9" }] },
     { name: t("mathematics"), options: [{ name: t("syllabus"), icon: "/7.jpg", link: "/resources/class-9/mathematics/syllabus" }, { name: t("watchVideoLesson"), icon: "/9.jpg", link: "/resources/class-9/mathematics/videos" }, { name: t("studyMaterial"), icon: "/8.jpg", link: "/resources/class-9/mathematics/material" }, { name: t("practiceQuestions"), icon: "/10.jpg", link: "/resources/class-9/mathematics/questions" }, { name: t("quickRevisionVideos"), icon: "/13.jpg", link: "/resources/class-9/mathematics/revision" }, { name: t("doubtSession"), icon: "/12.jpg", link: "/resources/class-9/mathematics/doubt-session" }, { name: t("askYourDoubt"), icon: "/11.jpg", link: "/contact?subject=mathematics&class=9" }] },
