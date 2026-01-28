@@ -39,6 +39,58 @@
   transition: all 0.3s ease;
 }
 
+/* --- Schedule Section Starts Here --- */
+
+.Schedule {
+  width: 100%;      
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  padding: 20px 20px;
+}
+
+.Schedule-placeholder {
+  background-color: #fff;     
+  
+  width: 25%;            
+  max-width: 500px;      
+  border-radius: 20px;
+  overflow: hidden;
+  border: 2px solid var(--lavender);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+}
+
+:root.dark-mode .Schedule-placeholder {
+  border-color: #9f7aea;
+  /* background: #1a1a2e; */
+}
+
+.Schedule-image {
+  width: 100%;           
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+.TDYC{
+/* background-color: white; */
+color: black;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+@media (max-width: 768px) {
+  .Schedule-placeholder {
+    width: 80%;          
+  }
+}
+.TDYC{
+  /* color: var(--text-dark); */
+}
+
 .classbtn{
   align-items: center;
   width: 700px;
@@ -70,6 +122,9 @@
 :root.dark-mode .class-card1 {
   background: linear-gradient(135deg, rgba(139, 92, 246, 0.15) 0%, #2a2a3e 100%);
   border-color: #9f7aea;
+}
+:root.dark-mode .bytxt{
+  color: #d4d4d4;
 }
 
 .class-card1:nth-child(odd) {

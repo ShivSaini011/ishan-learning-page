@@ -202,6 +202,9 @@
 :root.dark-mode .mobile-toggle {
   color: #e0e0e0;
 }
+.nav-close {
+  display: none;
+}
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -261,6 +264,10 @@
   :root.dark-mode .nav-close {
     color: #e0e0e0;
   }
+
+  /* .nav-close.active {
+    display: block;
+  } */
 
   .mobile-toggle {
     display: block;

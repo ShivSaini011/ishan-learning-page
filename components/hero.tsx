@@ -47,14 +47,14 @@ export default function Hero() {
             <a href="https://www.instagram.com/ishanlearning/" className="social-icon" title="Instagram" target="_blank">
               <img src="/insta.png" alt="Instagram" width={64} height={64} />
             </a>
-            <a href="#" className="social-icon" title="LinkedIn" target="_blank">
-              <img src="/tele.png" alt="Instagram" width={54} height={54} />
+            <a href="#" className="social-icon" title="Telegram" target="_blank">
+              <img src="/tele.png" alt="Telegram" width={54} height={54} />
             </a>
-            <a href="#" className="social-icon linkedin" title="YouTube" target="_blank">
+            <a href="#" className="social-icon linkedin" title="LinkedIn" target="_blank">
               <img src="/in.png" alt="LinkedIn" width={45} height={45} />
             </a>
-            <a href="#" className="social-icon1 whatsapp" title="YouTube" target="_blank">
-              <img src="/what.png" alt="Instagram" width={45} height={45} />
+            <a href="#" className="social-icon1 whatsapp" title="Whatsapp" target="_blank">
+              <img src="/what.png" alt="Whatsapp" width={45} height={45} />
             </a>
           </div>
         </div>

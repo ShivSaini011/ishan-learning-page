@@ -268,54 +268,7 @@ color: #133258;
   transform: scale(1.05);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-/* --- Schedule Section Starts Here --- */
 
-.Schedule {
-  width: 100%;           
-  display: flex;
-  justify-content: center; 
-  align-items: center;
-  padding: 20px 20px;
-}
-
-.Schedule-placeholder {
-  
-  width: 25%;            
-  max-width: 500px;      
-  
-  border-radius: 20px;
-  overflow: hidden;
-  border: 2px solid var(--lavender);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  display: flex;
-  justify-content: center;
-}
-
-:root.dark-mode .Schedule-placeholder {
-  border-color: #9f7aea;
-  background: #1a1a2e;
-}
-
-.Schedule-image {
-  width: 100%;           
-  height: auto;
-  display: block;
-  transition: transform 0.3s ease;
-}
-
-
-@media (max-width: 768px) {
-  .Schedule-placeholder {
-    width: 80%;          
-  }
-}
-.TDYC{
-  text-align: center;
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin-top: 2px;
-  color: var(--text-dark);
-}
 /* Logo styling */
 .hero-logo {
   display: flex;
