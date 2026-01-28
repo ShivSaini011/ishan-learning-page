@@ -13,6 +13,11 @@
   margin-bottom: 40px;
 }
 
+.linkimg{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .footer-section h4 {
   color: white;
   margin-bottom: 20px;

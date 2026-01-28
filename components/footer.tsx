@@ -67,13 +67,13 @@ export default function Footer() {
       <div className="footer-bottom">
         <p>{t("footerCopyright")}</p>
         <div className="footer-socials">
-          <a href="\fb" target="_blank"><img src="\fb.png" alt="facebook" /></a>
-          <a href="\tw" target="_blank"><img src="\tw.png" alt="twitter" /></a>
-          <a href="\ins" target="_blank"><img src="\ins.png" alt="instagrem" /></a>
-          <a href="\tel" target="_blank"><img src="\tel.png" alt="telegram" /></a>
-          <a href="\in" target="_blank"><img src="\i.png" alt="linkedin" /></a>
-          <a href="\w" target="_blank"><img src="\w.png" alt="whatsapp" /></a>
-          <a href="\yt" target="_blank"><img src="\yt.png" alt="youtube" /></a>
+          <a href="\fb" target="_blank" title="Facebook"><img src="\fb.png" alt="facebook" /></a>
+          <a className="linkimg" href="\tw" target="_blank" title="Twitter"><img src="\tw.png" alt="twitter" height={20} width={20} /></a>
+          <a href="\ins" target="_blank" title="Instagram"><img src="\ins.png" alt="instagrem" /></a>
+          <a href="\tel" target="_blank" title="Telegram"><img src="\tel.png" alt="telegram" /></a>
+          <a href="\in" target="_blank" title="LinkedIn"><img src="\i.png" alt="linkedin" /></a>
+          <a href="\w" target="_blank" title="WhatsApp"><img src="\w.png" alt="whatsapp" /></a>
+          <a href="\yt" target="_blank" title="YouTube"><img src="\yt.png" alt="youtube" /></a>
         </div>
       </div>
     </footer>

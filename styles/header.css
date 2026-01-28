@@ -23,6 +23,9 @@
   border-bottom-color: #8b5cf6;
   color: #e0e0e0;
 }
+/* .bgc-dark{
+  background: linear-gradient(90deg, #1a1a2e 0%, #16213e 100%);
+} */
 
 .header-container {
   max-width: 1200px;
@@ -182,7 +185,7 @@
 
 .lang-btn:hover,
 .theme-btn:hover {
-  background: rgba(0, 82, 255, 0.1);
+  background: rgba(38, 0, 255, 0.1);
 }
 
 :root.dark-mode .lang-btn:hover,

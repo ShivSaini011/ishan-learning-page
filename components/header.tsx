@@ -68,14 +68,14 @@ export default function Header() {
               onClick={() => setLanguage("en")}
               title="English"
             >
-              EN
+              Eng
             </button>
             <button
               className={`lang-btn ${language === "hi" ? "active" : ""}`}
               onClick={() => setLanguage("hi")}
               title="हिंदी"
             >
-              HI
+              हिंदी
             </button>
           </div>
 
@@ -89,7 +89,7 @@ export default function Header() {
               ☀️
             </button>
             <button
-              className={`theme-btn ${theme === "dark" ? "active" : ""}`}
+              className={`theme-btn bgc-dark ${theme === "dark" ? "active" : ""}`}
               onClick={() => setTheme("dark")}
               title="Dark Mode"
             >

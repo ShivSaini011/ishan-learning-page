@@ -617,7 +617,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 360px) {
   .exam-stress-hero h1 {
     font-size: 1.5rem;
     margin-bottom: 10px;
