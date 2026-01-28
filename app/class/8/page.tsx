@@ -348,7 +348,7 @@ export default function ClassPage({
       <Header />
       <div className="class-details-container">
         <div className="class-details-header">
-          <h1>Class 8</h1>
+          <h1>{t("class8")}</h1>
           <p>{t("exploreAllSubjects")}</p>
         </div>
 

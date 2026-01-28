@@ -101,7 +101,7 @@ color: #133258;
   align-items: center;
 }
 .youtubetxt{
-  font-size: 2.2rem;
+  font-size: 2.1rem;
   font-weight: 600;
   margin-bottom: 5PX;
   color: white;
@@ -117,8 +117,8 @@ color: #133258;
 }
 .socialyt{
   background-color:red;
-  width: 65px;
-  height: 45px;
+  width: 50px;
+  height: 35px;
   border-radius: 25%;
   color: white;
   /* background: linear-gradient(135deg, var(--primary-color), var(--purple)); */
@@ -437,6 +437,39 @@ color: #133258;
     grid-template-columns: 1fr;
     gap: 30px;
   }
+
+/* CRITICAL FIX: Prevent text clipping on small phones <420px */
+@media (max-width: 420px) {
+  .hero {
+    margin-top: 80px;
+    padding: 20px 15px;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+
+  /* Remove vertical centering - align content to top */
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  /* Ensure hero content is fully visible */
+  .hero-content {
+    width: 100%;
+    order: 1;
+    margin-top: 10px;
+  }
+
+  .hero-right-section {
+    width: 100%;
+    order: 2;
+  }
+}
 
 
 

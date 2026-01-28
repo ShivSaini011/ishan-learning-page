@@ -161,8 +161,8 @@ export default function PrivacyPolicy() {
             <h2>{t("contactInfo")}</h2>
             <p>{t("queriesRelated")}</p>
             <ul className="contact-list">
-              <li>📧 Email: [your email here]</li>
-              <li>🌐 Website: Ishan Learning</li>
+               <li>{t("emailAddress")}</li>
+            <li>{t("websiteIshan")}</li>
             </ul>
           </section>
         </div>

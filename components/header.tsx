@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect, useRef } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { useLanguage } from "@/components/language-context"
@@ -9,12 +9,34 @@ import "@/styles/header.css"
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const { t, language, setLanguage, theme, setTheme } = useLanguage()
+  const lastScrollYRef = useRef(0)
 
   const handleNavMouseLeave = () => {
     if (window.innerWidth <= 768) {
       setMobileMenuOpen(false)
     }
   }
+
+  useEffect(() => {
+    if (!mobileMenuOpen) return
+
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY
+
+      // Close menu only on scroll down
+      if (currentScrollY > lastScrollYRef.current) {
+        setMobileMenuOpen(false)
+      }
+
+      lastScrollYRef.current = currentScrollY
+    }
+
+    window.addEventListener("scroll", handleScroll, { passive: true })
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll)
+    }
+  }, [mobileMenuOpen])
 
   return (
     <header className="header">

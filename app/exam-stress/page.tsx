@@ -155,9 +155,9 @@ export default function ExamStress() {
           <p>
             {t("calmnessSup")}
           </p>
-          <p>
-            {t("examStressSupport")}
-          </p>
+          {/*<p>
+         {t("examStressSupport")}
+          </p>*/}
         </section>
 
         {/* Boundary */}

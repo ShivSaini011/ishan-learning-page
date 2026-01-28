@@ -573,6 +573,62 @@
 }
 
 @media (max-width: 480px) {
+  /* OVERFLOW FIX: Convert all multi-column grids to single column */
+  
+  /* Wellbeing grid - minmax(350px) was causing overflow */
+  .wellbeing-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  /* Vision-Mission grid - minmax(300px) was causing overflow */
+  .vision-mission-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  /* Difference grid - minmax(360px) was causing overflow */
+  .difference-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  /* About grid - minmax(300px) was causing overflow */
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* Features grid - minmax(250px) was causing overflow */
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* Stats grid - minmax(200px) was causing overflow */
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* Reduce padding on grid items */
+  .about-card {
+    padding: 20px;
+  }
+
+  .feature-item {
+    padding: 20px;
+  }
+
+  .wellbeing-item {
+    padding: 15px;
+  }
+
+  .difference-card {
+    padding: 15px;
+  }
+
+  /* Typography adjustments */
   .about-hero h1 {
     font-size: 1.5rem;
   }
@@ -588,6 +644,14 @@
   .belief-box,
   .founder-card {
     padding: 20px;
+  }
+
+  .about-card h2 {
+    font-size: 1.3rem;
+  }
+
+  .feature-item h3 {
+    font-size: 1.1rem;
   }
 }
 

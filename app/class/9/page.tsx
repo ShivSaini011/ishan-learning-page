@@ -31,7 +31,7 @@ export default function ClassPage({ params }: { params: { classNumber: string } 
       <Header />
       <div className="class-details-container">
         <div className="class-details-header">
-          <h1>Class 9</h1>
+          <h1>{t("class9")}</h1>
           <p>{t("exploreAllSubjects")}</p>
         </div>
 
