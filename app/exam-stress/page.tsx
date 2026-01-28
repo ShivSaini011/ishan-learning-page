@@ -307,6 +307,9 @@ export default function ExamStress() {
               {t("yourGoalNot")}
             </p>
           </div>
+
+
+          
         </section>
 
         {/* Exam Day Calm Routine */}
