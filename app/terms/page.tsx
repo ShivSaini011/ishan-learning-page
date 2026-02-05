@@ -14,7 +14,7 @@ export default function TermsOfService() {
     <div className="terms-container">
       <div className="terms-content">
         <h1>{t("termsOfServices")}</h1>
-        <p className="effective-date">{t("effectiveDate")}</p>
+        <p className="effective-date">{t("effectiveDate")} 01/01/2026</p>
 
         <p className="intro">
           {t("welcomeToIshan")}

@@ -116,15 +116,15 @@ export default function ClassPage({ params }: { params: { classNumber: string } 
   }
 
   return (
-    <div>
+    <div title="Class 7 Courses and Learning Resources - Science, Mathematics, Social Science and More">
       <Header />
-      <div className="class-details-container">
-        <div className="class-details-header">
-          <h1>{t("class7")}</h1>
-          <p>{t("exploreAllSubjects")}</p>
+      <main className="class-details-container" title="Class 7 subject courses and study materials">
+        <div className="class-details-header" title="Class 7 page header with course overview">
+          <h1 title="Class 7 courses and subjects">{t("class7")}</h1>
+          <p title="Explore all available subjects for Class 7">{t("exploreAllSubjects")}</p>
         </div>
 
-        <div className="subjects-container">
+        <div className="subjects-container" title="Grid of Class 7 subjects with expandable options">
           {subjectsData.map((subject) => (
             <div key={subject.name} className="subject-card">
               <button
@@ -153,7 +153,7 @@ export default function ClassPage({ params }: { params: { classNumber: string } 
             </div>
           ))}
         </div>
-      </div>
+      </main>
       <HomeButton />
       <Footer />
     </div>

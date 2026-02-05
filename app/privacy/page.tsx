@@ -15,7 +15,7 @@ export default function PrivacyPolicy() {
       <div className="privacy-container">
         <div className="privacy-content">
           <h1>{t("privacyPolicy")}</h1>
-          <p className="effective-date">{t("effectiveDate")} [dd/mm/yyyy]</p>
+          <p className="effective-date">{t("effectiveDate")} 01/01/2026</p>
 
           <p className="intro">
             {t("respects")}

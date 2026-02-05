@@ -13,7 +13,7 @@ import "@/styles/main.css"
 
 export default function Home() {
   return (
-    <div className="app">
+    <main className="app" title="Ishan Learning - Online Learning Platform for Classes 6-12">
       <Header />
       <Hero />
       <Features />
@@ -23,6 +23,6 @@ export default function Home() {
       {/* <AppDownload /> */}
       <Footer />
       
-    </div>
+    </main>
   )
 }

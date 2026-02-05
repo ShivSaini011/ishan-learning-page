@@ -2,6 +2,7 @@ import type React from "react"
 import { LanguageProvider } from "@/components/language-context"
 import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
+import Script from "next/script"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 
@@ -56,6 +57,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-NRB756NMQ4" />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-NRB756NMQ4');`}
+        </Script>
+      </head>
       <body className={`${_geist.className} antialiased`}>
         <LanguageProvider>
           {children}

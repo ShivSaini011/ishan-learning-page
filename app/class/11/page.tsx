@@ -38,35 +38,36 @@ export default function ClassPage({ params }: { params: { classNumber: string } 
   }
 
   return (
-    <div>
+    <div title="Class 11 Courses and Learning Resources - Science, Commerce and Humanities">
       <Header />
-      <div className="class-details-container">
-        <div className="class-details-header">
-          <h1>{t("class11")}</h1>
-          <p>{t("exploreAllSubjects")}</p>
+      <main className="class-details-container" title="Class 11 subject courses and study materials">
+        <div className="class-details-header" title="Class 11 page header with course overview">
+          <h1 title="Class 11 courses and subjects">{t("class11")}</h1>
+          <p title="Explore all available subjects for Class 11">{t("exploreAllSubjects")}</p>
         </div>
 
-        <div className="subjects-container">
+        <div className="subjects-container" title="Grid of Class 11 subjects with expandable options">
           {subjectsData.map((subject) => (
-            <div key={subject.name} className="subject-card">
+            <div key={subject.name} className="subject-card" title={`${subject.name} subject courses and resources`}>
               <button
                 className="subject-header"
+                title={`Expand or collapse ${subject.name} subject options`}
                 onClick={() => toggleSubject(subject.name)}
               >
-                <span className="subject-name">{subject.name}</span>
-                <span className={`subject-toggle ${expandedSubject === subject.name ? "open" : ""}`}>
+                <span className="subject-name" title={`Subject: ${subject.name}`}>{subject.name}</span>
+                <span className={`subject-toggle ${expandedSubject === subject.name ? "open" : ""}`} title="Toggle to view options">
                   ▼
                 </span>
               </button>
 
               {expandedSubject === subject.name && (
-                <div className="subject-options">
+                <div className="subject-options" title={`Learning resources for ${subject.name}`}>
                   {subject.options.map((option, index) => (
-                    <Link href={option.link} key={index} className="option-link" target="_blank" rel="noopener noreferrer">
-                      <div className="option-card">
-                        <img src={option.icon} alt={option.name} className="option-icon" />
-                        <div className="option-name">{option.name}</div>
-                        <div className="option-arrow">→</div>
+                    <Link href={option.link} key={index} className="option-link" title={`Access ${option.name} for ${subject.name}`} target="_blank" rel="noopener noreferrer">
+                      <div className="option-card" title={`${option.name} resource card`}>
+                        <img src={option.icon} alt={`${option.name} for ${subject.name}`} className="option-icon" title={`Icon for ${option.name}`} />
+                        <div className="option-name" title={`Resource type: ${option.name}`}>{option.name}</div>
+                        <div className="option-arrow" title="Open resource">→</div>
                       </div>
                     </Link>
                   ))}
@@ -75,7 +76,7 @@ export default function ClassPage({ params }: { params: { classNumber: string } 
             </div>
           ))}
         </div>
-      </div>
+      </main>
       <HomeButton />
       <Footer />
     </div>

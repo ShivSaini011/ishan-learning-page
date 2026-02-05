@@ -71,13 +71,12 @@ const translations: Translations = {
   guidanceWellbeingCorner: { en: "Guidance & Well-Being Corner", hi: "मार्गदर्शन और मानसिक स्वास्थ्य कॉर्नर" },
   calmMindLearns: { en: "Because a calm mind learns better. Access curated health resources designed for students.", hi: "क्योंकि शांत मन बेहतर सीखता है। छात्रों के लिए खास तौर पर चुने गए स्वास्थ्य संसाधनों तक पहुँच पाएं।" },
   examStressSupport: { en: "Exam Stress Support", hi: "परीक्षा तनाव सहायता" },
-  examStressDesc: { en: "This reflection is designed to help students understand exam stress, identify its causes and develop effective stress-management skills.", hi: "यह आत्म-चिंतन छात्रों को परीक्षा तनाव को समझने, उसके कारण पहचानने और तनाव प्रबंधन के प्रभावी तरीके विकसित करने में मदद करता है।" },
+  examStressDesc: { en: "This reflection helps students understand exam stress, recognize its causes and learn simple ways to manage it.", hi: "यह आत्म-चिंतन छात्रों को परीक्षा तनाव को समझने, उसके कारण पहचानने और तनाव प्रबंधन के प्रभावी तरीके विकसित करने में मदद करता है।" },
   readGuide: { en: "Read Guide", hi: "मार्गदर्शिका पढ़ें" },
   careerAwareness: { en: "Career Awareness", hi: "करियर जागरूकता" },
   careerDesc: { en: "Discover your passion. Navigate your way to success.", hi: "अपने जुनून को पहचानें। अपनी सफलता की राह खुद बनाएं।" },
   exploreCareers: { en: "Explore Careers", hi: "करियर के विकल्प देखें" },
-  mentalWellbeing: { en: "Mental Well-Being", hi: "मानसिक कल्याण" },
-  selfReflection: { en: "Self-Reflection", hi: "आत्म-चिंतन" },
+  mentalWellbeing: { en: "Mental Well-Being Self-Reflection", hi: "मानसिक कल्याण आत्म-चिंतन" },
   wellbeingDesc: { en: "Because learning works best when the mind feels supported, not pressured.", hi: "क्योंकि सीखना सबसे अच्छा तब होता है, जब मन सुरक्षित महसूस करे और उसे सहारा मिले, न कि दबाव।" },
   startCheck: { en: "Start Check", hi: "जाँच शुरू करें" },
   requestCounseling: { en: "Request a Counseling Session", hi: "परामर्श सत्र का अनुरोध करें" },
@@ -603,6 +602,36 @@ personalGuidance: {
 supportAllClasses: {
   en: "✓ Support for all classes (6-12)",
   hi: "✓ कक्षा 6 से 12 तक सभी के लिए सहयोग"
+},
+
+callUs: {
+  en: "Call Us",
+  hi: "हमें कॉल करें"
+},
+
+phoneContact: {
+  en: "Contact us by phone for quick assistance:",
+  hi: "जल्दी सहायता के लिए फोन पर हमसे संपर्क करें:"
+},
+
+phoneNumber: {
+  en: "+91-8006247231",
+  hi: "+91-8006247231"
+},
+
+callAvailability: {
+  en: " Quick response for urgent queries",
+  hi: " जरूरी सवालों के लिए जल्दी जवाब"
+},
+
+callDirect: {
+  en: " Direct communication with support team",
+  hi: " सहायता टीम से सीधा संवाद"
+},
+
+callSupport: {
+  en: " Available for all academic support needs",
+  hi: " सभी शैक्षणिक सहायता के लिए उपलब्ध"
 },
 
 emailUs: {

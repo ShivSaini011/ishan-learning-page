@@ -68,35 +68,36 @@ export default function Beyond() {
   ];
 
   return (
-    <div className="app">
+    <div className="app" title="Beyond the Classroom - Explore special learning programs and experiences">
       <Header />
 
-      <main className="beyond-container">
-        <section className="beyond-hero">
-          <h1>{t("beyondTheClassroom")}</h1>
-          <p>{t("learningExperienceCreativity")}</p>
+      <main className="beyond-container" title="Beyond the Classroom programs and opportunities">
+        <section className="beyond-hero" title="Hero section introducing beyond classroom learning">
+          <h1 title="Beyond the Classroom main heading">{t("beyondTheClassroom")}</h1>
+          <p title="Description of learning experiences and creativity focus">{t("learningExperienceCreativity")}</p>
         </section>
-        <section className="beyond-content">
+        <section className="beyond-content" title="Beyond classroom programs and courses">
           {/* <p className="beyond-description">
             Discover unique learning experiences that go beyond traditional textbooks. 
             Each class offers specialized programs designed to unlock creativity and practical skills.
           </p> */}
 
-          <div className="beyond-grid">
+          <div className="beyond-grid" title="Grid of specialized learning programs">
             {classes.map((cls, index) => (
-              <div key={index} className="beyond-card">
-                <div className="card-image">
+              <div key={index} className="beyond-card" title={`${cls.name} program card`}>
+                <div className="card-image" title={`Image for ${cls.name} program`}>
                   <Image
                     src={cls.image}
                     alt={cls.name}
                     width={180}
                     height={180}
+                    title={`${cls.name} program thumbnail`}
                   />
                 </div>
-                <div className="card-name">{cls.name}</div>
+                <div className="card-name" title={`Program name: ${cls.name}`}>{cls.name}</div>
                 {/* <div className="card-subtitle">Special Programs</div> */}
-                <a className="card-button" href={cls.link} target="_blank">
-                  <button className="card-bt" >{cls.button}</button></a>
+                <a className="card-button" href={cls.link} target="_blank" title={`Open ${cls.name} playlist on YouTube`}>
+                  <button className="card-bt" title={`${cls.button} - Access ${cls.name}`}>{cls.button}</button></a>
               </div>
             ))}
           </div>

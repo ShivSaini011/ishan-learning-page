@@ -48,7 +48,7 @@
   border-radius: 12px;
   text-align: center;
   transition: all 0.3s ease;
-  border: 2px solid var(--lavender-light);
+  border: 2px solid #9f7aea;
 }
 
 /* Dark mode guidance card background */
@@ -97,7 +97,7 @@
   height: 60px; */
   display: flex;
   padding: 5px 10px;
-  margin: auto;
+  margin: 0 auto;
   align-items: center;
   justify-content: center;
   border-radius: 12px;
@@ -192,7 +192,7 @@ margin: 0;
 
 @media (max-width: 768px) {
   .guidance {
-    padding: 40px 20px;
+    padding: 100px 20px;
   }
 
   .guidance-header {
@@ -246,11 +246,18 @@ margin: 0;
   font-size: 1rem;
 }
 
+ 
 /* Mobilresponsive */
+@media (max-width: 768px) {
+ .guidance {
+    padding: 110px 20px;
+  }
+}
 @media (max-width: 768px) {
   .home-button1 {
     bottom: 100px;
   }
+
   
   .home-icon-txt {
     font-size: 0.8em;

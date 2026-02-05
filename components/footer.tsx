@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="footer-container">
         <div className="footer-section">
           <div className="footer-logo">
-            <a href="/"><img src="/logonev.jpg" alt="logo" width={150} height={100} /></a>
+            <a href="/"><img src="/logonev.jpg" alt="Ishan Learning Logo" width={150} height={100} /></a>
             {/* <h4>Ishan Learning</h4> */}
           </div>
           <p>
@@ -67,13 +67,14 @@ export default function Footer() {
       <div className="footer-bottom">
         <p>{t("footerCopyright")}</p>
         <div className="footer-socials">
-          <a href="\fb" target="_blank" title="Facebook"><img src="\fb.png" alt="facebook" /></a>
-          <a className="linkimg" href="\tw" target="_blank" title="Twitter"><img src="\tw.png" alt="twitter" height={20} width={20} /></a>
-          <a href="\ins" target="_blank" title="Instagram"><img src="\ins.png" alt="instagrem" /></a>
-          <a href="\tel" target="_blank" title="Telegram"><img src="\tel.png" alt="telegram" /></a>
-          <a href="\in" target="_blank" title="LinkedIn"><img src="\i.png" alt="linkedin" /></a>
-          <a href="\w" target="_blank" title="WhatsApp"><img src="\w.png" alt="whatsapp" /></a>
-          <a href="\yt" target="_blank" title="YouTube"><img src="\yt.png" alt="youtube" /></a>
+          <a href="https://www.facebook.com/ishanlearning" target="_blank" title="Facebook"><img src="\fb.png" alt="facebook" /></a>
+          <a className="linkimg" href="https://x.com/ishanlearning" target="_blank" title="Twitter"><img src="\tw.png" alt="twitter" height={20} width={20} /></a>
+          <a href="https://www.instagram.com/ishanlearning/" target="_blank" title="Instagram"><img src="\ins.png" alt="instagrem" /></a>
+           <a href="https://www.threads.net/@ishanlearning" target="_blank" title="Theard"><img src="\th.png" alt="Theard" height={32} width={32} /></a>
+          <a href="https://t.me/ishanlearning" target="_blank" title="Telegram"><img src="\tel.png" alt="telegram" /></a>
+          <a href="https://www.linkedin.com/company/ishanlearning/" target="_blank" title="LinkedIn"><img src="\i.png" alt="linkedin" /></a>
+          <a href="https://whatsapp.com/channel/0029VbBxn9r4dTnCnjumby2d" target="_blank" title="WhatsApp"><img src="\w.png" alt="whatsapp" /></a>
+          <a href="https://www.youtube.com/@ishanlearning" target="_blank" title="YouTube"><img src="\yt.png" alt="youtube" /></a>
         </div>
       </div>
     </footer>

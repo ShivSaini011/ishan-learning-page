@@ -1229,45 +1229,46 @@ export default function WellBeing() {
   // Test Selection View
   if (!selectedTestId) {
     return (
-      <div className="app">
+      <div className="app" title="Mental Wellbeing - Student Reflection and Support">
         <Header />
-        <main className="wellbeing-container">
-          <section className="wellbeing-hero">
-            <h1>{t("mentalWellbeingTitle")}</h1>
-            <p className="subtitle">{t("reflectionSubtitle")}</p>
-            <p className="tagline">{t("supportedNotPressured")}</p>
+        <main className="wellbeing-container" title="Mental wellbeing reflection tool with multiple assessment categories">
+          <section className="wellbeing-hero" title="Mental wellbeing page hero section">
+            <h1 title="Student mental wellbeing and emotional awareness">{t("mentalWellbeingTitle")}</h1>
+            <p className="subtitle" title="Reflection subtitle">{t("reflectionSubtitle")}</p>
+            <p className="tagline" title="Support message">{t("supportedNotPressured")}</p>
           </section>
 
-          <section className="wellbeing-intro">
-            <div className="intro-content">
-              <p className="intro-text">
+          <section className="wellbeing-intro" title="Introduction to wellbeing reflections">
+            <div className="intro-content" title="Intro content container">
+              <p className="intro-text" title="Purpose of wellbeing reflections">
                 {t("reflectionDesigned")}
               </p>
-              <div className="disclaimer-box">
-                <h3>{t("important")}</h3>
-                <p>{t("notDiagnosis")}</p>
+              <div className="disclaimer-box" title="Important disclaimer about reflections">
+                <h3 title="Disclaimer header">{t("important")}</h3>
+                <p title="Not a medical diagnosis">{t("notDiagnosis")}</p>
               </div>
             </div>
           </section>
 
-          <section className="tests-selection">
-            <h2>{t("chooseReflection")}</h2>
-            <p className="selection-intro">{t("selectionIntro")}</p>
+          <section className="tests-selection" title="Test selection section">
+            <h2 title="Choose a wellbeing reflection">{t("chooseReflection")}</h2>
+            <p className="selection-intro" title="Instructions for selecting a test">{t("selectionIntro")}</p>
             
-            <div className="categories-grid">
+            <div className="categories-grid" title="Grid of wellbeing reflection categories">
               {Array.from(new Set(allTests.map(test => test.category))).map(category => (
-                <div key={category} className="category-group">
-                  <h3 className="category-title">{category}</h3>
-                  <div className="tests-list">
+                <div key={category} className="category-group" title={`${category} reflection tests`}>
+                  <h3 className="category-title" title={`Category: ${category}`}>{category}</h3>
+                  <div className="tests-list" title={`List of tests in ${category} category`}>
                     {allTests.filter(test => test.category === category).map(test => (
                       <button
                         key={test.id}
                         className="test-card"
+                        title={`Start ${test.title} reflection test`}
                         onClick={() => startTest(test.id)}
                       >
-                        <h4>{test.title}</h4>
-                        <p className="test-description">{test.why.substring(0, 100)}...</p>
-                        <span className="test-cta">{t("startReflection")}</span>
+                        <h4 title={`Test name: ${test.title}`}>{test.title}</h4>
+                        <p className="test-description" title="Test description preview">{test.why.substring(0, 100)}...</p>
+                        <span className="test-cta" title="Call to action to start reflection">{t("startReflection")}</span>
                       </button>
                     ))}
                   </div>
@@ -1284,61 +1285,64 @@ export default function WellBeing() {
 
   // Test View
   return (
-    <div className="app">
+    <div className="app" title="Wellbeing Reflection Test - Student Assessment">
       <Header />
-      <main className="wellbeing-container">
+      <main className="wellbeing-container" title="Wellbeing reflection assessment container">
         {!showResults ? (
           <>
-            <section className="wellbeing-hero">
-              <div className="test-header-content">
-                <button className="BTT" onClick={resetToSelection}>{t("back")}</button>
-                <h1>{currentTest?.title}</h1>
-                <p className="subtitle">{currentTest?.category}</p>
+            <section className="wellbeing-hero" title="Test header with back button">
+              <div className="test-header-content" title="Test header content">
+                <button className="BTT" title="Return to test selection" onClick={resetToSelection}>{t("back")}</button>
+                <h1 title={`Test: ${currentTest?.title}`}>{currentTest?.title}</h1>
+                <p className="subtitle" title={`Category: ${currentTest?.category}`}>{currentTest?.category}</p>
               </div>
             </section>
 
-            <section className="wellbeing-intro">
-              <div className="intro-content">
-                <div className="test-why-box">
-                  <h3>{t("whyThisReflection")}</h3>
-                  <p>{currentTest?.why}</p>
+            <section className="wellbeing-intro" title="Test information and guidelines">
+              <div className="intro-content" title="Test context and disclaimer">
+                <div className="test-why-box" title="Explanation of reflection">
+                  <h3 title="Why this reflection">{t("whyThisReflection")}</h3>
+                  <p title="Test context and purpose">{currentTest?.why}</p>
                 </div>
-                <div className="disclaimer-box">
-                  <h3>{t("important")}</h3>
-                  <p>{t("notDiagnosis")}</p>
+                <div className="disclaimer-box" title="Important disclaimer">
+                  <h3 title="Disclaimer header">{t("important")}</h3>
+                  <p title="This is not a medical diagnosis">{t("notDiagnosis")}</p>
                 </div>
               </div>
             </section>
 
-            <section className="wellbeing-reflection">
-              <div className="reflection-header">
-                <h2>{t("selfReflectionStatements")}</h2>
-                <p className="instruction">
+            <section className="wellbeing-reflection" title="Self-reflection statements">
+              <div className="reflection-header" title="Reflection instructions">
+                <h2 title="Rate the statements">{t("selfReflectionStatements")}</h2>
+                <p className="instruction" title="How to respond to statements">
                   {t("instruction")}
                 </p>
               </div>
 
-              <div className="statements-container">
+              <div className="statements-container" title="Container for all reflection statements">
                 {statements.map((statement, index) => (
-                  <div key={index} className="statement-card">
-                    <div className="statement-number">{index + 1}</div>
-                    <div className="statement-content">
-                      <p className="statement-text">{statement}</p>
-                      <div className="response-options">
+                  <div key={index} className="statement-card" title={`Statement ${index + 1}`}>
+                    <div className="statement-number" title="Statement number">{index + 1}</div>
+                    <div className="statement-content" title="Statement content and response options">
+                      <p className="statement-text" title="Reflection statement">{statement}</p>
+                      <div className="response-options" title="Response option buttons">
                         <button
                           className={`response-btn ${responses[index] === "often" ? "active often" : ""}`}
+                          title="This statement applies often to me"
                           onClick={() => handleResponse(index, "often")}
                         >
                           {t("often")}
                         </button>
                         <button
                           className={`response-btn ${responses[index] === "sometimes" ? "active sometimes" : ""}`}
+                          title="This statement applies sometimes to me"
                           onClick={() => handleResponse(index, "sometimes")}
                         >
                           {t("sometimes")}
                         </button>
                         <button
                           className={`response-btn ${responses[index] === "rarely" ? "active rarely" : ""}`}
+                          title="This statement applies rarely to me"
                           onClick={() => handleResponse(index, "rarely")}
                         >
                           {t("rarely")}
@@ -1349,9 +1353,10 @@ export default function WellBeing() {
                 ))}
               </div>
 
-              <div className="submit-section">
+              <div className="submit-section" title="Submit responses section">
                 <button 
                   className="submit-btn" 
+                  title={Object.keys(responses).length === statements.length ? "View reflection results" : "Complete all statements to proceed"}
                   onClick={handleSubmit}
                   disabled={Object.keys(responses).length !== statements.length}
                 >
@@ -1364,99 +1369,100 @@ export default function WellBeing() {
           </>
         ) : (
           <>
-            <section className="wellbeing-results">
-              <h2>{t("understandingResponses")}</h2>
+            <section className="wellbeing-results" title="Test results and interpretation">
+              <h2 title="Understanding your responses">{t("understandingResponses")}</h2>
               
               {getRecommendation() === "rarely" && (
-                <div className="result-card rarely">
-                  <h3>{currentTest?.results.rarely.title}</h3>
-                  <p>{currentTest?.results.rarely.description}</p>
-                  <div className="result-note">{currentTest?.results.rarely.note}</div>
+                <div className="result-card rarely" title="Result: Rarely - positive indicator">
+                  <h3 title="Result title">{currentTest?.results.rarely.title}</h3>
+                  <p title="Detailed result description">{currentTest?.results.rarely.description}</p>
+                  <div className="result-note" title="Recommendation note">{currentTest?.results.rarely.note}</div>
                 </div>
               )}
 
               {getRecommendation() === "sometimes" && (
-                <div className="result-card sometimes">
-                  <h3>{currentTest?.results.sometimes.title}</h3>
-                  <p>{currentTest?.results.sometimes.description}</p>
-                  <div className="result-note">{currentTest?.results.sometimes.note}</div>
+                <div className="result-card sometimes" title="Result: Sometimes - moderate indicator">
+                  <h3 title="Result title">{currentTest?.results.sometimes.title}</h3>
+                  <p title="Detailed result description">{currentTest?.results.sometimes.description}</p>
+                  <div className="result-note" title="Recommendation note">{currentTest?.results.sometimes.note}</div>
                 </div>
               )}
 
               {getRecommendation() === "often" && (
-                <div className="result-card often">
-                  <h3>{currentTest?.results.often.title}</h3>
-                  <p>{currentTest?.results.often.description}</p>
-                  <div className="result-note">{currentTest?.results.often.note}</div>
+                <div className="result-card often" title="Result: Often - seek support indicator">
+                  <h3 title="Result title">{currentTest?.results.often.title}</h3>
+                  <p title="Detailed result description">{currentTest?.results.often.description}</p>
+                  <div className="result-note" title="Recommendation note">{currentTest?.results.often.note}</div>
                 </div>
               )}
             </section>
 
-            <section className="wellbeing-support">
-              <h2>{t("whenSeeking")}</h2>
-              <p className="support-intro">{t("supportIntro")}</p>
-              <div className="support-indicators">
-                <div className="indicator">
-                  <span className="indicator-icon">✓</span>
-                  <p>{t("feelingsConstant")}</p>
+            <section className="wellbeing-support" title="When to seek additional support">
+              <h2 title="Indicators for seeking support">{t("whenSeeking")}</h2>
+              <p className="support-intro" title="Information about seeking help">{t("supportIntro")}</p>
+              <div className="support-indicators" title="List of support indicators">
+                <div className="indicator" title="Indicator 1: Feelings are constant">
+                  <span className="indicator-icon" title="Checkmark icon">✓</span>
+                  <p title="Constant feelings indicator">{t("feelingsConstant")}</p>
                 </div>
-                <div className="indicator">
-                  <span className="indicator-icon">✓</span>
-                  <p>{t("stressAffects")}</p>
+                <div className="indicator" title="Indicator 2: Stress affects daily life">
+                  <span className="indicator-icon" title="Checkmark icon">✓</span>
+                  <p title="Stress affects life indicator">{t("stressAffects")}</p>
                 </div>
-                <div className="indicator">
-                  <span className="indicator-icon">✓</span>
-                  <p>{t("emotionallyExhausted")}</p>
+                <div className="indicator" title="Indicator 3: Emotionally exhausted">
+                  <span className="indicator-icon" title="Checkmark icon">✓</span>
+                  <p title="Emotional exhaustion indicator">{t("emotionallyExhausted")}</p>
                 </div>
-                <div className="indicator">
-                  <span className="indicator-icon">✓</span>
-                  <p>{t("feelStuck")}</p>
+                <div className="indicator" title="Indicator 4: Feel stuck">
+                  <span className="indicator-icon" title="Checkmark icon">✓</span>
+                  <p title="Feeling stuck indicator">{t("feelStuck")}</p>
                 </div>
               </div>
-              <p className="support-note">{t("supportNote")}</p>
+              <p className="support-note" title="Additional support note">{t("supportNote")}</p>
             </section>
 
-            <section className="wellbeing-boundaries">
-              <h2>{t("importantBoundaries")}</h2>
-              <div className="boundaries-content">
-                <p>
+            <section className="wellbeing-boundaries" title="Important boundaries and resources">
+              <h2 title="Important boundaries">{t("importantBoundaries")}</h2>
+              <div className="boundaries-content" title="Boundaries content and resources">
+                <p title="What Ishan does not provide">
                   <strong>{t("ishanDoesNotProvide")}</strong> {t("reflectionOnlyForAwareness")}
                 </p>
-                <p>{t("ifEmotional")}</p>
-                <div className="support-resources">
-                  <div className="resource">
-                    <span className="resource-icon">👨‍👩‍👧</span>
-                    <p>{t("parents")}</p>
+                <p title="When to seek professional help">{t("ifEmotional")}</p>
+                <div className="support-resources" title="Available support resources">
+                  <div className="resource" title="Parents and family support">
+                    <span className="resource-icon" title="Family icon">👨‍👩‍👧</span>
+                    <p title="Parents resource">{t("parents")}</p>
                   </div>
-                  <div className="resource">
-                    <span className="resource-icon">🏫</span>
-                    <p>{t("teachersSchoolCounselors")}</p>
+                  <div className="resource" title="School counselors and teachers">
+                    <span className="resource-icon" title="School icon">🏫</span>
+                    <p title="School support resource">{t("teachersSchoolCounselors")}</p>
                   </div>
-                  <div className="resource">
-                    <span className="resource-icon">🏥</span>
-                    <p>{t("qualifiedMental")}</p>
+                  <div className="resource" title="Mental health professionals">
+                    <span className="resource-icon" title="Hospital icon">🏥</span>
+                    <p title="Professional mental health resource">{t("qualifiedMental")}</p>
                   </div>
-                  <div className="resource">
-                    <span className="resource-icon">📞</span>
-                    <p>{t("appropriateSupport")}</p>
+                  <div className="resource" title="Crisis support helplines">
+                    <span className="resource-icon" title="Phone icon">📞</span>
+                    <p title="Crisis support resource">{t("appropriateSupport")}</p>
                   </div>
                 </div>
               </div>
             </section>
 
-            <section className="wellbeing-closing">
-              <h2>{t("closingThought")}</h2>
-              <p className="closing-main">
+            <section className="wellbeing-closing" title="Closing message">
+              <h2 title="Closing thought">{t("closingThought")}</h2>
+              <p className="closing-main" title="Main closing message">
                 {t("yourMental")}
               </p>
-              <p className="closing-sub">
+              <p className="closing-sub" title="Secondary closing message">
                 {t("takingTime")}
               </p>
             </section>
 
-            <div className="results-actions">
+            <div className="results-actions" title="Action buttons after results">
               <button 
                 className="retake-btn"
+                title="Retake the same reflection test"
                 onClick={() => {
                   setResponses({})
                   setShowResults(false)
@@ -1467,6 +1473,7 @@ export default function WellBeing() {
               </button>
               <button 
                 className="explore-btn"
+                title="Explore other wellbeing reflections"
                 onClick={resetToSelection}
               >
                 {t("exploreOther")}

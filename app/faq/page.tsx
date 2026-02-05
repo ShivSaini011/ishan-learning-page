@@ -79,41 +79,42 @@ export default function FAQ() {
   }
 
   return (
-    <div className="faq-page">
+    <div className="faq-page" title="Frequently Asked Questions - Get Answers">
         <Header />
-    <div className="faq-container">
-      <div className="faq-header">
-        <h1>{t("faq")}</h1>
-        <p>{t("findAnswers")}</p>
+    <div className="faq-container" title="FAQ container with all questions and answers">
+      <div className="faq-header" title="FAQ page header">
+        <h1 title="Frequently Asked Questions">{t("faq")}</h1>
+        <p title="Find answers to common questions">{t("findAnswers")}</p>
       </div>
 
-      <div className="faq-content">
-        <div className="faq-accordion">
+      <main className="faq-content" title="Main FAQ content section">
+        <div className="faq-accordion" title="Accordion with expandable FAQ items">
           {faqs.map((faq, index) => (
-            <div key={index} className="faq-item">
+            <div key={index} className="faq-item" title={`FAQ item ${index + 1}`}>
               <button
                 className={`faq-question ${openIndex === index ? "active" : ""}`}
+                title={`Click to ${openIndex === index ? "collapse" : "expand"} answer for question ${index + 1}`}
                 onClick={() => toggleAccordion(index)}
               >
-                <span className="faq-question-text">{t(faq.questionKey)}</span>
-                <span className="faq-icon">
+                <span className="faq-question-text" title="Question text">{t(faq.questionKey)}</span>
+                <span className="faq-icon" title="Expand/collapse icon">
                   {openIndex === index ? "−" : "+"}
                 </span>
               </button>
               {openIndex === index && (
-                <div className="faq-answer">
-                  <p>{t(faq.answerKey)}</p>
+                <div className="faq-answer" title="Answer to the question">
+                  <p title="Answer text">{t(faq.answerKey)}</p>
                 </div>
               )}
             </div>
           ))}
         </div>
-      </div>
+      </main>
 
-      <div className="faq-footer">
-        <p>{t("didntFind")}</p>
-        <p>
-          <a href="/contact">{t("contact")}</a> {t("contactUsQuery")}
+      <div className="faq-footer" title="FAQ footer with contact information">
+        <p title="Message if answer not found">{t("didntFind")}</p>
+        <p title="Contact suggestion">
+          <a href="/contact" title="Navigate to contact page">{t("contact")}</a> {t("contactUsQuery")}
         </p>
       </div>
           <HomeButton />

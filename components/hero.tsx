@@ -5,56 +5,59 @@ import SearchClass from "@/components/search"
 export default function Hero() {
   const { t } = useLanguage();
   return (
-    <section className="hero">
+    <section className="hero" title="Ishan Learning - Learn Smart, Stay Confident">
       <div className="hero-container">
         <div className="hero-content">
           {/* <div className="hero-badge">✨ ENROLLMENT OPEN FOR 2024-25</div> */}
-          <div className="hero-title">
-            <div className="hero-txt"> {t("class6to12")}</div>
-            <span className="highlight">{t("stayConfident")}</span>
-          </div>
-          <a href="https://www.youtube.com/@IshanLearning" className="youtubeican" title="YouTube" target="_blank">
-            <div className="socialyt" title="YouTube" >
+          <h1 className="hero-title" title="Class 6 to 12 Online Learning Platform">
+            <div className="hero-txt" title="Learn smart with Ishan Learning"> {t("class6to12")}</div>
+            <span className="highlight" title="Stay confident in your studies">{t("stayConfident")}</span>
+          </h1>
+          <a href="https://www.youtube.com/@IshanLearning" className="youtubeican" title="Visit Ishan Learning YouTube Channel" target="_blank">
+            <div className="socialyt" title="YouTube Play Icon" >
               ▶
             </div>
-            <div className="youtubetxt ">@IshanLearning</div>
+            <div className="youtubetxt " title="Subscribe to Ishan Learning on YouTube">@IshanLearning</div>
           </a>
           {/* <SearchClass/> */}
-          <div className="education-right">{t("education_right")}</div>
+          <div className="education-right" title="Education is a right, not a privilege">{t("education_right")}</div>
         </div>
 
-        <div className="hero-right-section">
+        <div className="hero-right-section" title="Hero section promotional content">
           {/* Search bar */}
           {/* <div className="search-bar">
             <input type="text" placeholder="Search courses..." className="search-input" />
             <button className="search-btn">🔍</button>
           </div> */}
           {/* Logo */}
-          <div className="hero-logo">
+          <div className="hero-logo" title="Ishan Learning brand logo">
             <div className="logo-placeholder">
-              <img src="logo.png" alt="Logo" className="logo-image" />
+              <img src="logo.png" alt="Ishan Learning Logo" className="logo-image" title="Ishan Learning Logo" />
             </div>
           </div>
 
           {/* Social media icons */}
-          <div className="social-icons">
-            <a href="https://www.facebook.com/ishanlearning/" className="social-icon" title="Facebook" target="_blank">
-              <img src="/face.png" alt="Instagram" width={65} height={65} />
+          <div className="social-icons" title="Connect with Ishan Learning on social media">
+            <a href="https://www.facebook.com/ishanlearning/" className="social-icon" title="Follow Ishan Learning on Facebook" target="_blank">
+              <img src="/face.png" alt="Facebook Icon" width={65} height={65} title="Facebook" />
             </a>
-            <a href="https://www.twitter.com/ishanlearning" className="social-icon" title="Twitter" target="_blank">
-              <img src="/x.png" alt="Instagram" width={65} height={65} />
+            <a href="https://x.com/ishanlearning" className="social-icon" title="Follow Ishan Learning on Twitter" target="_blank">
+              <img src="/x.png" alt="Twitter Icon" width={65} height={65} title="Twitter" />
             </a>
-            <a href="https://www.instagram.com/ishanlearning/" className="social-icon" title="Instagram" target="_blank">
-              <img src="/insta.png" alt="Instagram" width={64} height={64} />
+            <a href="https://www.instagram.com/ishanlearning/" className="social-icon" title="Follow Ishan Learning on Instagram" target="_blank">
+              <img src="/insta.png" alt="Instagram Icon" width={64} height={64} title="Instagram" />
             </a>
-            <a href="#" className="social-icon" title="Telegram" target="_blank">
-              <img src="/tele.png" alt="Telegram" width={54} height={54} />
+            <a href="https://www.threads.net/@ishanlearning" className="social-icon" title="Follow Ishan Learning on Thread" target="_blank">
+              <img src="/thread.png" alt="Thread Icon" width={50} height={50} title="Thread" />
             </a>
-            <a href="#" className="social-icon linkedin" title="LinkedIn" target="_blank">
-              <img src="/in.png" alt="LinkedIn" width={45} height={45} />
+            <a href="https://t.me/ishanlearning" className="social-icon" title="Connect on Telegram" target="_blank">
+              <img src="/tele.png" alt="Telegram Icon" width={54} height={54} title="Telegram" />
             </a>
-            <a href="#" className="social-icon1 whatsapp" title="Whatsapp" target="_blank">
-              <img src="/what.png" alt="Whatsapp" width={45} height={45} />
+            <a href="https://www.linkedin.com/company/ishanlearning/" className="social-icon whatsapp" title="Connect on LinkedIn" target="_blank">
+              <img src="/in.png" alt="LinkedIn Icon" width={45} height={45} title="LinkedIn" />
+            </a>
+            <a href="https://whatsapp.com/channel/0029VbBxn9r4dTnCnjumby2d" className="social-icon1 whatsapp" title="Chat on WhatsApp" target="_blank">
+              <img src="/what.png" alt="WhatsApp Icon" width={45} height={45} title="WhatsApp" />
             </a>
           </div>
         </div>
