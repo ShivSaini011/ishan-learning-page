@@ -26,11 +26,11 @@ export default function Contact() {
           <p>{t("queriesFor")}</p>
           
           <div className="contact-actions">
-            <a href="/ask-query" className="contact-button query-button" target="_blank">
+            <a href="https://forms.gle/8fhKYyaFgNyHrG99A" className="contact-button query-button" target="_blank">
               <span className="button-icon" >✉️</span>
               {t("askQuery")}
             </a>
-            <a href="/request-session" className="contact-button session-button" target="_blank">
+            <a href="https://forms.gle/KwyZ2Cz2wTqjoYgv6" className="contact-button session-button" target="_blank">
               <span className="button-icon">📅</span>
               {t("requestSession")}
             </a>
@@ -49,8 +49,8 @@ export default function Contact() {
           <p>{t("reachOutInquiries")}</p>
           
           <div className="email-section">
-            <a href="mailto:info@ishanlearning.com" className="email-link">
-              info@ishanlearning.com
+            <a href="mailto:contactishanlearning@gmail.com" className="email-link">
+              contactishanlearning@gmail.com
             </a>
           </div>
 

@@ -37,7 +37,7 @@ export default function Footer() {
           <h4>{t("Support")}</h4>
           <ul>
             <li>
-              <a href="/help" target="_blank">{t("footerHelpCenter")}</a>
+              <a href="https://forms.gle/8fhKYyaFgNyHrG99A" target="_blank">{t("footerHelpCenter")}</a>
             </li>
             <li>
               <a href="/faq">{t("footerFAQ")}</a>

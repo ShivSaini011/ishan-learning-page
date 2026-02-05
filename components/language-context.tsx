@@ -346,8 +346,8 @@ founderDesc1: {
 },
 
 founderDesc2: {
-  en: "The platform is guided by Abhishek Saini, who holds Master's degrees in Psychology and Sociology. He is a Gold Medalist in Psychology, has qualified UGC-NET in Psychology and UGC-NET with JRF in Sociology and is currently pursuing a PhD in Sociology.",
-  hi: "यह मंच अभिषेक सैनी के मार्गदर्शन में संचालित है, जिनके पास मनोविज्ञान और समाजशास्त्र में मास्टर डिग्री है। वे मनोविज्ञान में गोल्ड मेडलिस्ट हैं, मनोविज्ञान में UGC-NET तथा समाजशास्त्र में JRF के साथ UGC-NET उत्तीर्ण कर चुके हैं और वर्तमान में समाजशास्त्र में पीएचडी कर रहे हैं।"
+  en: "The platform is guided by Abhishek Saini, who holds Master's degrees in Psychology and Sociology. He is a Gold Medalist in Psychology, has qualified UGC-NET with JRF in Sociology and is currently pursuing a PhD in Sociology.",
+  hi: "यह मंच अभिषेक सैनी के मार्गदर्शन में संचालित है, जिनके पास मनोविज्ञान और समाजशास्त्र में मास्टर डिग्री है। वे मनोविज्ञान में गोल्ड मेडलिस्ट हैं, समाजशास्त्र में JRF के साथ UGC-NET उत्तीर्ण कर चुके हैं और वर्तमान में समाजशास्त्र में पीएचडी कर रहे हैं।"
 },
 
 founderDesc3: {
@@ -479,6 +479,33 @@ yogaMind: {
 yogaMindBtn: {
   en: "Yoga & Mind Discipline",
   hi: "योग और मन का अनुशासन"
+},
+SmartDigitalLife: {
+  en: "Learn to use technology wisely for learning, balance and growth.",
+  hi: "सीखने, संतुलन बनाए रखने और आगे बढ़ने के लिए तकनीक का समझदारी से उपयोग करें।"
+},
+
+AroundUsBtn: {
+  en: "Around Us",
+  hi: "हमारे चारों ओर"
+},
+AroundUs: {
+  en: "Understand what’s happening around us and how it connects to our lives.",
+  hi: "हमारे आसपास हो रही घटनाओं को समझें और जानें कि उनका हमारे जीवन से क्या संबंध है।"
+},
+
+IndianRootsBtn: {
+  en: "Indian Roots",
+  hi: "भारत की जड़ें"
+},
+IndianRoots: {
+  en: "Explore India’s knowledge, culture and timeless ideas in a simple, meaningful way.",
+  hi: "भारत के ज्ञान, संस्कृति और कालजयी विचारों को सरल और अर्थपूर्ण रूप में समझें।"
+},
+
+SmartDigitalLifeBtn: {
+  en: "Smart Digital Life",
+  hi: "डिजिटल समझदारी"
 },
 
   // Careers page

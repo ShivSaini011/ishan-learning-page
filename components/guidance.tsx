@@ -57,7 +57,7 @@ export default function Guidance() {
             </div>
           ))}
         </div>
-        <a className="request-a-session" href="/reqest" target="_blank"> 
+        <a className="request-a-session" href="https://forms.gle/KwyZ2Cz2wTqjoYgv6" target="_blank"> 
           <button className="session-btn">{t("requestCounseling")}</button>
         </a>
       <Link href="\tdy" className="home-button1" target="_blank">

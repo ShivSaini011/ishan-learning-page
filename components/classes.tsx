@@ -36,7 +36,7 @@ export default function Classes() {
       </div>
       <div className="Schedule">
         <div className="Schedule-placeholder">
-          <a href="Class Schedule Link" target="_blank" rel="noopener noreferrer">
+          <a href="https://drive.google.com/drive/folders/1ld0tHroFusFZ-dJQeeAI3zMh_4o5f2Y6" target="_blank" rel="noopener noreferrer">
             <img src="Schedule.png" alt="Logo" className="Schedule-image" />
             <div className="TDYC">{t("todayClassSchedule")}</div>
           </a>

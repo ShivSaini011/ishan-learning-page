@@ -12,6 +12,24 @@ export const metadata: Metadata = {
   title: "Ishan Learning",
   description: "Learn Smart, Stay Confident",
   generator: "v0.app",
+  robots: "index, follow",
+  alternates: {
+    canonical: "https://ishanlearning.com",
+  },
+  openGraph: {
+    title: "Ishan Learning",
+    description: "Learn Smart, Stay Confident",
+    type: "website",
+    url: "https://ishanlearning.com",
+    images: [
+      {
+        url: "https://ishanlearning.com/logonev.jpg",
+        width: 800,
+        height: 600,
+        alt: "Ishan Learning Logo",
+      },
+    ],
+  },
   icons: {
     icon: [
       {

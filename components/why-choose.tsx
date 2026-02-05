@@ -38,7 +38,7 @@ export default function WhyChoose() {
             <img className="whyimg" src="/qr.png" alt="Query Illustration" width={380} height={380} />
               <div className="query-instructions">
               <h2  className="qrtxt">{t("submitYourQuery")}</h2>
-              <a href="\submit"  target="_blank">
+              <a href="https://forms.gle/8fhKYyaFgNyHrG99A"  target="_blank">
               <button className="submit-query-btn">{t("submitBtn")}</button>
               </a>
               </div>
