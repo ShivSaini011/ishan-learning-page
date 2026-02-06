@@ -126,7 +126,6 @@ color: black;
 :root.dark-mode .bytxt{
   color: #d4d4d4;
 }
-
 .class-card1:nth-child(odd) {
   background: linear-gradient(135deg, #e0f2fe 0%, white 100%);
   border-color: var(--cyan);
