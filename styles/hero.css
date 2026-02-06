@@ -306,7 +306,9 @@ color: #133258;
   height: 100%;
   stroke: var(--purple);
 }
-
+.thread{
+  overflow: hidden;
+}
 :root.dark-mode .logo-placeholder svg {
   stroke: #c084fc;
 }
@@ -432,6 +434,7 @@ color: #133258;
     padding: 40px 20px;
     min-height: auto;
   }
+
 
   .hero-container {
     grid-template-columns: 1fr;
